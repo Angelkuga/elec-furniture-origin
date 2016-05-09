@@ -1,0 +1,282 @@
+﻿2015-05-28 17:32:36,110 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-28 17:32:39,381 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:32:39,408 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:32:40,220 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:32:40,229 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:32:41,156 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:05,223 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:05,328 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:05,328 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:06,215 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:07,031 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:19,666 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:20,471 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:20,475 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:23,351 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 17:36:24,105 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 18:07:34,543 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 18:07:35,001 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 18:07:35,324 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 18:07:36,130 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 18:07:36,921 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-28 18:33:52,361 [3] TREC.Web.Global DEBUG - 家具快搜停止

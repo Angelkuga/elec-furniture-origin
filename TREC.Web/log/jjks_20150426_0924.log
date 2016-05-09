@@ -1,0 +1,842 @@
+﻿2015-04-26 21:24:15,431 [9] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-26 21:24:18,109 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:18,679 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:18,726 [9] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:28,405 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:28,424 [9] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:29,189 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:37,407 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:37,410 [9] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:37,412 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:41,278 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:41,279 [9] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:41,280 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:56,209 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:56,226 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:24:56,629 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:25:07,620 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:25:07,623 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:25:07,625 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:01,623 [16] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:01,624 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:01,632 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:16,298 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:16,300 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:16,874 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:24,252 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:24,252 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:24,253 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:24,889 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:24,903 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:24,905 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:28,799 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:29,119 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:29,228 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:37,899 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:37,901 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:38,037 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:41,440 [15] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:41,440 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:26:41,444 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:30:02,750 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:30:03,070 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:30:03,256 [18] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:30:06,515 [18] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:30:06,515 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:30:06,519 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:32:57,698 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:32:57,699 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:32:57,701 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/GroupBuybrandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:19,083 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:19,084 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:19,091 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:28,165 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:28,166 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:28,176 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:32,415 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:32,433 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:32,560 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:33,265 [17] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:33,265 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 这是一个无效的 Webresource 请求。
+   在 System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 21:35:33,267 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/admin/brand/brandlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.101
+UserHostAddress:
+192.168.1.101
+
+System.Web.HttpException: 此请求是无效的脚本资源请求。
+   在 System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-26 22:01:53,678 [8] TREC.Web.Global DEBUG - 家具快搜停止

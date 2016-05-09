@@ -1,0 +1,96 @@
+﻿2015-05-14 10:20:24,615 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-14 10:22:39,711 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/Dealer/437/product-662--------1-----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 关键字 'and' 附近有语法错误。
+关键字 'and' 附近有语法错误。
+关键字 'and' 附近有语法错误。
+关键字 'and' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItemByCreateMid(String strWhere, String createmid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 298
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCreatemIdNew(Int32 createmid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 60
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 955
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 96
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-14 10:25:22,251 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 文件“/template/web/default/dealer/product---------1--9---.aspx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-14 10:25:33,687 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 文件“/template/web/default/dealer/product---------1-----528.aspx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-14 10:26:00,501 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 文件“/template/web/default/dealer/product---------1-----528.aspx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-14 10:41:51,269 [3] TREC.Web.Global DEBUG - 家具快搜停止

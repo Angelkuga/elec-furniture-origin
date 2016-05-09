@@ -1,0 +1,35 @@
+﻿2015-05-08 19:13:37,004 [12] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-08 19:14:01,409 [12] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/productlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 关键字 'where' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TREC.Data.DbHelper.ExecuteScalar(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 583
+   在 TREC.Data.DbHelper.ExecuteScalar(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 697
+   在 TREC.Data.DbHelper.ExecuteScalar(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 654
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pagesSize, String strWhere, String field, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 605
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pageSize, String strWhere, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 626
+   在 TREC.Data.Products.GetWebProductList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 412
+   在 TREC.ECommerce.ECProduct.GetWebProductList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 279
+   在 TREC.Web.ajax.ajaxproduct.delProduct(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 454
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 142
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-08 19:14:15,907 [12] TREC.Web.Global DEBUG - 家具快搜停止

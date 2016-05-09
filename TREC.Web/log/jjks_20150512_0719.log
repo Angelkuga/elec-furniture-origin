@@ -1,0 +1,92 @@
+﻿2015-05-12 19:19:38,786 [4] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-12 19:19:42,665 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.SqlClient.SqlException: 列名 'ateMid' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TREC.Data.DbHelper.ExecuteScalar(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 583
+   在 TREC.Data.DbHelper.ExecuteScalar(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 697
+   在 TREC.Data.DbHelper.ExecuteScalar(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 654
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pagesSize, String strWhere, String field, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 605
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pageSize, String strWhere, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 626
+   在 TREC.Data.Products.GetWebProductList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 484
+   在 TREC.ECommerce.ECProduct.GetWebProductList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 309
+   在 TREC.Web.template.web.Dealer.product.Page_Load(Object sender, EventArgs e) 位置 F:\CodeNew\trunk\TREC.Web\template\web\default\Dealer\product.aspx.cs:行号 294
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_dealer_product_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\98a5a42a\612aefc7\App_Web_wpeie3u6.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 19:20:52,365 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.SqlClient.SqlException: 列名 'ateMid' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TREC.Data.DbHelper.ExecuteScalar(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 583
+   在 TREC.Data.DbHelper.ExecuteScalar(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 697
+   在 TREC.Data.DbHelper.ExecuteScalar(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 654
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pagesSize, String strWhere, String field, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 605
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pageSize, String strWhere, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 626
+   在 TREC.Data.Products.GetWebProductList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 484
+   在 TREC.ECommerce.ECProduct.GetWebProductList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 309
+   在 TREC.Web.template.web.Dealer.product.Page_Load(Object sender, EventArgs e) 位置 F:\CodeNew\trunk\TREC.Web\template\web\default\Dealer\product.aspx.cs:行号 294
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_dealer_product_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\98a5a42a\612aefc7\App_Web_wpeie3u6.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 19:22:52,038 [6] TREC.Web.Global DEBUG - 家具快搜停止

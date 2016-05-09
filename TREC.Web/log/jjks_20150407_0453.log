@@ -1,0 +1,105 @@
+﻿2015-04-07 16:53:03,417 [7] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-07 16:53:12,338 [4] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.ArgumentException: 已添加了具有相同键的项。
+   在 TRECommon.SerializationHelper.DeSerialize(Type type, String s) 位置 F:\CodeNew\trunk\TRECommon\Xml\SerializationHelper.cs:行号 136
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandList() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 537
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandInfo() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 516
+   在 TREC.ECommerce.CompanyPageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\CompanyPageBase.cs:行号 71
+   在 TREC.Web.aspx.company.product..ctor() 位置 F:\CodeNew\trunk\TREC.Web\aspx\company\product.aspx.cs:行号 382
+   在 ASP.template_web_default_company_product_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_xyozpe_8.15.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_xyozpe_8.Create_ASP_template_web_default_company_product_aspx() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_xyozpe_8.22.cs:行号 0
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 16:53:15,497 [10] TREC.Web.Global DEBUG - 家具快搜停止
+2015-04-07 16:53:29,857 [7] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-07 17:00:48,003 [4] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; QQBrowser/8.0.3345.400) like Gecko
+UserHostName:
+192.168.1.102
+UserHostAddress:
+192.168.1.102
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Web.HttpException: 无法验证数据。
+   在 System.Web.Configuration.MachineKeySection.EncryptOrDecryptData(Boolean fEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length, IVType ivType, Boolean useValidationSymAlgo, Boolean signData)
+   在 System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   在 TRECommon.CookiesHelper.GetUserTicket(String strKey) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 82
+   在 TRECommon.CookiesHelper.GetCookieCustomer(String strName) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 328
+   在 ASP.template_web_default_index_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\CodeNew\trunk\TREC.Web\template\web\default\index.aspx:行号 65
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_index_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_index.aspx.392f1fb4.qp1i3aed.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 17:01:03,985 [10] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+UserHostName:
+192.168.1.102
+UserHostAddress:
+192.168.1.102
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Web.HttpException: 无法验证数据。
+   在 System.Web.Configuration.MachineKeySection.EncryptOrDecryptData(Boolean fEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length, IVType ivType, Boolean useValidationSymAlgo, Boolean signData)
+   在 System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   在 TRECommon.CookiesHelper.GetUserTicket(String strKey) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 82
+   在 TRECommon.CookiesHelper.GetCookieCustomer(String strName) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 328
+   在 ASP.template_web_default_productlist_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\CodeNew\trunk\TREC.Web\template\web\default\productlist.aspx:行号 95
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_productlist_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_vvanlvvd.9.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 17:05:58,192 [4] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; QQBrowser/8.0.3345.400) like Gecko
+UserHostName:
+192.168.1.102
+UserHostAddress:
+192.168.1.102
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Web.HttpException: 无法验证数据。
+   在 System.Web.Configuration.MachineKeySection.EncryptOrDecryptData(Boolean fEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length, IVType ivType, Boolean useValidationSymAlgo, Boolean signData)
+   在 System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   在 TRECommon.CookiesHelper.GetUserTicket(String strKey) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 82
+   在 TRECommon.CookiesHelper.GetCookieCustomer(String strName) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 328
+   在 ASP.template_web_default_ascx_headercompany_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\CodeNew\trunk\TREC.Web\template\web\default\ascx\headerCompany.ascx:行号 41
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 ASP.template_web_default_company_product_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_tnbknqca.6.cs:行号 0
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_company_product_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_tnbknqca.6.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 17:07:44,219 [10] TREC.Web.Global DEBUG - 家具快搜停止

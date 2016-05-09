@@ -1,0 +1,213 @@
+﻿2015-05-12 16:18:35,929 [6] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-12 16:18:42,645 [8] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:18:42,659 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:18:44,810 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 选择列表中的列 'v_product.createmid' 无效，因为该列没有包含在聚合函数或 GROUP BY 子句中。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 839
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 932
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCreatemIdNew(Int32 createmid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 59
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 955
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 96
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:18:55,081 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:18:55,137 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:18:55,479 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:18:55,530 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/index.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 选择列表中的列 'v_product.createmid' 无效，因为该列没有包含在聚合函数或 GROUP BY 子句中。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 839
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 932
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCreatemIdNew(Int32 createmid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 59
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 955
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 96
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:19:00,553 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:19:00,558 [10] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:19:02,802 [11] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/Dealer/about.aspx?did=437
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 选择列表中的列 'v_product.createmid' 无效，因为该列没有包含在聚合函数或 GROUP BY 子句中。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 839
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 932
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCreatemIdNew(Int32 createmid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 59
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 955
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 96
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 16:20:24,397 [11] TREC.Web.Global DEBUG - 家具快搜停止

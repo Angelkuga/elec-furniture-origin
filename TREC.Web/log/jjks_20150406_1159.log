@@ -1,0 +1,50 @@
+﻿2015-04-06 11:59:49,931 [6] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-06 12:02:50,989 [6] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/reg.aspx?r=l
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajax.ajaxuser.CheckValidation(String v, String vt, HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 895
+   在 TREC.Web.ajax.ajaxuser.Login(String name, String pwd) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 849
+   在 TREC.Web.ajax.ajaxuser.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 138
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-06 12:02:59,441 [6] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/reg.aspx?r=l
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajax.ajaxuser.CheckValidation(String v, String vt, HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 895
+   在 TREC.Web.ajax.ajaxuser.Login(String name, String pwd) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 849
+   在 TREC.Web.ajax.ajaxuser.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 138
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-06 12:03:51,677 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/reg.aspx?r=l
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajax.ajaxuser.CheckValidation(String v, String vt, HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 895
+   在 TREC.Web.ajax.ajaxuser.Login(String name, String pwd) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 849
+   在 TREC.Web.ajax.ajaxuser.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxuser.ashx.cs:行号 138
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-06 12:07:15,601 [6] TREC.Web.Global DEBUG - 家具快搜停止

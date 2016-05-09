@@ -1,0 +1,30 @@
+﻿2015-05-11 19:12:28,468 [7] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-11 19:14:11,908 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/companybrandlist.aspx?n=2
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: 字符串的长度不能为零。
+参数名: oldValue
+   在 System.String.Replace(String oldValue, String newValue)
+   在 ASP.template_web_default_ascx_new_teladdress_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\CodeNew\trunk\TREC.Web\template\web\default\ascx\new_teladdress.ascx:行号 9
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 ASP.template_web_default_company_index_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\CodeNew\trunk\TREC.Web\template\web\default\company\index.aspx:行号 295
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_company_index_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_dtnrm-c2.19.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-11 19:16:58,462 [3] TREC.Web.Global DEBUG - 家具快搜停止

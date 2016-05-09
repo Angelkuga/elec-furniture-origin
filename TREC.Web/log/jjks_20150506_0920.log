@@ -1,0 +1,30 @@
+﻿2015-05-06 09:20:08,891 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-06 09:20:44,136 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/Payment/regpayment.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:8060
+   在 System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+   在 TREC.Payment.BankComm.GetBankCommPayment(String ordercode, String _orderDate, String _orderTime, Decimal price, String types, String _issBankNo) 位置 F:\CodeNew\trunk\TREC.Payment\BankComm.cs:行号 218
+   在 TREC.Web.Suppler.Payment.BankComm_Bridge.Page_Load(Object sender, EventArgs e) 位置 F:\CodeNew\trunk\TREC.Web\suppler\Payment\BankComm_Bridge.aspx.cs:行号 88
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.suppler_payment_bankcomm_bridge_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_oovhum3j.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 09:41:28,021 [3] TREC.Web.Global DEBUG - 家具快搜停止

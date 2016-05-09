@@ -1,0 +1,18 @@
+﻿2015-05-25 16:29:24,660 [11] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-25 16:29:25,092 [11] TREC.Web.Global ERROR - 错误:
+UserAgent:
+
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-25 16:29:25,302 [11] TREC.Web.Global DEBUG - 家具快搜停止
+2015-05-25 16:29:40,274 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-25 16:40:49,353 [6] TREC.Web.Global DEBUG - 家具快搜停止

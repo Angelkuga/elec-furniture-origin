@@ -1,0 +1,112 @@
+﻿2015-04-07 14:35:43,630 [8] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-07 14:35:51,713 [3] TREC.Web.Global DEBUG - 家具快搜停止
+2015-04-07 14:35:58,785 [14] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-07 14:40:54,281 [14] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.123
+UserHostAddress:
+192.168.1.123
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Web.HttpException: 无法验证数据。
+   在 System.Web.Configuration.MachineKeySection.EncryptOrDecryptData(Boolean fEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length, IVType ivType, Boolean useValidationSymAlgo, Boolean signData)
+   在 System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   在 TRECommon.CookiesHelper.GetUserTicket(String strKey) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 82
+   在 TRECommon.CookiesHelper.GetCookieCustomer(String strName) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 328
+   在 ASP.template_web_default_productlist_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\CodeNew\trunk\TREC.Web\template\web\default\productlist.aspx:行号 95
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_productlist_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_productlist.aspx.392f1fb4.lnhza0t2.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 14:55:26,769 [8] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.SqlClient.SqlException: 对象名 'v_marketlist' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TREC.Data.DbHelper.ExecuteScalar(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 583
+   在 TREC.Data.DbHelper.ExecuteScalar(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 697
+   在 TREC.Data.DbHelper.ExecuteScalar(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 654
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pagesSize, String strWhere, String field, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 532
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pageSize, String strWhere, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 553
+   在 TREC.Data.Markets.GetWebMarketList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Markets.cs:行号 293
+   在 TREC.ECommerce.ECMarket.GetWebMarketList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECMarket.cs:行号 43
+   在 TREC.Web.aspx.marketlist.Page_Load(Object sender, EventArgs e) 位置 F:\CodeNew\trunk\TREC.Web\aspx\marketlist.aspx.cs:行号 367
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_marketlist_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_x-18uulf.33.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 14:55:33,069 [14] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.SqlClient.SqlException: 对象名 'v_marketlist' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TREC.Data.DbHelper.ExecuteScalar(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 583
+   在 TREC.Data.DbHelper.ExecuteScalar(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 697
+   在 TREC.Data.DbHelper.ExecuteScalar(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 654
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pagesSize, String strWhere, String field, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 532
+   在 TREC.Data.DataCommon.GetPageDataReader(String tableName, Int32 pageIndex, Int32 pageSize, String strWhere, String sortkey, String orderByType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 553
+   在 TREC.Data.Markets.GetWebMarketList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Markets.cs:行号 293
+   在 TREC.ECommerce.ECMarket.GetWebMarketList(Int32 PageIndex, Int32 PageSize, String strWhere, String sortkey, String ordertype, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECMarket.cs:行号 43
+   在 TREC.Web.aspx.marketlist.Page_Load(Object sender, EventArgs e) 位置 F:\CodeNew\trunk\TREC.Web\aspx\marketlist.aspx.cs:行号 367
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.template_web_default_marketlist_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_x-18uulf.33.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-07 15:04:17,456 [14] TREC.Web.Global DEBUG - 家具快搜停止

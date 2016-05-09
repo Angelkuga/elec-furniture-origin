@@ -1,0 +1,9 @@
+﻿.nav{ position:relative;}
+.nav ul {line-height:27px;list-style-type:none;text-align:left;width:255px;position:absolute;height:300px;overflow-y:scroll;overflow-x:hidden;} 
+.nav ul li{float:left;width:255px;background:#ccc;} 
+.nav ul a{width:156px;text-align:left;padding-left:20px;} 
+.nav ul a:link{color:#666; text-decoration:none;} 
+.nav ul a:visited{color:#666;text-decoration:none;} 
+.nav ul a:hover{color:#F3F3F3;text-decoration:none;font-weight:normal;}
+.nav ul li.mychecked{background:#008CD4;}
+.nav ul li.mychecked a{color:#F3F3F3;}

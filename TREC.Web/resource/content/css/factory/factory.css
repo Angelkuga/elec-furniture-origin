@@ -1,0 +1,28 @@
+.keynote{position:relative;margin-bottom:15px}.keynote .slides_container{width:947px}.keynote .slides_control{width:947px}.keynote .pagination{position:absolute;right:70px;bottom:25px;z-index:10}.keynote .pagination li{width:37px;background:#cbb3ae;margin:0 3px;float:left;text-indent:-9999px;height:8px;overflow:hidden}.keynote .pagination .current{background:#ac1033}.keynote .pagination li a{display:block}.fac-shop{position:relative;margin-bottom:15px;border:1px solid #ccc;width:945px}.fac-shop .slides_container{height:304px;background:#f6f6f6}.fac-shop .pagination{position:absolute;right:70px;bottom:25px;z-index:10}.fac-shop .pagination li{background:#cbb3ae;margin:0 3px;float:left;height:20px;width:20px;overflow:hidden;text-align:center;color:#fff;line-height:20px}.fac-shop .pagination li a{display:block;color:#fff;font-weight:700}.fac-shop .pagination .current{background:#ac1033}.fac-shop .img{width:606px}.fac-shop .txt{width:320px;color:#666;line-height:28px;margin-left:20px}.fac-shop .txt a{color:#666}.fac-shop .txt .a1{color:#c9033b}.fac-shop .txt .a2{color:#f60}.seller-cont{margin-bottom:27px}.seller-cont .cont-r{width:230px}.seller-cont .cont-r .cont-r-t{background:url(/resource/content/img/seller/a2.jpg) repeat-x 0 0;color:#939393;line-height:34px;height:34px;margin-bottom:1px}.seller-cont .cont-r .bd{border:1px solid #d8d8d8;padding-top:24px;padding-left:28px;padding-bottom:25px;background:#f5f5f5;margin-bottom:17px}.seller-cont .cont-r .selects{margin-bottom:25px}.seller-cont .cont-r .selects select{display:block;margin-bottom:15px;border:1px solid #ccc;padding:2px;width:173px}.seller-cont .cont-r .classify{margin-bottom:37px}.seller-cont .cont-r .classify a,.seller-cont .cont-r .classify span{display:inline-block;width:49%;color:#555;line-height:25px}.seller-cont .cont-r .search .i1{padding:4px;border:1px solid #dadada;width:110px;margin-right:8px}.seller-cont .cont-r .search .i2{line-height:26px;background:url(/resource/content/img/seller/a3.jpg) no-repeat;width:50px;height:26px;border:0;color:#fff}
+/*
+.seller-cont .cont-r .fd-t{background:url(/resource/content/img/seller/a4.jpg) repeat-x 0 0;padding-left:20px;color:#fff;height:32px;line-height:32px}
+*/
+.seller-cont .cont-r .fd-t {
+padding-left: 15px;
+color: #b9003c;
+height: 32px;
+line-height: 32px;
+border: 1px solid #ccc;
+font-family: Î¢ÈíÑÅºÚ;
+background: #fcfcfc;
+font-weight: bold;
+}
+.seller-cont .cont-r .fd{padding:15px 20px 10px;border:1px solid #d8d8d8;border-top:0;color:#666;background:#f5f5f5}.seller-cont .cont-r .fd span{color:#d70d00}.seller-cont .cont-r .fd p{margin-bottom:8px}.seller-cont .cont-r .fd img{vertical-align:middle}.cont-l{width:947px}.cont-l .brand{margin-bottom:17px}.cont-l .common-hd{border-bottom:3px solid #b9003c}.cont-l .common-hd .hd-l{background:#b9003c;line-height:34px;height:34px;display:inline-block;color:#fff;padding:0 20px}.cont-l .common-hd .hd-r{margin-top:10px;color:#b9003c;margin-right:10px}.cont-l .brand td{vertical-align:middle;height:162px;color:#595858;border:1px solid #d8d8d8;position:relative}.cont-l .brand .bd .bd-l{border-right:0}.cont-l .brand .bd .bd-c{border-left:0}.cont-l .brand h6 a{color:#b9003c;margin-bottom:5px}.cont-l .brand td p{color:#595858;border-bottom:1px dashed #d8d8d8;padding-bottom:8px;margin-bottom:8px}.cont-l .brand td .text{line-height:22px;padding-right:50px}.cont-l .brand td .s1{position:absolute;bottom:25px;left:21px;width:196px}.cont-l .brand tr td a.songti{display:block;background:#fbcd77;border:1px solid #ffbe46;height:20px;width:95px;line-height:20px;color:#b9003c;float:left}.cont-l .brand tr td a.a1{margin-right:2px}.cont-l .brand tr td .icon-fix{background:url(/resource/content/img/common/c1.gif) no-repeat;width:6px;height:11px;position:absolute;left:-1px;top:70px}.recommend{}.recommend .common-hd .hd-r{background:url(/resource/content/img/seller/a7.jpg) no-repeat center right;padding-right:15px}.recommend .common-bd{border:1px solid #d8d8d8;width:945px;overflow:hidden}
+/*
+.recommend .item{padding:20px;width:1000px}
+*/
+.recommend .item li
+{
+margin-right: 14px;
+float: left;
+margin-bottom: 28px;
+border: 1px solid #e7e7e7;
+width: 216px;
+height: 240px;
+}
+    .recommend .item li a:hover .p1{color:#b9003c}.recommend .item p{line-height:20px}.recommend .item .p1{color:#000}.recommend .item .p2{color:#005aa0}.recommend .item .p3{color:#bfbfbf}.recommend .item .p3 span{color:#b80b0f}

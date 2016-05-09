@@ -1,0 +1,282 @@
+﻿2015-06-02 11:04:27,914 [7] TREC.Web.Global DEBUG - 家具快搜启动
+2015-06-02 11:04:36,008 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/341/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:04:52,530 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/341/product.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:05:00,392 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/341/about.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:05:06,228 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/341/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:05:51,933 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/company/341/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:06:41,652 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/company/341/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:07:09,356 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/company/341/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+列名 'shop' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 861
+   在 TREC.Data.Products.GetProductSearchItem(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 154
+   在 TREC.ECommerce.ECProduct.GetProductSearchItemByCompanyIdNew(Int32 companyid, String brandid, String brandsid) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 44
+   在 TREC.Web.ajax.ajaxproduct.GetProductSearchItem(String v1, String v2, String v3, String c, String type) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 976
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 94
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 11:07:49,032 [3] TREC.Web.Global DEBUG - 家具快搜停止

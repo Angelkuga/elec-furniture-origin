@@ -1,0 +1,23 @@
+﻿2015-04-16 18:27:21,156 [14] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-16 18:27:26,911 [14] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 请求在此上下文中不可用
+   在 System.Web.UI.Page.get_Request()
+   在 TREC.ECommerce.MarketPageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\MarketPageBase.cs:行号 30
+   在 TREC.Web.aspx.market.marketcliqueabout..ctor() 位置 F:\CodeNew\trunk\TREC.Web\aspx\market\marketcliqueabout.aspx.cs:行号 53
+   在 ASP.template_web_default_market_marketcliqueabout_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\98a5a42a\612aefc7\App_Web_tkha94nd.15.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_tkha94nd.Create_ASP_template_web_default_market_marketcliqueabout_aspx() 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\98a5a42a\612aefc7\App_Web_tkha94nd.22.cs:行号 0
+   在 System.Web.Compilation.BuildResultCompiledType.CreateInstance()
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-16 18:27:44,833 [14] TREC.Web.Global DEBUG - 家具快搜停止

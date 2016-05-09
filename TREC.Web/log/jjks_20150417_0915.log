@@ -1,0 +1,87 @@
+﻿2015-04-17 21:15:43,772 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-17 21:42:29,382 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/market/60/marketcliqueabout.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 列名 'stitle' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 878
+   在 TREC.Data.MarketClique.GetMarketClique(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\MarketClique.cs:行号 113
+   在 TREC.Data.MarketClique.GetMarketCliqueByWhere(String Where) 位置 F:\CodeNew\trunk\TREC.Data\Provide\MarketClique.cs:行号 313
+   在 TREC.ECommerce.ECMarketClique.GetMarketCliqueByWhere(String Where) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECMarketClique.cs:行号 83
+   在 TREC.ECommerce.MarketCliquePageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\MarketCliquePageBase.cs:行号 66
+   在 TREC.Web.aspx.market.marketclique..ctor() 位置 F:\CodeNew\trunk\TREC.Web\aspx\market\marketclique.aspx.cs:行号 36
+   在 ASP.template_web_default_market_marketclique_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_rky1gcxd.13.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_rky1gcxd.Create_ASP_template_web_default_market_marketclique_aspx() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_rky1gcxd.22.cs:行号 0
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-17 21:50:34,824 [13] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.103
+UserHostAddress:
+192.168.1.103
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-17 21:50:34,824 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+UserHostName:
+192.168.1.103
+UserHostAddress:
+192.168.1.103
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-17 21:51:18,021 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/market/226/about.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpCompileException: f:\CodeNew\trunk\TREC.Web\template\web\default\market\index.aspx(144): error CS1026: 应输入 )
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-17 22:12:42,899 [13] TREC.Web.Global DEBUG - 家具快搜停止

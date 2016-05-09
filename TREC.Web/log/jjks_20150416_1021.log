@@ -1,0 +1,24 @@
+﻿2015-04-16 10:21:41,252 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-16 10:21:41,742 [3] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpException: 无法验证数据。
+   在 System.Web.Configuration.MachineKeySection.EncryptOrDecryptData(Boolean fEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length, IVType ivType, Boolean useValidationSymAlgo, Boolean signData)
+   在 System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   在 TRECommon.CookiesHelper.GetUserTicket() 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 102
+   在 TRECommon.CookiesHelper.GetCookie(String strName) 位置 F:\CodeNew\trunk\TRECommon\Cookies&Session\CookiesManager.cs:行号 30
+   在 TREC.ECommerce.AdminPageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\AdminPageBase.cs:行号 24
+   在 TREC.Web.Admin.index..ctor()
+   在 ASP.admin_index_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_mso0az_b.3.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_mso0az_b.Create_ASP_admin_index_aspx() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_mso0az_b.6.cs:行号 0
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-16 10:28:15,655 [6] TREC.Web.Global DEBUG - 家具快搜停止

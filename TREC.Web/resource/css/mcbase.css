@@ -1,0 +1,59 @@
+*{ margin:0; padding:0; list-style:none;}
+.brandfb { background:url(../images/utbg.jpg) no-repeat; height:35px; width:990px; position:relative;}
+.brandfb h1 { font-size:14px; font-weight:bold; text-align:left; position:absolute; left:20px; top:10px; }
+.brandfb span{ position:absolute; right:10px; top:10px;font-size:12px;z-index:999;}
+.brandfb span a{ color:#333; text-decoration:none; font-family:simsun;}
+.brandfb span a:hover{ color:#900; text-decoration:underline; font-family:simsun;}
+.brandcon{ width:990px; height:410px; margin-bottom:5px; background:url(../images/ppfbbg.gif) no-repeat;}
+.snline{ border:1px #ddd solid;}
+.mcadv{ width:990px;margin:0 auto 18px;}
+.mcadv .mleft{ width:750px; height:320px; float:left; }
+.mcadv .mright{ width:228px; height:318px; position:relative; float:right; }
+.mcadv .mright a{ color:#333; text-decoration:none;font-family:simsun;}
+.mcadv .mright a:hover{ color:#900; text-decoration:underline;font-family:simsun;}
+.mcadv .mright h1{ height:34px; line-height:34px; background-color:#f4f4f4;}
+.mcadv .mright h1 p{ margin-left:20px; font-size:14px; font-weight:bold;}
+.mcadv .mright h1 span{ font-size:12px; position:absolute; top:0; right:10px; color:#666; font-weight:normal;}
+.mcadv .mright ul{ margin:10px;}
+.mcadv .mright li{line-height:25px;font-size:12px;height:25px;overflow:hidden;}
+.mcadv .mright li i{ font-size:14px; font-family:simsun; font-style:normal; color:#900;}
+
+/*tabs*/
+.cpTitle{ height:50px; position:relative;}
+.cpTitle ul{ position:absolute; top:7px; left:120px; }
+.cpTitle li{ float:left; display:block; cursor:pointer; margin-right:5px; display:inline;}
+.cpTitle li.tabActive,.cpTitle li.tabNormal{ width:58px; height:26px; overflow:hidden; line-height:26px; text-align:center; font-size:14px; position:absolute; top:0;}
+.cpTitle li.tabActive{color:#fff;font-weight:bold; background:url(../images/mctabbg.gif) 0 0 no-repeat;}
+.cpTitle li.tabActive a{color:#fff;}
+.cpTitle li.tabNormal{color:#333; font-weight:bold; background:url(../images/mctabbg.gif) 0 -26px no-repeat;}
+.cpTitle li.tabNormal a{color:#333;}
+.cplist{ padding-top:6px;}
+
+
+
+/*slide*/
+.box{ width:750px; height:420px; margin:0px auto;}
+#slide{position:relative;float:left;width:750px;height:320px;margin-bottom:20px;overflow:hidden;background:url(../images/loading.gif) no-repeat center;}
+#slide img{ border:none;}
+#slide ul{position:absolute;}
+#slide li{float:left; width:750px; height:320px; overflow:hidden; }
+#slide .o-control{display:none;position:absolute;top:120px;width:50px;height:80px;background:#000;filter:alpha(opacity=30);opacity:0.3;cursor:pointer;}
+#slide .control{position:relative;top:13px;left:8px;display:inline-block;width:30px;height:55px;background:url(../images/bg_index.png);filter:alpha(opacity=60);opacity:0.6;}
+#slide #goback{left:0px;}
+#goback .control{background-position:0px -35px;}
+#slide #forward{right:0px;}
+#forward .control{left:10px;background-position:-35px -35px;}
+#slide div{position:absolute; float:right; bottom:10px; right:10px; height:32px; overflow:hidden; zoom:1; }
+#slide span{width:32px;font-size:14px;height:32px;margin:2px 2px; background:#999;float:left;text-align:center;line-height:32px;cursor:pointer;font-family:arial;filter:alpha(opacity=70);opacity:0.7;}
+#slide span a{color:#fff;text-decoration:none;}
+#slide span.curr,#slide span.hover{background:#900;filter:alpha(opacity=100);opacity:1;}
+#slide .curr a:link, #slide .curr a:visited{color:#fff;}
+.brandcon .cplist{margin-top:0; width:940px; overflow-x:scroll;}
+
+.brands ul£¬?.brands li,.brands span{ margin:0; padding:0; list-style:none;}
+.brands{ width:1880px;}
+.brands ul{ width:1880px; height:355px; overflow:hidden;}
+.brands li{ background-color: #F6F6F6; border: 1px solid #DDDDDD;display: block;float: left;font-size: 12px; height: 26px;list-style: none outside none;margin: 10px 4px 0 3px;padding: 5px 0 0 6px;text-align: left;width: 79px; }
+.brands li a{ color:#3366CC; text-decoration:none;}
+.brands li a:hover{ color:#900; text-decoration:underline;}
+.brands li span{width:100%; float:left;display:block; height:14px; color:#333; font-size:10px; font-family:Arial;}

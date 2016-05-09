@@ -1,0 +1,324 @@
+﻿2015-04-10 16:48:22,241 [7] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-10 16:48:31,643 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:48:31,828 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:48:32,024 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:48:58,520 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:48:58,534 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:48:59,004 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:48:59,911 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:49:47,423 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:49:47,425 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:49:48,431 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:49:49,382 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/promotions/list/-all----.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:48,991 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-admin-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:49,046 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-admin-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:49,601 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-admin-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:50,000 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-admin-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:52,608 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-company-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:52,608 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-company-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:53,026 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-company-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:50:53,437 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-company-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:51:03,114 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-all-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:51:03,125 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-all-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:51:03,868 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-all-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:51:04,452 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/news/list-all-.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.Web.ajaxtools.ajaxshow.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\ajaxshow.ashx.cs:行号 60
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-10 16:51:57,286 [7] TREC.Web.Global DEBUG - 家具快搜停止

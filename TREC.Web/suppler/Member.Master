@@ -1,0 +1,489 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Member.master.cs" Inherits="TREC.Web.Suppler.Member" %>
+
+<%@ Import Namespace="TREC.Entity" %>
+<%@ Import Namespace="TREC.ECommerce" %>
+<%@ Register Src="ascx/head.ascx" TagName="head" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="X-UA-Compatible" content="IE=7;IE=9;IE=8">
+    <title>
+        <%=ECommon.WebTitle%>-管理中心</title>
+    <link rel="icon" href="/jiajukuaiso.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/jiajukuaiso.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script type="text/javascript" src="<%=TREC.ECommerce.ECommon.WebSupplerResourceUrl.TrimEnd('/') %>/script/jquery-1.7.1.min.js"></script>
+    <style type="text/css">
+    .paystat {
+	border-width : 1px;
+	border-color : #8C8C8C;
+	border-style : solid;
+	background-color : #DDDDDD;
+	color : #D85700;
+	padding:5px 5px 5px 5px;
+        }
+        .tipmessage22{position:absolute;color:#d52249;height:31px;line-height:31px;display:none;width:186px;text-align:center;background:url(/resource/web/images/2222.gif) no-repeat;z-index:1000;}
+    .tipmessage
+    {
+        position:absolute;
+         width:288px;
+            height:30px;
+	 padding:5px; 
+    border: 1px solid #FFC176;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+    background-color:#FFFCED;
+    display:none;
+    z-index:1000;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="tipmessage" id="diverrorshow">您的会员权限不够，无法查看！请<a href="/suppler/Payment/RegPayment.aspx">点击这里</a>进行充值。</div>
+    <div align="center">
+        <div class="headerbg">
+            <div class="header">
+                <div class="logo">
+                    <a href="<%=TREC.ECommerce.ECommon.WebSupplerUrl.TrimEnd('/') %>/index.aspx"></a>
+                </div>
+                <div class="subr">
+                  <img border="0" src="http://wpa.qq.com/pa?p=2:2285277787:41" alt="点击这里给客服发消息" title="点击这里给客服发消息">
+                    您好：<u><%=SupplerPageBase.memberInfo.username%></u> <uc1:head ID="head1" runat="server" />
+                    | <span><a href="<%=TREC.ECommerce.ECommon.WebUrl.TrimEnd('/') %>/loginout.aspx">退出</a></span></div>
+            </div>
+        </div>
+        <div class="mainbox" style="width: 1100px;">
+            <div class="subleft bord">
+                <% if (SupplerPageBase.memberInfo.type == (int)EnumMemberType.工厂企业)
+                   { %>
+                <div class="menuTitle">
+                    <a href="/suppler/index.aspx">
+                        <%=EnterpriseName %></a> <span style="color: #0000FF;">在线</span>
+                </div>
+                <div class="infoPercen">
+                    <img src="<%=CompanyLogo %>" style="width: 160px; height: 55px;" />
+                    <%= SupplerPageBase.memberInfo.VipLevel %>
+                    会员 0 条未读消息
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        商品中心
+                    </h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>87%</i></dt>
+                        <dd class=" bgcor01">
+                            <b style="width: 13%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="productinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/product/productinfo.aspx">
+                            产品添加</a></li>
+                        <li <%if(_menuName=="productlist"){ %> class="menuFocus" <%} %>><a href="/suppler/product/productlist.aspx">
+                            产品管理</a></li>
+                        <li <%if(_menuName=="issuegroupproduct"){ %> class="menuFocus" <%} %>><a href="/suppler/product/issuegroupproduct.aspx">
+                            套组合添加</a></li>
+                        <li <%if(_menuName=="groupproductlist"){ %> class="menuFocus" <%} %>><a href="/suppler/product/groupproductlist.aspx">
+                            套组合管理</a></li>
+                        <li <%if(_menuName=="colorswatchlist"){ %> class="menuFocus" <%} %>><a href="/suppler/colorswatch/colorswatchlist.aspx">
+                            色板管理</a></li>
+                        <li <%if(_menuName=="SetProductPrice"){ %> class="menuFocus" <%} %>><a href="/suppler/product/SetProductPrice.aspx">
+                            调价管理</a></li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        营销中心</h3>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="informationinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/information/promotionsinfo.aspx">
+                            活动信息发布</a> </li>
+                        <li <%if(_menuName=="information"){ %> class="menuFocus" <%} %>><a href="/suppler/information/promotionslist.aspx">
+                            活动管理</a> </li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                      订单管理</h3>
+                </div>
+                 <%
+                    if (SupplerPageBase.memberInfo.type == (int)EnumMemberType.工厂企业)
+                   {  %>
+                <div class="menuContent">
+                    <ul>
+                        <%=ShowOrderList()%>
+                       
+                    </ul>
+                </div>
+                <% }%>
+                <div class="menuTitle">
+                    <h3>
+                        厂商信息管理</h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>51%</i></dt>
+                        <dd class=" bgcor02">
+                            <b style="width: 49%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="companyinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/company/companyinfo.aspx">
+                            厂商信息</a></li>
+                        <li <%if(_menuName=="brandlist"){ %> class="menuFocus" <%} %>><a href="/suppler/brand/brandlist.aspx">
+                            品牌管理</a></li>
+                        <li <%if(_menuName=="shoplist"){ %> class="menuFocus" <%} %>>
+                       <a href="/suppler/shop/shoplist.aspx">
+                            店铺管理</a></li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        账号管理</h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>34%</i></dt>
+                        <dd class=" bgcor03">
+                            <b style="width: 66%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="purview"){ %> class="menuFocus" <%} %>><a href="/suppler/member/UpdateAccount.aspx">
+                            账号信息</a></li>
+                        <li <%if(_menuName=="purviewPWD"){ %> class="menuFocus" <%} %>><a href="/suppler/member/Purview.aspx">
+                            修改密码</a></li>
+                        <li <%if(_menuName=="purviewPM"){ %> class="menuFocus" <%} %>><a href="/suppler/member/SettlePurview.aspx">
+                            权限管理</a></li>
+                        <li style="display:none;"><a href="#">积分管理</a></li>
+                        <li <%if(_menuName=="Payment"){ %> class="menuFocus" <%} %>><a href="/suppler/Payment/RegPayment.aspx">
+                            充值管理</a></li>
+                    </ul>
+                </div>
+                <%}
+                   else if (SupplerPageBase.memberInfo.type == (int)EnumMemberType.经销商)
+                   {  %>
+                <div class="menuTitle">
+                    <a href="/suppler/index.aspx">
+                        <%=EnterpriseName %></a> <span style="color: #0000FF;">在线</span>
+                </div>
+                <div class="infoPercen">
+                    <img src="<%=CompanyLogo %>" style="width: 160px; height: 55px;" />
+                    <%= SupplerPageBase.memberInfo.VipLevel %>
+                    会员 0 条未读消息
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        商品中心
+                    </h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>87%</i></dt>
+                        <dd class=" bgcor01">
+                            <b style="width: 13%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="productinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/product/productinfo.aspx">
+                            产品添加</a></li>
+                        <li <%if(_menuName=="productlist"){ %> class="menuFocus" <%} %>><a href="/suppler/product/productlist.aspx">
+                            产品管理</a></li>
+                        <li <%if(_menuName=="issuegroupproduct"){ %> class="menuFocus" <%} %>><a href="/suppler/product/issuegroupproduct.aspx">
+                            套组合添加</a></li>
+                        <li <%if(_menuName=="groupproductlist"){ %> class="menuFocus" <%} %>><a href="/suppler/product/groupproductlist.aspx">
+                            套组合管理</a></li>
+                        <li <%if(_menuName=="colorswatchlist"){ %> class="menuFocus" <%} %>><a href="/suppler/colorswatch/colorswatchlist.aspx">
+                            色板管理</a></li>
+                        <li <%if(_menuName=="SetProductPrice"){ %> class="menuFocus" <%} %>><a href="/suppler/product/SetProductPrice.aspx">
+                            调价管理</a></li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        营销中心</h3>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="informationinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/information/promotionsinfo.aspx">
+                            活动信息发布</a> </li>
+                        <li <%if(_menuName=="information"){ %> class="menuFocus" <%} %>><a href="/suppler/information/promotionslist.aspx">
+                            活动管理</a> </li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        订单管理</h3>
+                </div>
+                    <%
+                    if (SupplerPageBase.memberInfo.type == (int)EnumMemberType.经销商)
+                   {  %>
+                <div class="menuContent">
+                    <ul>
+                       <%=ShowOrderList()%>
+                    </ul>
+                </div>
+                <% }%>
+                <div class="menuTitle">
+                    <h3>
+                        经销商信息管理</h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>51%</i></dt>
+                        <dd class=" bgcor02">
+                            <b style="width: 49%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="companyinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/dealer/dealerinfo.aspx">
+                           经销商信息</a></li>
+                        <li <%if(_menuName=="brandlist"){ %> class="menuFocus" <%} %>><a href="/suppler/brand/brandlist.aspx">
+                            品牌管理</a></li>
+                        <li <%if(_menuName=="shoplist"){ %> class="menuFocus" <%} %>><a href="/suppler/shop/shoplist.aspx">
+                            店铺管理</a></li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        账号管理</h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>34%</i></dt>
+                        <dd class=" bgcor03">
+                            <b style="width: 66%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="purview"){ %> class="menuFocus" <%} %>><a href="/suppler/member/UpdateAccount.aspx">
+                            账号信息</a></li>
+                        <li <%if(_menuName=="purviewPWD"){ %> class="menuFocus" <%} %>><a href="/suppler/member/Purview.aspx">
+                            修改密码</a></li>
+                        <li <%if(_menuName=="purviewPM"){ %> class="menuFocus" <%} %>><a href="/suppler/member/SettlePurview.aspx">
+                            权限管理</a></li>
+                        <li style="display:none;"><a href="#">积分管理</a></li>
+                        <li <%if(_menuName=="Payment"){ %> class="menuFocus" <%} %>><a href="/suppler/Payment/RegPayment.aspx">
+                            充值管理</a></li>
+                    </ul>
+                </div>
+
+                <!-----卖场 begin------>
+                <%}
+                   else if (SupplerPageBase.memberInfo.type == (int)EnumMemberType.卖场)
+                   {  %>
+                <div class="menuTitle">
+                    <a href="/suppler/index.aspx">
+                        <%=EnterpriseName %></a> <span style="color: #0000FF;">在线</span>
+                </div>
+                <div class="infoPercen">
+                    <img src="<%=CompanyLogo %>" style="width: 160px; height: 55px;" />
+                    <%= SupplerPageBase.memberInfo.VipLevel %>
+                    会员 0 条未读消息
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        卖场管理
+                    </h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>87%</i></dt>
+                        <dd class=" bgcor01">
+                            <b style="width: 13%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="companyinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/market/marketinfo.aspx">
+                            卖场基本信息</a></li>
+                        <li <%if(_menuName=="marketshopadd"){ %> class="menuFocus" <%} %>><a href="/suppler/market/marketshopadd.aspx">
+                            添加楼层商家</a></li>
+                        <li <%if(_menuName=="marketstoryshopmanage"){ %> class="menuFocus" <%} %>><a href="/suppler/market/marketstoryshopmanage.aspx">
+                            楼层商家管理</a></li>
+                        <li <%if(_menuName=="marketstoryshoplist"){ %> class="menuFocus" <%} %>><a href="/suppler/market/marketstoryshoplist.aspx?sid=-1">
+                            暂未确认的商家</a></li>
+                        
+                        <li <%if(_menuName=="marketclique"){ %> class="menuFocus" <%} %>><a href="/suppler/market/marketclique.aspx">
+                            集团基本信息</a></li>
+                            <li>
+                            <a href="/suppler/market/PavilionAdd.aspx">场馆添加</a>
+                            </li>
+                             <li>
+                            <a href="/suppler/market/PavilionList.aspx">场馆管理</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        营销中心</h3>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                    <li <%if(_menuName=="setmarketstoryshop"){ %> class="menuFocus" <%} %>><a href="/suppler/market/setmarketstoryshop.aspx">
+                            店铺推荐管理</a></li>
+                        <li <%if(_menuName=="informationinfo"){ %> class="menuFocus" <%} %>><a href="/suppler/information/promotionsinfo.aspx">
+                            活动信息发布</a> </li>
+                        <li <%if(_menuName=="information"){ %> class="menuFocus" <%} %>><a href="/suppler/information/promotionslist.aspx">
+                            活动管理</a> </li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        订单管理</h3>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        账号管理</h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>34%</i></dt>
+                        <dd class=" bgcor03">
+                            <b style="width: 66%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="purview"){ %> class="menuFocus" <%} %>><a href="/suppler/member/UpdateAccount.aspx">
+                            账号信息</a></li>
+                        <li <%if(_menuName=="purviewPWD"){ %> class="menuFocus" <%} %>><a href="/suppler/member/Purview.aspx">
+                            修改密码</a></li>
+                        <li <%if(_menuName=="purviewPM"){ %> class="menuFocus" <%} %>><a href="/suppler/member/SettlePurview.aspx">
+                            权限管理</a></li>
+                        <li style="display:none;"><a href="#">积分管理</a></li>
+                        <li <%if(_menuName=="Payment"){ %> class="menuFocus" <%} %>><a href="/suppler/Payment/RegPayment.aspx">
+                            充值管理</a></li>
+                    </ul>
+                </div>
+                <%} %>
+                   <!----卖场 end------->
+
+
+                    <!-----集团 begin------>
+                <%
+                    if (SupplerPageBase.memberInfo.type == (int)EnumMemberType.集团)
+                   { %>
+                <div class="menuTitle">
+                    <a href="/suppler/index.aspx">
+                        <%=EnterpriseName %></a> <span style="color: #0000FF;">在线</span>
+                </div>
+                <div class="infoPercen">
+                    <img src="<%=CompanyLogo %>" style="width: 160px; height: 55px;" />
+                    <%= SupplerPageBase.memberInfo.VipLevel %>
+                    会员 0 条未读消息
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        集团管理
+                    </h3>
+                </div>
+                <div class="infoPercen">
+                    <dl>
+                        <dt>资料完善度<i>87%</i></dt>
+                        <dd class=" bgcor01">
+                            <b style="width: 13%;"></b>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li ><a href="/suppler/market/marketclique.aspx">
+                            集团资料</a></li>
+                             <li ><a href="/suppler/market/marketminInfor.aspx">
+                            添加卖场</a></li>
+                             <li ><a href="/suppler/market/marketminList.aspx">
+                            管理卖场</a></li>
+                    </ul>
+                </div>
+                <div class="menuTitle">
+                    <h3>
+                        帐号信息
+                    </h3>
+                </div>
+                <div class="menuContent">
+                    <ul>
+                        <li <%if(_menuName=="purview"){ %> class="menuFocus" <%} %>><a href="/suppler/member/UpdateAccount.aspx">
+                            账号信息</a></li>
+                        <li <%if(_menuName=="purviewPWD"){ %> class="menuFocus" <%} %>><a href="/suppler/member/Purview.aspx">
+                            修改密码</a></li>
+                    </ul>
+                </div>
+                <%} %>
+                   <!----集团 end------->
+
+                <div class="lmenntip">
+                    *&nbsp;完善的资料有利于推广，<br>
+                    &nbsp; &nbsp;客户更容易找到您！</div>
+                <div class="menuTitle outhere">
+                    <h3>
+                        <a href="<%=TREC.ECommerce.ECommon.WebUrl.TrimEnd('/') %>/loginout.aspx">退出系统</a></h3>
+                </div>
+            </div>
+            <div class="subright bord">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div align="center">
+        <div class="footer">
+            <p>
+                Copyright © <a href="http://www.jiajuks.com/">家具快搜</a>（www.jiajuks.com） &nbsp;沪ICP备12034118号</p>
+        </div>
+    </div>
+    </form>
+
+
+    <script language="javascript"  type="text/javascript">
+        function showp() {
+            $("#divshowpay").show();
+            setTimeout("showpout()", 4000);
+        }
+         function showpout() {
+            $("#divshowpay").hide(1000);
+        }
+
+
+        function messagedshow(e) {
+            $("#diverrorshow").show();
+            var pointX = e.pageX;
+            var pointY = e.pageY;
+            $("#diverrorshow")[0].style.top = pointY + 'px';
+            $("#diverrorshow")[0].style.left = pointX + 'px';
+            setTimeout("messagedhide()", 3000)
+        }
+
+        function messagedhide() {
+            $("#diverrorshow").hide(500);
+        }
+    </script>
+    <!--家具快搜--百度商桥-->
+</body>
+</html>

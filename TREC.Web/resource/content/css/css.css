@@ -1,0 +1,111 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+.sugfrm-btn { background: #490540; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b41ba7), to(#490540)); background: -moz-linear-gradient(#b41ba7, #490540); border: 1px solid #730f69; border-radius: 8px; text-align: center; margin: 10px; padding: 5px 0px; font-family: "微软雅黑", Arial; font-weight: bold; font-size: 18px; color: #fff; width: 95%; cursor: pointer; }
+
+
+.coolbg { border-right: 1px solid #ACACAC; border-bottom: 1px solid #ACACAC; background-color: #F1F8B4; padding: 2px; padding-right: 5px; padding-left: 5px; background: #EFF7D0; cursor: pointer; }
+
+
+.main { width: 1200px; margin: 20px auto; }
+.mainz { width: 950px; margin-right: 15px; float: left; }
+.mainy { width: 228px; border: 1px solid #d8d8d8; float: right; }
+.mainz1 { width: 948px; border: 1px solid #d8d8d8; border-bottom: none; color: #666; margin-bottom: 10px; }
+.mainz1 dl { border-bottom: 1px solid #d8d8d8; padding: 15px; overflow: hidden; }
+.mainz1 dl span { color: #F00; font-size: 14px; }
+.mainz1 dl dt { width: 75px; float: left; font-weight: bold; padding-top: 5px; }
+.mainz1 dl dd { width: 840px; float: right; }
+.mainz1 dl dd a { padding: 5px 8px; border-bottom: 10px; color: #666; display: inline-block; }
+.mainz1 dl dd a:hover { background: #b9003c; color: #fff; }
+.mainz2 { width: 950px; }
+.mainz2 h3 { background: #b9003c; color: #fff; padding: 8px 15px; float: left; font-size: 14px; font-family: 微软雅黑; }
+.mainz3 { width: 918px; padding: 8px 15px; background: #f9f9f9; border: 1px solid #d8d8d8; }
+.mainz3 div { margin-right: 15px; float: left; }
+.quyu { padding: 6px 25px 6px 15px; border: 1px solid #d8d8d8; background: url(/resource/content/images/jt2.jpg) no-repeat 71px 10px #fff; }
+.flei { padding-top: 7px; }
+.mainz4 { width: 950px; margin: 20px 0; }
+.mainz4 dl { width: 465px; border: 1px solid #d8d8d8; float: left; margin-bottom: 15px; }
+.mainz4 dl:hover { background: #fffff3; }
+.mainz4 dl dt { width: 135px; border-left: 1px solid #d8d8d8; float: right; padding: 12px; }
+.mainz4 dl dt img { width: 134px; height: 189px; }
+.mainz4 dl dd.scmc { width: 305px; border-bottom: 1px solid #d8d8d8; height: 70px; background: url(/resource/content/images/bj.jpg) repeat-x; text-align: center; color: #666; font-size: 18px; font-family: 微软雅黑; padding: 15px 0; }
+.mainz4 dl:hover .scmc { background: url(/resource/content/images/bj.jpg) 0px -103px repeat-x; color: #fff; }
+.mainz4 dl dd.scgm { color: #666; line-height: 22px; padding: 15px; }
+.mainz4 dl.yfd { float: right; }
+.mainy h3 { font-size: 14px; font-weight: bold; font-family: 微软雅黑; color: #666; text-indent: 5px; line-height: 33px; background: url(/resource/content/images/bj.jpg) 0px -207px repeat-x; }
+.mcss { padding: 20px 10px; }
+.mcss input { float: left; width: 130px; height: 24px; margin-right: 10px; }
+.rmtj { width: 100%; height: 164px; background: #f1f1f1; border-bottom: 1px solid #e7e3e7; }
+.rmtj1 { width: 1062px; height: 144px; margin: 0 auto; padding: 10px 0; background: url(/resource/content/images/rmtj.jpg) no-repeat 25px -2px; padding-left: 138px; }
+.rmtj1 dl { background: #FFF; width: 300px; height: 115px; padding: 15px; float: left; margin-right: 20px; }
+.rmtj1 dt { float: left; }
+.rmtj1 dd { float: right; color: #666; padding-top: 10px; font-size: 14px; font-family: 微软雅黑; line-height: 25px; }
+.rmtj1 dd span { color: #e1383d; font-weight: bold; }
+.rmtj1 dd a { font-size: 14px; color: #666; font-family: 微软雅黑; }
+.listz { width: 200px; float: left; margin-right: 20px; }
+.listy { width: 970px; float: right; }
+.listz h1 { font-size: 16px; color: #666; font-family: 微软雅黑; background: #f9f9f9; padding: 10px; border: 1px solid #e7e3e7; margin-bottom: 10px; }
+.listz ul { margin-bottom: 10px; }
+.listz ul li { font-size: 18px; background: #393939; margin-bottom: 1px; padding: 10px 0; }
+.listz ul li.hove { background: #b9003c; }
+.listz ul li a { font-size: 16px; color: #fff; font-family: 微软雅黑; padding-left: 20px; }
+.linu { margin: 10px 0 0px 0; border-top: 1px dashed #fff; padding-top: 15px; display: none; }
+.listz ul li .linu a { font-size: 14px; width: 80px; float: left; margin-bottom: 6px; }
+.listy1 { background: #f9f9f9; border: 1px solid #e7e3e7; padding: 15px; color: #666; }
+.listy1 a { float: right; }
+.listy1 span { color: #F00; }
+.listy2 dl { border-bottom: 1px solid #e7e3e7; padding: 20px; overflow: hidden; }
+.listy2 dl dt { float: left; width: 75px; }
+.listy2 dl dd { float: left; width: 850px; }
+.listy2 dl dd a  
+{
+   /* padding: 8px 10px; float: left;*/
+    padding: 3px 10px;
+float: left;
+     }
+.listy2 dl dd a.hove, .listy2 dl dd a:hover { background: #b9003c; color: #FFF; padding: 3px 10px; }
+
+.pplm { width: 790px; float: left; }
+.listp
+{
+    border: 1px solid #e7e7e7;
+float: left;
+padding: 7px;
+line-height: 20px;
+margin: 10px 4px 0px 0;
+    }
+.listp:hover{border: 1px solid #B7B5B5;box-shadow: 0px 0px 10px #B7B5B5;}
+.listp span.huis { color: #808080; }
+.listp div span.hse { color: #b80b0f; }
+.listp div span.lanse { color: #005aa0; }
+.tree { background: #f2f4f6; padding: 10px; overflow: hidden; }
+.tree li { float: left; background: #f2f4f6; color: #d3cccc; padding: 2px 5px; margin: 0 5px 5px 0; border: 1px solid #ccc; }
+.tree2 h2 { background: #fef9ed; border-bottom: 1px solid #f3f3f3; color: #b80b0f; font-size: 18px; font-family: 微软雅黑; padding: 5px 0 0 10px;height:30px; }
+.tree2 li a { border-bottom: 1px dashed #f3f3f3; color: #666; font-family: 微软雅黑; width: 215px; display: block; padding: 10px; }
+
+
+.tab_conbox { border: 1px solid #e7e3e7; border-top: none; }
+.tab_con { padding: 10px; display: none; overflow: hidden; }
+.tabs { height: 32px; border-bottom: 1px solid #e7e3e7; width: 100%; }
+.tabs li { height: 31px; float: left; margin-bottom: -1px; overflow: hidden; position: relative; }
+.tabs li a { display: block; padding: 0 20px; border: 1px solid #fff; outline: none; }
+.tabs li a:hover { background: #ccc; }
+.tabs .thistab, .tabs .thistab a:hover { color: #b9003c; background: none; }
+
+
+.listy2 dl dd a.hove, .listy2 dl dd a:hover {
+background: #b9003c;
+color: #FFF;
+padding: 3px 10px;
+}
+
+.listy2 dl {
+border-bottom: 1px solid #e7e3e7;
+padding: 10px;
+overflow: hidden;
+}
+
+
+
+

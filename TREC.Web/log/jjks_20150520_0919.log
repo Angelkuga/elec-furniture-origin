@@ -1,0 +1,95 @@
+﻿2015-05-20 09:19:39,606 [4] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-20 09:24:18,686 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/brand/brandinfo.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 关键字 'and' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 878
+   在 TREC.Data.Brands.GetBrandInfo(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Brands.cs:行号 322
+   在 TREC.ECommerce.ECBrand.GetBrandInfo(String strWhere) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECBrand.cs:行号 132
+   在 TREC.Web.Suppler.ajax.ajaxSupplerValidator.GetBrandTitleCompany(String title, String companyid, String id) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\ajaxSupplerValidator.ashx.cs:行号 116
+   在 TREC.Web.Suppler.ajax.ajaxSupplerValidator.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\ajaxSupplerValidator.ashx.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-20 09:24:45,579 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/brand/brandinfo.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 关键字 'and' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 878
+   在 TREC.Data.Brands.GetBrandInfo(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Brands.cs:行号 322
+   在 TREC.ECommerce.ECBrand.GetBrandInfo(String strWhere) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECBrand.cs:行号 132
+   在 TREC.Web.Suppler.ajax.ajaxSupplerValidator.GetBrandTitleCompany(String title, String companyid, String id) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\ajaxSupplerValidator.ashx.cs:行号 116
+   在 TREC.Web.Suppler.ajax.ajaxSupplerValidator.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\ajaxSupplerValidator.ashx.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-20 09:24:52,152 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/brand/brandinfo.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 关键字 'and' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 TREC.Data.DbHelper.ExecuteReader(DbConnection connection, DbTransaction transaction, CommandType commandType, String commandText, DbParameter[] commandParameters, DbConnectionOwnership connectionOwnership) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 846
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 939
+   在 TREC.Data.DbHelper.ExecuteReader(CommandType commandType, String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 878
+   在 TREC.Data.Brands.GetBrandInfo(String strWhere) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Brands.cs:行号 322
+   在 TREC.ECommerce.ECBrand.GetBrandInfo(String strWhere) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECBrand.cs:行号 132
+   在 TREC.Web.Suppler.ajax.ajaxSupplerValidator.GetBrandTitleCompany(String title, String companyid, String id) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\ajaxSupplerValidator.ashx.cs:行号 116
+   在 TREC.Web.Suppler.ajax.ajaxSupplerValidator.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\ajaxSupplerValidator.ashx.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-20 09:58:01,251 [4] TREC.Web.Global DEBUG - 家具快搜停止

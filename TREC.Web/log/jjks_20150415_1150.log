@@ -1,0 +1,46 @@
+﻿2015-04-15 11:50:27,462 [9] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-15 11:50:30,759 [9] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-15 11:54:15,581 [16] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-15 11:55:06,521 [14] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/Settled.aspx?sid=103
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 TREC.ECommerce.EmailHelper.SendEmailReg(String _username, String _email, String TypeName, String _phone, String _tname, String _qq) 位置 F:\CodeNew\trunk\TREC.ECommerce\EmailHelper.cs:行号 128
+   在 TREC.Web.Suppler.ajax.MemberHandler.MarketSettled(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 491
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 232
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-15 12:02:15,759 [22] TREC.Web.Global DEBUG - 家具快搜停止

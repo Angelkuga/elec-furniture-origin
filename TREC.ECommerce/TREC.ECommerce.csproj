@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{445E2E52-950F-4F6A-9520-508C33795A13}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TREC.ECommerce</RootNamespace>
+    <AssemblyName>TREC.ECommerce</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aliyun.OpenServices">
+      <HintPath>..\DLL\Aliyun.OpenServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorSwatchBll.cs" />
+    <Compile Include="ECArticle.cs" />
+    <Compile Include="ECCustomer.cs" />
+    <Compile Include="ECCustomerActive.cs" />
+    <Compile Include="ECLinks.cs" />
+    <Compile Include="ECMarketClique.cs" />
+    <Compile Include="ECMerchants.cs" />
+    <Compile Include="ECMerchantsMember.cs" />
+    <Compile Include="ECModule.cs" />
+    <Compile Include="ECommerce.cs" />
+    <Compile Include="ECommon.cs" />
+    <Compile Include="ECAppBrand.cs" />
+    <Compile Include="ECPayMent.cs" />
+    <Compile Include="EcShoppingPay.cs" />
+    <Compile Include="ECSms.cs" />
+    <Compile Include="ECUrls.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="HttpModule.cs" />
+    <Compile Include="Hz2Py.cs" />
+    <Compile Include="MarketCliquePageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageSend.cs" />
+    <Compile Include="ProductBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitMeth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SupplerPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EAction.cs" />
+    <Compile Include="ECModuleLink.cs" />
+    <Compile Include="ECRole.cs" />
+    <Compile Include="t_promotionstypeBLL.cs" />
+    <Compile Include="Ui\AliyunECUpLoad.cs" />
+    <Compile Include="Ui\ECUpload.cs" />
+    <Compile Include="Ui\PageAlert.cs" />
+    <Compile Include="Ui\UiCommon.cs" />
+    <Compile Include="ECAdmin.cs" />
+    <Compile Include="ECAdvertisement.cs" />
+    <Compile Include="ECAdvertisementCategory.cs" />
+    <Compile Include="ECMember.cs" />
+    <Compile Include="ECCompany.cs" />
+    <Compile Include="ECShop.cs" />
+    <Compile Include="ECMarket.cs" />
+    <Compile Include="ECDealer.cs" />
+    <Compile Include="ECArea.cs" />
+    <Compile Include="ECConfig.cs" />
+    <Compile Include="ECMenu.cs" />
+    <Compile Include="ECLog.cs" />
+    <Compile Include="ECBrand.cs" />
+    <Compile Include="ECProduct.cs" />
+    <Compile Include="ECProductAttribute.cs" />
+    <Compile Include="ECProductCategory.cs" />
+    <Compile Include="ECPCategoryPTyp.cs" />
+    <Compile Include="WebPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECMarketStorey.cs" />
+    <Compile Include="ECMarketStoreyShop.cs" />
+    <Compile Include="CompanyPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarketPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECAggregation.cs" />
+    <Compile Include="ECPromotion.cs" />
+    <Compile Include="ECPromotionDef.cs" />
+    <Compile Include="EnPromotionStage.cs" />
+    <Compile Include="ECGroupOrder.cs" />
+    <Compile Include="ECGroupOrderProduct.cs" />
+    <Compile Include="ECAppPromotion.cs" />
+    <Compile Include="ECProductShopPrice.cs" />
+    <Compile Include="ECMsgCollection.cs" />
+    <Compile Include="XWebClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TREC.Config\TREC.Config.csproj">
+      <Project>{1861302F-FF9C-47C4-BF74-E2B97972CD86}</Project>
+      <Name>TREC.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TREC.Data\TREC.Data.csproj">
+      <Project>{5DDFDD85-B181-458E-95D3-F16643FECCEC}</Project>
+      <Name>TREC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TREC.Entity\TREC.Entity.csproj">
+      <Project>{73FEC9EA-274A-4650-A312-8C4B7F19257C}</Project>
+      <Name>TREC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRECommon\TRECommon.csproj">
+      <Project>{8BCDF65D-3BF5-41D9-BD9F-01635A768129}</Project>
+      <Name>TRECommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ECGroupOrderPay.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

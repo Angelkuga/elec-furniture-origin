@@ -1,0 +1,34 @@
+﻿2015-04-13 13:56:39,824 [11] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-13 13:56:40,233 [11] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/market/marketclique.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: “/upload//temp/http://jiajuks.oss-cn-hangzhou.aliyuncs.com/2015_4/20150413135016575cyn.jpg”不是有效的虚拟路径。
+   在 System.Web.VirtualPath.Create(String virtualPath, VirtualPathOptions options)
+   在 System.Web.HttpServerUtility.MapPath(String path)
+   在 TREC.Web.ajaxtools.AliyunImgfileupload1.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\AliyunImgfileupload.ashx.cs:行号 77
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-13 13:56:42,008 [11] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/market/marketclique.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: “/upload//temp/http://jiajuks.oss-cn-hangzhou.aliyuncs.com/2015_4/20150413135016575cyn.jpg”不是有效的虚拟路径。
+   在 System.Web.VirtualPath.Create(String virtualPath, VirtualPathOptions options)
+   在 System.Web.HttpServerUtility.MapPath(String path)
+   在 TREC.Web.ajaxtools.AliyunImgfileupload1.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\AliyunImgfileupload.ashx.cs:行号 77
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-13 14:07:01,429 [8] TREC.Web.Global DEBUG - 家具快搜停止

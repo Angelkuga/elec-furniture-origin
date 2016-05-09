@@ -1,0 +1,86 @@
+﻿2015-05-12 15:04:35,824 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-05-12 15:04:39,730 [3] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Web.HttpParseException: f:\CodeNew\trunk\TREC.Web\template\web\default\ascx\DealerProduct.ascx(110): error CS0103: 当前上下文中不存在名称“companyInfo” ---> System.Web.HttpCompileException: f:\CodeNew\trunk\TREC.Web\template\web\default\ascx\DealerProduct.ascx(110): error CS0103: 当前上下文中不存在名称“companyInfo”
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.BaseTemplateParser.GetReferencedType(VirtualPath virtualPath, Boolean allowNoCompile)
+   在 System.Web.UI.BaseTemplateParser.GetUserControlType(VirtualPath virtualPath)
+   在 System.Web.UI.MainTagNameToTypeMapper.ProcessUserControlRegistration(UserControlRegisterEntry ucRegisterEntry)
+   在 System.Web.UI.BaseTemplateParser.ProcessDirective(String directiveName, IDictionary directive)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   在 System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   在 System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   在 System.Web.UI.TemplateParser.ParseInternal()
+   在 System.Web.UI.TemplateParser.Parse()
+   在 System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 15:06:56,561 [7] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/204/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.ArgumentException: 已添加了具有相同键的项。
+   在 TRECommon.SerializationHelper.DeSerialize(Type type, String s) 位置 F:\CodeNew\trunk\TRECommon\Xml\SerializationHelper.cs:行号 136
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandList() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 537
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandInfo() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 516
+   在 TREC.ECommerce.CompanyPageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\CompanyPageBase.cs:行号 71
+   在 TREC.Web.aspx.company.product..ctor() 位置 F:\CodeNew\trunk\TREC.Web\aspx\company\product.aspx.cs:行号 422
+   在 ASP.template_web_default_company_product_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_ophr7xnl.21.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_ophr7xnl.Create_ASP_template_web_default_company_product_aspx() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_ophr7xnl.22.cs:行号 0
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 15:06:56,563 [9] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/204/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.ArgumentException: 已添加了具有相同键的项。
+   在 TRECommon.SerializationHelper.DeSerialize(Type type, String s) 位置 F:\CodeNew\trunk\TRECommon\Xml\SerializationHelper.cs:行号 136
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandList() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 537
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandInfo() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 516
+   在 TREC.ECommerce.CompanyPageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\CompanyPageBase.cs:行号 71
+   在 TREC.Web.aspx.company.product..ctor() 位置 F:\CodeNew\trunk\TREC.Web\aspx\company\product.aspx.cs:行号 422
+   在 ASP.template_web_default_company_product_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_ophr7xnl.21.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_ophr7xnl.Create_ASP_template_web_default_company_product_aspx() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_ophr7xnl.22.cs:行号 0
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-12 15:11:11,481 [11] TREC.Web.Global DEBUG - 家具快搜停止

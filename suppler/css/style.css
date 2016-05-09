@@ -1,0 +1,436 @@
+/*
+	[Destoon B2B System] Copyright (c) 2008-2011 Destoon.COM
+	This is NOT a freeware, use is subject to license.txt
+*/
+/* global */
+* {word-break:break-all;font-family:Verdana,Arial;}
+body {background:#FFFFFF;color:#000000;font-size:12px;margin:0px;height:100%;}
+input,textarea,select,button,td {font-size:12px; }
+input,textarea,select,button{float:left; display:block;}
+input[type="text"]{width:160px;}
+textarea{width:380px;}
+img {border:none;}
+ul li {list-style-type:none;}
+ol li {list-style-type:decimal;}
+ul,form {margin:0px;padding:0px;}
+html {height:100%;}
+a:link,a:visited,a:active {text-decoration:none;color:#000000;}
+a:hover {color:#FF0000;text-decoration:none;}
+a.t:link,a.t:visited,a.t:active {text-decoration:none;color:#0240A3;}
+a.t:hover {color:#FF0000;}
+a.w:link,a.w:visited,a.w:active {text-decoration:none;color:#FFFFFF;}
+a.w:hover {color:#FAFAFA;}
+a.b:link,a.b:visited,a.b:active {text-decoration:none;color:#005590;}
+a.b:hover{color:#FF0000;}
+a.l:link,a.l:visited,a.l:active {text-decoration:underline;color:#005590;}
+a.l:hover{color:#FF0000;}
+a.n:link,a.n:visited,a.n:active {text-decoration:none;display:block;width:125px;color:#005590;font-size:14px;}
+a.n:hover{color:#FF6600;}
+a.m:link,a.m:visited,a.m:active {color:#666666;text-decoration:none;}
+a.m:hover {color:#FF6600;}
+a.f:link,a.f:visited,a.f:active,a.f:hover {text-decoration:none;display:block;width:125px;color:#888888;font-size:14px;}
+
+
+.head {background:#FFFFFF url('../images/head_bg.gif') repeat-x 0 bottom;padding:0 0 5px 0;}
+#top {padding:8px;border-bottom:#F0F0F0 1px solid;color:#929393;}
+#top a {color:#555555;}
+#m_menu {z-index:1000;position:absolute;left:190px;border:#F0F0F0 1px solid;border-top:#FFFFFF 1px solid;margin-top:-1px;background:#FFFFFF;width:70px;overflow:hidden;filter:Alpha(opacity=90);-moz-opacity:0.9;}
+#m_menu a {text-decoration:none;height:22px;line-height:22px;padding:0 0 0 10px;width:100%;display:block;}
+#m_menu a:hover {color:#FFFFFF;background:#2764A4;}
+
+.head_sch {text-align:right;padding:0 8px 0 0;}
+.head_user {color:#3C3C3C;}
+#head_kw {border:#6C92AD 1px solid;padding:2px;color:#666666;background:url('../images/head_sch.gif') no-repeat right center;}
+#head_bt {z-index:1;position:absolute;width:62px;height:20px;margin:0 0 0 -62px;}
+
+
+
+
+/*验证表单样式*/
+span.error{
+	margin-left:5px;
+	padding-left:25px;
+	color:#F00;
+	background:url(../images/error.gif) left center no-repeat;
+}
+span.success{
+	margin-left:5px;
+	padding-left:25px;
+	color:#999;
+	background:url(../images/success.gif) left center no-repeat;
+}
+
+
+.Fcon{width:1000px; margin:0 auto;}
+.clear{ clear:both; height:6px; width:100%;}
+#top{background:#f4f4f4; border-bottom:1px solid #dedbda;}
+.foot{ text-align:center; border-top:1px solid #ccc;}
+
+.leftMenu{padding:5px; border:1px solid #C4CED8; color:#FFFFFF; width:160px; float:left;}
+.leftMenu a{margin-left:23px; }
+.leftMenu h3{background:url('../images/menu.gif') no-repeat scroll -10px -10px;height:30px; margin:0px; line-height:30px; color:#404040; font-size:12px; }
+.leftMenu h3 a{height:30px; line-height:30px;}
+.leftMenu ul li{margin:3px 0px;}
+.leftMenu ul li a{display:block; margin:0px; background:url('../images/menu.gif') no-repeat;background-position:-10px -63px; height:21px; line-height:21px; padding:2px 0 2px 28px;}
+.leftMenu ul li a:hover,.leftMenu ul li a.cur{background-position:-10px -108px; font-weight:bold; color:#fff;}
+.frameMenu{border:1px solid #C4CED8; float:left; width:814px; margin-left:10px; border-bottom:0px; height:30px; line-height:30px; background:#f4f4f4;}
+.frameMenu span.title{ margin-left:10px; float:left; font-weight:bold;}
+a.help{float:right; display:block; width:16px; height:16px; margin-top:5px; margin-right:4px; }
+.rightFrame{border:1px solid #C4CED8; float:left; width:804px; margin-left:10px; padding:5px;}
+
+td.tl{background:#f8f8f8;}
+td.tr{background:#ffff;}
+
+.formTable{border:1px solid #ccc; width:99%;}
+.formTable tr th{background:#ededed; text-align:left; height:24px; line-height:24px;}
+.formTable tr td{border:none; padding-top:8px; padding-bottom:8px;}
+
+.msgtable{ width:100%; border:1px solid #CAD1DD; background:none repeat scroll 0 0 #FFFFFF; border-bottom:none;}
+.msgtable td{height:35px; line-height:35px; border-bottom:1px dashed #DCE1E5}
+.msgtable th{height:26px; line-height:26px; background:#F4F4F4;border-right:1px solid #CAD1DD;border-bottom:1px solid #CAD1DD;}
+.msgtable td input[type='checkbox']{margin-left:10px;}
+.msgtable th.l,.msgtable td.l{padding-left:10px;}
+.msgtable td.edit a{ text-decoration:underline;}
+.msgtable .tr_bg{background:#F9F9F9;}
+.msgtable .tr_hover_col{background:#EAEAEA;}
+
+a:visited,a:active{ color:#005eac; }
+a:hover{ color:#ff5500; }
+img{ border:0px; vertical-align:middle; }
+
+.submit{
+	background:url(../images/button_submit.gif) repeat-x #e3f1fa;
+	border:1px solid #aed0ea;
+	padding:0px 10px;
+	height:24px;
+	line-height:24px;
+	color:#3d80b3;
+	cursor:pointer;
+}
+.input{
+	padding:0px 3px;
+	border:1px solid #d1d1d1;
+	background:url(../images/input_bg.jpg) repeat-x;
+	height:22px;
+	line-height:22px;
+	font-size:12px;
+	color:#999;
+}
+.textarea{
+	padding:3px;
+	border:1px solid #d1d1d1;
+	background:url(../images/input_bg.jpg) repeat-x;
+	font-size:12px;
+	color:#999;
+}
+.focus{
+	border:1px solid #336699 !important;
+	background:url(../images/focus_bg.jpg) repeat-x !important;
+	color:#333333 !important;
+}
+.select{
+	padding:1px;
+	border: 1px solid #CDCDCD;
+	background:#FDFEEF;
+	height:22px;
+	line-height:22px;
+}
+.keyword{
+	border: 1px solid #CDCDCD;
+	background:#FDFEEF;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+}
+
+.btn_bg a{
+	padding:1px 8px;
+	color:#000;
+	border:1px solid #70b1cf;
+	background:url(../images/btn_bg.gif) repeat-x;
+	margin:0px 0px 0px 5px;
+}
+.btn_all{
+	padding:1px 8px;
+	color:#000;
+	border:1px solid #70b1cf;
+	background:url(../images/btn_bg.gif) repeat-x;
+	cursor:pointer;
+	margin:0px 0px 0px 5px;
+}
+
+.listButtom{background:none repeat scroll 0 0 #F2F2F2;height:35px; border:1px solid #CAD1DD; border-top:none; padding-top:10px; }
+
+.pages{float:right; width:600px; }
+.pages #AspNetPager1{margin:0 auto; }
+.pages a,.pages span,.pages input{line-height:14px; height:14px; display:block; text-align:center; float:left; padding:3px; background:#f4f4f4; border:1px solid #CAD1DD; }
+.pages a:hover{border:1px solid #f60;}
+.pages span{border:1px solid #f60; color:#f60; color:#000; text-decoration:underline; font-weight:bold;}
+.pages input[type='text']{background:#fff;}
+.pages input[type='button']{height:22px; line-height:22px;}
+
+
+
+
+
+.tipbox{
+	font-size:12px;
+	color:#F00;
+	line-height:26px;
+}
+input,select,textarea{float:left; margin:0px 2px;}
+label{ display:block; height:22px; float:left; line-height:26px;}
+.checkall{margin-left:7px; display:block;}
+input[type="radio"]{margin-top:6px; margin-left:5px;}
+input[type="checkbox"]{margin-top:6px; margin-left:5px;}
+
+.left{ float:left; }
+.right{ float:right; }
+.clear{ clear:both; }
+.spClear{ clear:both;height:10px; }
+.mouse{ cursor:pointer; }
+
+
+h1{ font-size:14px; }
+.w160{width:160px;}
+.w250{width:250px;}
+.w380{width:380px;}
+.wh380{width:380px; height:50px;}
+input[type='text'].w380{width:380px;}
+
+
+/*设置提示样式*/
+
+.warning{
+	padding:8px 10px 8px 30px;
+	border:1px solid #FAF4B8;
+	color:#C52716;
+	background:url(../images/warning.gif) 8px center no-repeat #FEFDE9;
+}
+.correct{
+	padding:8px 10px 8px 30px;
+	border:1px solid #CCF9C1;
+	color:#090;
+	background:url(../images/correct.gif) 8px center no-repeat #F1FEF2;
+}
+.disable{
+	padding:8px 10px 8px 30px;
+	border:1px solid #F9F2B7;
+	color:#F00;
+	background:url(../images/disable.gif) 8px center no-repeat #FDF8E8;
+}
+
+.icon-01{
+	margin:0;
+	padding:10px 0 0 80px;
+	color:#4D4D4D;
+	font-family:"微软雅黑";
+	line-height:1.8em;
+	min-height:60px;
+	background:url(../images/icon-01.gif) no-repeat 10px 10px;
+}
+.icon-02{
+	margin:0;
+	padding:10px 0 0 80px;
+	color:#4D4D4D;
+	font-family:"微软雅黑";
+	line-height:1.8em;
+	min-height:60px;
+	background:url(../images/icon-02.gif) no-repeat 10px 10px;
+}
+.icon-03{
+	margin:0;
+	padding:10px 0 0 80px;
+	color:#4D4D4D;
+	font-family:"微软雅黑";
+	line-height:1.8em;
+	min-height:60px;
+	background:url(../images/icon-03.gif) no-repeat 10px 10px;
+}
+.icon-01 b{
+	display:block;
+	color:#090;
+	font-size:14px;
+	line-height:2.0em;
+}
+.icon-02 b{
+	display:block;
+	color:#F00;
+	font-size:14px;
+	line-height:2.0em;
+}
+.icon-03 b{
+	display:block;
+	color:#FC0;
+	font-size:14px;
+	line-height:2.0em;
+}
+
+/*页面居中显示*/
+.pcent{
+	top:35%;
+	right:46%;
+	position:absolute;
+	display:none;
+	z-index:100000;
+}
+
+
+
+/** 提示 信息样式**/
+.tip-yellowsimple {
+	z-index:1000;
+	text-align:left;
+	border:1px solid #c7bf93;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:6px 8px;
+	min-width:50px;
+	max-width:300px;
+	color:#000;
+	background-color:#fff9c9;
+	/**
+	 * - If you set a background-image, border/padding/background-color will be ingnored.
+	 *   You can set any padding to .tip-inner instead if you need.
+	 * - If you want a tiled background-image and border/padding for the tip,
+	 *   set the background-image to .tip-inner instead.
+	 */
+}
+.tip-yellowsimple .tip-inner {
+	font:12px/16px arial,helvetica,sans-serif;
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-yellowsimple .tip-arrow-top {
+	margin-top:-6px;
+	margin-left:-5px; /* approx. half the width to center it */
+	top:0;
+	left:50%;
+	width:9px;
+	height:6px;
+	background:url(../images/tip-yellowsimple_arrows.gif) no-repeat;
+}
+.tip-yellowsimple .tip-arrow-right {
+	margin-top:-4px; /* approx. half the height to center it */
+	margin-left:0;
+	top:50%;
+	left:100%;
+	width:6px;
+	height:9px;
+	background:url(../images/tip-yellowsimple_arrows.gif) no-repeat -9px 0;
+}
+.tip-yellowsimple .tip-arrow-bottom {
+	margin-top:0;
+	margin-left:-5px; /* approx. half the width to center it */
+	top:100%;
+	left:50%;
+	width:9px;
+	height:6px;
+	background:url(../images/tip-yellowsimple_arrows.gif) no-repeat -18px 0;
+}
+.tip-yellowsimple .tip-arrow-left {
+	margin-top:-4px; /* approx. half the height to center it */
+	margin-left:-6px;
+	top:50%;
+	left:0;
+	width:6px;
+	height:9px;
+	background:url(../images/tip-yellowsimple_arrows.gif) no-repeat -27px 0;
+}
+
+
+
+
+
+.tip-yellow {
+	z-index:991000;
+	text-align:left;
+	border:1px solid #939393;
+	padding:7px;
+	min-width:50px;
+	max-width:530px;
+	color:#8c3901;
+	background-color:#fef9d9;
+	background-image:url(../images/tip-yellow.png); /* bgImageFrameSize >= 10 should work fine */
+	/**
+	 * - If you set a background-image, border/padding/background-color will be ingnored.
+	 *   You can set any padding to .tip-inner instead if you need.
+	 * - If you want a tiled background-image and border/padding for the tip,
+	 *   set the background-image to .tip-inner instead.
+	 */
+}
+.tip-yellow .tip-inner {
+	font:bold 13px/18px 'trebuchet ms',arial,helvetica,sans-serif;
+	margin-top:-2px;
+	padding:0 3px 1px 3px;
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-yellow .tip-arrow-top {
+	margin-top:-7px;
+	margin-left:15px;
+	top:0;
+	left:0;
+	width:16px;
+	height:10px;
+	background:url(../images/tip-yellow_arrows.png) no-repeat;
+}
+.tip-yellow .tip-arrow-right {
+	margin-top:-9px; /* approx. half the height to center it */
+	margin-left:-4px;
+	top:50%;
+	left:100%;
+	width:10px;
+	height:20px;
+	background:url(../images/tip-yellow_arrows.png) no-repeat -16px 0;
+}
+.tip-yellow .tip-arrow-bottom {
+	margin-top:-6px;
+	margin-left:15px;
+	top:100%;
+	left:0;
+	width:16px;
+	height:13px;
+	background:url(../images/tip-yellow_arrows.png) no-repeat -32px 0;
+}
+.tip-yellow .tip-arrow-left {
+	margin-top:-9px; /* approx. half the height to center it */
+	margin-left:-6px;
+	top:50%;
+	left:0;
+	width:10px;
+	height:20px;
+	background:url(../images/tip-yellow_arrows.png) no-repeat -48px 0;
+}
+
+/*file容器样式*/
+.fileUpload .input{height:18px; line-height:18px;}
+.fileUpload .fileTools{margin-bottom:3px; float:left;}
+.fileTools a._filedel,.fileTools a._filesee{display:block; width:12px; line-height:24px; height:18px; float:left; margin-left:4px; text-decoration:underline;}
+a._filesee .seeupfile{display:block; position:absolute;  border:1px solid; z-index:1000000; background:#ccc;}
+a.files {margin:0 auto;float:left; width:64px;height:22px;overflow:hidden;display:block;border:1px solid #70b1cf;background:url(../images/upfilebg.gif) left top no-repeat;text-decoration:none;}
+/*file设为透明，并覆盖整个触发面*/
+a.files input {margin-left:-240px;font-size:20px;cursor:pointer;filter:alpha(opacity=0);opacity:0;}
+/*取消点击时的虚线框*/
+a.files, a.files input{outline:none;/*ff*/hide-focus:expression(this.hideFocus=true);/*ie*/ height:18px; line-height:18px;}
+/*上传文件时切换图片*/
+.filesbg2{background:url(../images/upfilebg2.gif) left top no-repeat!important;}
+.uploading{float:left;background:url(../images/loading.gif) no-repeat left center;padding-left:18px;display:none;line-height:20px;height:20px;}
+
+.line5 {clear:both;font-size:1px;height:5px;overflow:hidden;}
+/*图文容器样式*/
+a.upfiles {margin:0 auto;width:90px;height:30px;overflow:hidden;display:block;border:1px solid #BEBEBE;background:url(../images/btn_upload.gif) left top no-repeat;text-decoration:none;}
+a.upfiles:hover {background-color:#FFFFEE;background-position:0 -30px;}
+/*file设为透明，并覆盖整个触发面*/
+a.upfiles input {margin-left:-350px;font-size:30px;cursor:pointer;filter:alpha(opacity=0);opacity:0;}
+/*取消点击时的虚线框*/
+a.upfiles, a.upfiles input{outline:none;/*ff*/hide-focus:expression(this.hideFocus=true);/*ie*/}
+
+a.helper{margin-left:5px; display:block;  width:16px; height:16px; background:url(../images/fatcow_466.png)}
+.menuHelper{float:right; margin:6px 5px 0px 0px;}
+
+/**  main  **/
+.i_quick ul li,.i_quick ul li{float:left; margin:20px; border:1px solid #fff; padding:3px;}
+.i_quick ul li a img,.i_quick ul li a img{margin-left:5px;}
+.i_quick ul li:hover,.i_quick ul li:hover{border-color:#f60; cursor:pointer;}

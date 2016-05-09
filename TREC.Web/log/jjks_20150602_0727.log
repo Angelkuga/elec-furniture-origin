@@ -1,0 +1,173 @@
+﻿2015-06-02 19:27:11,974 [12] TREC.Web.Global DEBUG - 家具快搜启动
+2015-06-02 19:29:49,465 [18] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/productlist.aspx?xid=8&did=7&tid=106
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Data.SqlClient.SqlException: 无法绑定由多个部分组成的标识符 "tpb.typevalue"。
+无法绑定由多个部分组成的标识符 "tpb.typevalue"。
+SELECT *
+,  (SELECT TOP 1 tpb.ProductAttributePromotion FROM  t_productattribute tpb WHERE tpb.productid=T.tpid ORDER BY tpb.saleprice) AS ProductAttributePromotion
+,  (SELECT TOP 1 tpb.buyprice FROM  t_productattribute tpb WHERE tpb.productid=T.tpid ORDER BY tpb.saleprice) AS buyprice
+,  (SELECT TOP 1 tpb.markprice FROM  t_productattribute tpb WHERE tpb.productid=T.tpid ORDER BY tpb.saleprice) AS markprice
+,  (SELECT TOP 1 tpb.saleprice FROM  t_productattribute tpb WHERE tpb.productid=T.tpid ORDER BY tpb.saleprice) AS saleprice
+ FROM
+(SELECT row_number() OVER (ORDER BY (tp.lastedittime) desc) AS rownum,
+  isnull(t_shop.id,0) as shopid, isnull(t_shop.title,'' ) as shoptitle ,tp.id AS tpid,tp.title AS tptitle,[dbo].[F_GetbuypriceName](tp.id) as buypriceName,
+tp.companyid,companyname,brandtitle,    tp.sku, tp.stylename, tp.materialname,tp.categorytitle  ,  tp.brandid,tp.thumb,tp.lastedittime  FROM 
+dbo.t_product tp
+inner join t_brand on t_brand.id = tp.brandid  AND t_brand.auditstatus=1 AND t_brand.linestatus=1 
+LEFT JOIN t_productshopprice ON t_productshopprice.productid =  tp.id 
+LEFT JOIN dbo.t_shop ON dbo.t_shop.id = t_productshopprice.shopid  
+WHERE tp.auditstatus =1 AND tp.linestatus =1  and tp.categoryid  =8 and tpb.typevalue = 106  and tp.categoryid in (SELECT id  FROM dbo.t_productcategory WHERE parentid = 7 AND ptype<>2 ) ) AS T WHERE rownum BETWEEN (1 - 1) * 48 + 1 AND 1 * 48
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Haojibiz.Data.SqlHelper.ExecuteDataSet(SqlConnection connection, CommandType cmdType, String cmdText, SqlParameter[] commandParameters)
+   在 Haojibiz.Data.SqlHelper.ExecuteDataSet(String connectionString, CommandType cmdType, String cmdText, SqlParameter[] commandParameters)
+   在 Haojibiz.Data.SqlHelper.ExecuteDataSet(CommandType cmdType, String cmdText, SqlParameter[] commandParameters)
+   在 TREC.Web.ajax.hdsearch.Searchproduct(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\hdsearch.ashx.cs:行号 391
+   在 TREC.Web.ajax.hdsearch.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\hdsearch.ashx.cs:行号 46
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 19:32:26,589 [12] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/product/productlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.3; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.102
+UserHostAddress:
+192.168.1.102
+
+System.Data.SqlClient.SqlException: 'b' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 TREC.Data.DbHelper.ExecuteDataset(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1128
+   在 TREC.Data.DbHelper.ExecuteDataset(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1076
+   在 TREC.Data.DbHelper.ExecuteDataset(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1032
+   在 TREC.Data.DataCommon.GetPageDataTable(String tableName, Int32 PageIndex, Int32 PageSize, String strWhere, String key, Int32 orderType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 460
+   在 TREC.Data.Products.GetProductList(Int32 PageIndex, Int32 PageSize, String strWhere, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 1983
+   在 TREC.ECommerce.ECProduct.GetProductList(Int32 PageIndex, Int32 PageSize, String strWhere, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 698
+   在 TREC.ECommerce.ECProduct.GetProductList(String strWhere) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 730
+   在 TREC.Web.ajax.ajaxproduct.saveproductcopyshop(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 424
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 149
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 19:35:45,737 [12] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/product/productlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.3; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.102
+UserHostAddress:
+192.168.1.102
+
+System.Data.SqlClient.SqlException: 'b' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 TREC.Data.DbHelper.ExecuteDataset(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1128
+   在 TREC.Data.DbHelper.ExecuteDataset(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1076
+   在 TREC.Data.DbHelper.ExecuteDataset(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1032
+   在 TREC.Data.DataCommon.GetPageDataTable(String tableName, Int32 PageIndex, Int32 PageSize, String strWhere, String key, Int32 orderType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 460
+   在 TREC.Data.Products.GetProductList(Int32 PageIndex, Int32 PageSize, String strWhere, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 1983
+   在 TREC.ECommerce.ECProduct.GetProductList(Int32 PageIndex, Int32 PageSize, String strWhere, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 698
+   在 TREC.ECommerce.ECProduct.GetProductList(String strWhere) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 730
+   在 TREC.Web.ajax.ajaxproduct.saveproductcopyshop(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 424
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 149
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 19:37:36,309 [18] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/suppler/product/productlist.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.3; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.102
+UserHostAddress:
+192.168.1.102
+
+System.Data.SqlClient.SqlException: 在将 varchar 值 '0804-18' 转换成数据类型 int 时失败。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.HasMoreRows()
+   在 System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   在 System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 TREC.Data.DbHelper.ExecuteDataset(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1128
+   在 TREC.Data.DbHelper.ExecuteDataset(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1076
+   在 TREC.Data.DbHelper.ExecuteDataset(String commandText) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 1032
+   在 TREC.Data.DataCommon.GetPageDataTable(String tableName, Int32 PageIndex, Int32 PageSize, String strWhere, String key, Int32 orderType, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\DataCommon.cs:行号 460
+   在 TREC.Data.Products.GetProductList(Int32 PageIndex, Int32 PageSize, String strWhere, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.Data\Provide\Products.cs:行号 1983
+   在 TREC.ECommerce.ECProduct.GetProductList(Int32 PageIndex, Int32 PageSize, String strWhere, Int32& pageCount) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 698
+   在 TREC.ECommerce.ECProduct.GetProductList(String strWhere) 位置 F:\CodeNew\trunk\TREC.ECommerce\ECProduct.cs:行号 730
+   在 TREC.Web.ajax.ajaxproduct.saveproductcopyshop(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 424
+   在 TREC.Web.ajax.ajaxproduct.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\ajaxproduct.ashx.cs:行号 149
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 19:54:10,343 [18] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/productlist.aspx?xid=14&did=7&tid=74
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.IndexOutOfRangeException: 无法找到表 1。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 TREC.Web.ajax.hdsearch.Searchproduct(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\hdsearch.ashx.cs:行号 396
+   在 TREC.Web.ajax.hdsearch.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajax\hdsearch.ashx.cs:行号 46
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-03 09:22:10,210 [12] TREC.Web.Global DEBUG - 家具快搜停止

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DDFDD85-B181-458E-95D3-F16643FECCEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TREC.Data</RootNamespace>
+    <AssemblyName>TREC.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SQLDMO">
+      <HintPath>..\DLL\Interop.SQLDMO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataCommon.cs" />
+    <Compile Include="DbHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provide\Administrators.cs" />
+    <Compile Include="Provide\Advertisements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Provide\Aggregations.cs" />
+    <Compile Include="Provide\Articles.cs" />
+    <Compile Include="Provide\Brands.cs" />
+    <Compile Include="Provide\ColorSwatchDb.cs" />
+    <Compile Include="Provide\Customer.cs" />
+    <Compile Include="Provide\CustomerActive.cs" />
+    <Compile Include="Provide\ECProductAttribute.cs" />
+    <Compile Include="Provide\GroupOrders.cs" />
+    <Compile Include="Provide\Logs.cs" />
+    <Compile Include="Provide\MarketClique.cs" />
+    <Compile Include="Provide\Merchants.cs" />
+    <Compile Include="Provide\MerchantsMember.cs" />
+    <Compile Include="Provide\PayMent.cs" />
+    <Compile Include="Provide\Permissions.cs" />
+    <Compile Include="Provide\Members.cs" />
+    <Compile Include="Provide\Companys.cs" />
+    <Compile Include="Provide\Configs.cs" />
+    <Compile Include="Provide\Areas.cs" />
+    <Compile Include="Provide\Menus.cs" />
+    <Compile Include="Provide\ProductDb.cs" />
+    <Compile Include="Provide\Products.cs" />
+    <Compile Include="Provide\ProductCategorys.cs" />
+    <Compile Include="Provide\ProductAttributes.cs" />
+    <Compile Include="Provide\PCategoryPTyps.cs" />
+    <Compile Include="Provide\MarketStoreys.cs" />
+    <Compile Include="Provide\MarketStoreyShops.cs" />
+    <Compile Include="Provide\Promotion.cs" />
+    <Compile Include="Provide\AppPromotions.cs" />
+    <Compile Include="Provide\ShoppingPay.cs" />
+    <Compile Include="Provide\Shops.cs" />
+    <Compile Include="Provide\Links.cs" />
+    <Compile Include="Provide\ProductShopPrice.cs" />
+    <Compile Include="Provide\Sms.cs" />
+    <Compile Include="Provide\MsgCollection.cs" />
+    <Compile Include="Provide\t_promotionstypeDAL.cs" />
+    <Compile Include="SqlDataCommon.cs" />
+    <Compile Include="Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TREC.Entity\TREC.Entity.csproj">
+      <Project>{73FEC9EA-274A-4650-A312-8C4B7F19257C}</Project>
+      <Name>TREC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRECommon\TRECommon.csproj">
+      <Project>{8BCDF65D-3BF5-41D9-BD9F-01635A768129}</Project>
+      <Name>TRECommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provide\Markets.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Provide\Dealers.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

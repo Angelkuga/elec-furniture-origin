@@ -1,0 +1,30 @@
+﻿.guide-cont{margin-top:10px;margin-bottom:80px;}
+.guide-left{width:797px;}
+.guide-left .guide-hot{margin-bottom:10px;}
+.guide-left .guide-hot img{border:1px solid #bfbfbf;transition: all ease 0.5s}
+.guide-left .guide-hot img:hover{border:1px solid #b9003c;}
+.guide-left .option{border:1px solid #bfbfbf;margin-bottom:15px;}
+.guide-left .option .hd{background:#b9003c;padding:13px 0 20px 95px;}
+.guide-left .option .hd .text{border:1px solid #a3a3a3;padding:12px 10px;font-size:16px;border-radius:5px;width:448px;}
+.guide-left .option .hd .button{background:url(../img/common/j8.png) no-repeat 0 0;padding-left:48px;line-height:43px;border:0;color:#fff;height:45px;padding-right:25px;font-size:18px;font-weight:bold;cursor:pointer;}
+.guide-left .option .bd{border-top:1px dashed #999;padding:8px 0 5px;line-height:25px;color:#4a4a4a;}
+.guide-left .option .bd:first-child{border-top:0;}
+.guide-left .option .left{width:85px;text-align:center;font-size:14px;}
+.guide-left .option dl{width:650px;}
+.guide-left .option dd{float:left;margin-left:10px;}
+.guide-left .option dd a{color:#4a4a4a;}
+.guide-left .activity .hd li{float:left;padding:5px 15px;cursor:pointer;font-size:14px;font-weight:bold;color:#464646;margin-right:15px;margin-bottom:10px;}
+.guide-left .activity .hd li:hover,.guide-left .activity .hd li.on{background:#b9003c;color:#fff;}
+.guide-left .activity .bd {border:1px solid #bcbcbc;padding:0 3px 28px 3px;}
+.guide-left .activity .bd li{padding:15px 12px 20px 27px;line-height:25px;border-bottom:1px dashed #999999;}
+.guide-left .activity .bd h4{font-size:18px;color:#2f2f2f;font-family:'Microsoft YaHei';}
+.guide-left .activity .bd h4 span{color:#b9003c;font-size:18px;}
+.guide-left .activity .bd .time{color:#4a4a4a;font-size:14px;}
+.guide-left .activity .bd .surplus{color:#b9003c;font-weight:bold;}
+.guide-left .activity .bd .address{color:#4a4a4a;font-size:14px;}
+
+.guide-left .activity .bd .right{width:85px;height:85px;border-radius:3px;color:#fff;font-size:38px;background:#b9003c;line-height:85px;text-align:center;}
+
+.guide-right li{margin-bottom:5px;}
+.guide-right li img{border:1px solid #d5d5d5;transition: all ease 0.5s;}
+.guide-right li:hover img{border:1px solid #b9003c;}

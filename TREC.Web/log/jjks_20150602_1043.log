@@ -1,0 +1,25 @@
+﻿2015-06-02 10:43:03,556 [7] TREC.Web.Global DEBUG - 家具快搜启动
+2015-06-02 10:43:12,544 [3] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://192.168.1.115:84/company/341/index.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.ArgumentException: 已添加了具有相同键的项。
+   在 TRECommon.SerializationHelper.DeSerialize(Type type, String s) 位置 F:\CodeNew\trunk\TRECommon\Xml\SerializationHelper.cs:行号 136
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandList() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 537
+   在 TREC.Entity.EnWebCompany.get_CompanyBrandInfo() 位置 F:\CodeNew\trunk\TREC.Entity\EnWebCompany.cs:行号 516
+   在 TREC.ECommerce.CompanyPageBase..ctor() 位置 F:\CodeNew\trunk\TREC.ECommerce\CompanyPageBase.cs:行号 71
+   在 TREC.Web.aspx.company.product..ctor() 位置 F:\CodeNew\trunk\TREC.Web\aspx\company\product.aspx.cs:行号 422
+   在 ASP.template_web_default_company_product_aspx..ctor() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_olhtca7p.17.cs:行号 0
+   在 __ASP.FastObjectFactory_app_web_olhtca7p.Create_ASP_template_web_default_company_product_aspx() 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\a1a14bdb\63861841\App_Web_olhtca7p.20.cs:行号 0
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-06-02 10:47:13,881 [7] TREC.Web.Global DEBUG - 家具快搜停止

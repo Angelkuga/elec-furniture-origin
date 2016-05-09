@@ -1,0 +1,190 @@
+﻿2015-04-30 11:06:22,763 [4] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-30 11:06:45,854 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/SetProductPrice.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 列名 'createmid' 无效。
+列名 'brandId' 无效。
+列名 'ShopId' 无效。
+列名 'shopid' 无效。
+列名 'createmid' 无效。
+列名 'MarketPrice' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TREC.Data.DbHelper.ExecuteNonQuery(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 391
+   在 TREC.Data.DbHelper.ExecuteNonQuery(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 311
+   在 TREC.Data.ProductDb.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String Userid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\ProductDb.cs:行号 48
+   在 TREC.ECommerce.ProductBll.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String userId) 位置 F:\CodeNew\trunk\TREC.ECommerce\ProductBll.cs:行号 30
+   在 TREC.Web.Suppler.ajax.MemberHandler.SetPriceDb(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 315
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 210
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-30 11:07:00,404 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/SetProductPrice.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 列名 'createmid' 无效。
+列名 'brandId' 无效。
+列名 'ShopId' 无效。
+列名 'shopid' 无效。
+列名 'createmid' 无效。
+列名 'MarketPrice' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TREC.Data.DbHelper.ExecuteNonQuery(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 391
+   在 TREC.Data.DbHelper.ExecuteNonQuery(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 311
+   在 TREC.Data.ProductDb.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String Userid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\ProductDb.cs:行号 48
+   在 TREC.ECommerce.ProductBll.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String userId) 位置 F:\CodeNew\trunk\TREC.ECommerce\ProductBll.cs:行号 30
+   在 TREC.Web.Suppler.ajax.MemberHandler.SetPriceDb(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 315
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 210
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-30 11:07:02,091 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/SetProductPrice.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 列名 'createmid' 无效。
+列名 'brandId' 无效。
+列名 'ShopId' 无效。
+列名 'shopid' 无效。
+列名 'createmid' 无效。
+列名 'MarketPrice' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TREC.Data.DbHelper.ExecuteNonQuery(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 391
+   在 TREC.Data.DbHelper.ExecuteNonQuery(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 311
+   在 TREC.Data.ProductDb.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String Userid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\ProductDb.cs:行号 48
+   在 TREC.ECommerce.ProductBll.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String userId) 位置 F:\CodeNew\trunk\TREC.ECommerce\ProductBll.cs:行号 30
+   在 TREC.Web.Suppler.ajax.MemberHandler.SetPriceDb(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 315
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 210
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-30 11:08:23,657 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/SetProductPrice.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 列名 'createmid' 无效。
+列名 'brandId' 无效。
+列名 'ShopId' 无效。
+列名 'shopid' 无效。
+列名 'createmid' 无效。
+列名 'MarketPrice' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TREC.Data.DbHelper.ExecuteNonQuery(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 391
+   在 TREC.Data.DbHelper.ExecuteNonQuery(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 311
+   在 TREC.Data.ProductDb.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String Userid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\ProductDb.cs:行号 48
+   在 TREC.ECommerce.ProductBll.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String userId) 位置 F:\CodeNew\trunk\TREC.ECommerce\ProductBll.cs:行号 30
+   在 TREC.Web.Suppler.ajax.MemberHandler.SetPriceDb(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 315
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 210
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-30 11:15:41,380 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/SetProductPrice.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 列名 'MarketPrice' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TREC.Data.DbHelper.ExecuteNonQuery(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 391
+   在 TREC.Data.DbHelper.ExecuteNonQuery(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 311
+   在 TREC.Data.ProductDb.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String Userid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\ProductDb.cs:行号 48
+   在 TREC.ECommerce.ProductBll.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String userId) 位置 F:\CodeNew\trunk\TREC.ECommerce\ProductBll.cs:行号 30
+   在 TREC.Web.Suppler.ajax.MemberHandler.SetPriceDb(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 315
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 210
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-30 11:24:50,517 [4] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/product/SetProductPrice.aspx
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Data.SqlClient.SqlException: 列名 'MarketPrice' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TREC.Data.DbHelper.ExecuteNonQuery(DbConnection connection, CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 391
+   在 TREC.Data.DbHelper.ExecuteNonQuery(CommandType commandType, String commandText, DbParameter[] commandParameters) 位置 F:\CodeNew\trunk\TREC.Data\DbHelper.cs:行号 311
+   在 TREC.Data.ProductDb.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String Userid) 位置 F:\CodeNew\trunk\TREC.Data\Provide\ProductDb.cs:行号 48
+   在 TREC.ECommerce.ProductBll.SetProductPrice(Int32 brandId, Int32 seriesId, Int32 shopId, Int32 pricetype, Int32 pp, String userId) 位置 F:\CodeNew\trunk\TREC.ECommerce\ProductBll.cs:行号 30
+   在 TREC.Web.Suppler.ajax.MemberHandler.SetPriceDb(HttpContext c) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 315
+   在 TREC.Web.Suppler.ajax.MemberHandler.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\suppler\ajax\MemberHandler.ashx.cs:行号 210
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-30 12:00:09,468 [4] TREC.Web.Global DEBUG - 家具快搜停止

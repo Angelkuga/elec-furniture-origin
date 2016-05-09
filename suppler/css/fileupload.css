@@ -1,0 +1,20 @@
+﻿._jsfileupload{ display:block; float:left; width:450px;}
+._fileTools{display:block; float:left;width:450px; margin:0px 0px 5px 0px;}
+._fileTools input{height:18px; line-height:18px;}
+/*路径显示控件*/
+._fileTools ._fileValue{float:left;}
+._fileTools .w380{width:250px;}
+/*file容器样式*/
+._jsfileupload a.files {margin:0 auto;float:left; width:64px;height:18px;overflow:hidden;display:block;border:1px solid #70b1cf;text-decoration:none; background:url(../images/upfilebg.gif) left top no-repeat;}
+/*file设为透明，并覆盖整个触发面*/
+._jsfileupload a.files input {margin-left:-240px;font-size:20px;cursor:pointer;filter:alpha(opacity=0);opacity:0;}
+
+/*取消点击时的虚线框*/
+._jsfileupload a.files,._jsfileuploada.files input{outline:none;/*ff*/hide-focus:expression(this.hideFocus=true);/*ie*/}
+/*上传文件时切换图片*/
+.filesbg2{background:url(../images/upfilebg2.gif) left top no-repeat!important;}
+
+._jsfileupload .uploading{float:left;background:url(../images/loading.gif) no-repeat left center;padding-left:18px;display:none;line-height:20px;height:20px;}
+._jsfileupload input.filelistinput{display:none;}
+
+._filepreview,._filedel{display:block; float:left; padding:4px;}

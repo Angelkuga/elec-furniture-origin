@@ -1,0 +1,47 @@
+﻿*{padding:0px; margin:0px; font-size:12px; color:#282828}
+li{ list-style-type:none; float:left;}
+
+input.webSearch{border:1px solid #AAAAAA; padding:5px 20px 4px 5px; background:url("../images/ico/fatcow_542.png") no-repeat right 4px; width:250px; padding-right:18px;}
+input.webfocus{border:1px solid #5897FB;}
+
+input.submit{
+	background:url(../images/button_submit.gif) repeat-x #e3f1fa;
+	border:1px solid #aed0ea;
+	padding:0px 10px;
+	height:24px;
+	line-height:24px;
+	margin:0px 4px;
+	color:#3d80b3;
+	cursor:pointer;
+}
+
+ table.conSearch{width:796px;height:200px;}
+        table.conSearch td.searchBox{height:60px;}
+        
+        table.conSearch a.btnCon{ background:url("../images/ico/ico-01.gif") no-repeat; width:91px; height:33px; float:right;}
+        table.conSearch a.btnCon:hover{ background:url("../images/ico/ico-02.gif") no-repeat;}
+        
+        
+        
+        table.searchList{border-top:1px solid #ccc; width:100%;}
+        table.searchList tr th.l,table.searchList tr td.l{border-right:1px solid #ccc; width:600px; text-align:left; }
+        table.searchList tr th{color:#fff; font-weight:bold; font-size:14px; background:#f60; height:30px;}
+        table.searchList tr td.c{height:300px;}
+        
+        
+        table.searchList ul.infolist{ height:300px; position:relative;}
+        
+        table.searchList ul.infolist li{width:180px; float:left; height:60px; margin:8px;}
+        table.searchList ul li a{ text-decoration:none; border:1px solid #fff; display:block;  padding:5px; width:170px; height:60px; float:left; position:absolute; background:#faf9f9;}
+        table.searchList ul li a img{border:1px solid #ccc; padding:1px; background:#ccc; float:left;}
+        table.searchList ul li a p{display:block; width:100%; height:20px; line-height:20px; overflow:hidden; float:left;}
+        table.searchList ul li a p.t{height:24px; line-height:24px; color:#f60; font-weight:bold;}
+        table.searchList ul li a p.d{display:none;}
+        table.searchList ul li a span{position:absolute; width:32px; height:16px; line-height:16px; right:0px; background:#f60; color:#fff; top:0px; text-align:center;}     
+        table.searchList ul li a:hover,table.searchList ul li a.cur{border:1px solid #f60; height:150px;  z-index:1000000;}
+        table.searchList ul li a:hover p.d{display:block;}
+        
+        table.searchList ul.sinfolist li{width:170px; height:60px; float:left; margin:8px;}
+        
+        table.searchList ul li.no a{ display:block; text-align:center; height:60px;}
+        table.searchList ul li.no a:hover{height:60px}

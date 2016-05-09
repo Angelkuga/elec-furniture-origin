@@ -1,0 +1,44 @@
+﻿2015-03-29 11:23:44,000 [3] TREC.Web.Global DEBUG - 家具快搜启动
+2015-03-29 11:29:25,317 [3] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Configuration.ConfigurationErrorsException: 在应用程序级别之外使用注册为 allowDefinition='MachineToApplication' 的节是错误的。如果在 IIS 中没有将虚拟目录配置为应用程序，则可能导致此错误。 (F:\CodeNew\trunk\TREC.pay\web.config line 21)
+   在 System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.Configuration.RuntimeConfig.GetSectionObject(String sectionName)
+   在 System.Web.Configuration.RuntimeConfig.GetSection(String sectionName, Type type, ResultsIndex index)
+   在 System.Web.Configuration.RuntimeConfig.get_Identity()
+   在 System.Web.HttpContext.get_ImpersonationToken()
+   在 System.Web.ClientImpersonationContext.Start(HttpContext context, Boolean throwOnError)
+   在 System.Web.HttpApplication.ThreadContext.SetImpersonationContext()
+   在 System.Web.HttpApplication.ThreadContext.Enter(Boolean setImpersonationContext)
+   在 System.Web.HttpApplication.OnThreadEnterPrivate(Boolean setImpersonationContext)
+   在 System.Web.HttpApplication.ApplicationStepManager.ResumeSteps(Exception error)
+2015-03-29 11:29:59,693 [8] TREC.Web.Global ERROR - 错误:
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+UserHostName:
+192.168.1.115
+UserHostAddress:
+192.168.1.115
+
+System.Configuration.ConfigurationErrorsException: 在应用程序级别之外使用注册为 allowDefinition='MachineToApplication' 的节是错误的。如果在 IIS 中没有将虚拟目录配置为应用程序，则可能导致此错误。 (F:\CodeNew\trunk\TREC.pay\web.config line 21)
+   在 System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.Configuration.RuntimeConfig.GetSectionObject(String sectionName)
+   在 System.Web.Configuration.RuntimeConfig.GetSection(String sectionName, Type type, ResultsIndex index)
+   在 System.Web.Configuration.RuntimeConfig.get_Identity()
+   在 System.Web.HttpContext.get_ImpersonationToken()
+   在 System.Web.ClientImpersonationContext.Start(HttpContext context, Boolean throwOnError)
+   在 System.Web.HttpApplication.ThreadContext.SetImpersonationContext()
+   在 System.Web.HttpApplication.ThreadContext.Enter(Boolean setImpersonationContext)
+   在 System.Web.HttpApplication.OnThreadEnterPrivate(Boolean setImpersonationContext)
+   在 System.Web.HttpApplication.ApplicationStepManager.ResumeSteps(Exception error)
+2015-03-29 11:48:34,177 [8] TREC.Web.Global DEBUG - 家具快搜停止

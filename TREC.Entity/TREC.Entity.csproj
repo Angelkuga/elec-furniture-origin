@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73FEC9EA-274A-4650-A312-8C4B7F19257C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TREC.Entity</RootNamespace>
+    <AssemblyName>TREC.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorSwatchModel.cs" />
+    <Compile Include="EnAdmin.cs" />
+    <Compile Include="EnAppProduct.cs" />
+    <Compile Include="EnArticleCategory.cs" />
+    <Compile Include="EnCustomer.cs" />
+    <Compile Include="EnCustomerActive.cs" />
+    <Compile Include="EnFilePath.cs" />
+    <Compile Include="EnLinks.cs" />
+    <Compile Include="EnMarketClique.cs" />
+    <Compile Include="EnMarketCliqueRef.cs" />
+    <Compile Include="EnMerchants.cs" />
+    <Compile Include="EnMerchantsMember.cs" />
+    <Compile Include="EnProductShopPrice.cs" />
+    <Compile Include="EnRole.cs" />
+    <Compile Include="EnArticle.cs" />
+    <Compile Include="EnSearchItem.cs" />
+    <Compile Include="EnSms.cs" />
+    <Compile Include="Enum\EnumActionType.cs" />
+    <Compile Include="Enum\EnumAdvertisementinType.cs" />
+    <Compile Include="Enum\EnumAttribute.cs" />
+    <Compile Include="Enum\EnumAuditStatus.cs" />
+    <Compile Include="Enum\EnumConfigByEnterprise.cs" />
+    <Compile Include="Enum\EnumConfigByProduct.cs" />
+    <Compile Include="Enum\EnumConfigModule.cs" />
+    <Compile Include="Enum\EnumGroupOrder.cs" />
+    <Compile Include="Enum\EnumLineStatus.cs" />
+    <Compile Include="Enum\EnumMemberType.cs" />
+    <Compile Include="Enum\EnumModuleType.cs" />
+    <Compile Include="Enum\EnumProductConType.cs" />
+    <Compile Include="Enum\EnumAppBrandModule.cs" />
+    <Compile Include="Enum\EnumAppBrandType.cs" />
+    <Compile Include="Enum\EnumPromotionStage.cs" />
+    <Compile Include="Enum\EnumPromotionType.cs" />
+    <Compile Include="Enum\EnumTemplate.cs" />
+    <Compile Include="EnUrls.cs" />
+    <Compile Include="EnWebAdvertising.cs" />
+    <Compile Include="EnWebAdvertisingcategory.cs" />
+    <Compile Include="EnWebBrand.cs" />
+    <Compile Include="EnProduct.cs" />
+    <Compile Include="EnProductAttribute.cs" />
+    <Compile Include="EnProductCategory.cs" />
+    <Compile Include="EnWebCompany.cs" />
+    <Compile Include="EnWebMerchants.cs" />
+    <Compile Include="EnWebProduct.cs" />
+    <Compile Include="EnWebPromotionInfoList.cs" />
+    <Compile Include="EnWebShop.cs" />
+    <Compile Include="EnWebShopBrand.cs" />
+    <Compile Include="EnWebVWAdvertising.cs" />
+    <Compile Include="EnXmlProduct.cs" />
+    <Compile Include="EnGroupOrder.cs" />
+    <Compile Include="EnGroupOrderPay.cs" />
+    <Compile Include="EnGroupOrderProduct.cs" />
+    <Compile Include="EnPayMent.cs" />
+    <Compile Include="GroupProductModel.cs" />
+    <Compile Include="GroupProductProperty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EnAction.cs" />
+    <Compile Include="EnModule.cs" />
+    <Compile Include="EnModuleLink.cs" />
+    <Compile Include="TableName.cs" />
+    <Compile Include="EnRoleActionDef.cs" />
+    <Compile Include="EnAdvertisementCategory.cs" />
+    <Compile Include="EnMember.cs" />
+    <Compile Include="EnCompany.cs" />
+    <Compile Include="EnMarket.cs" />
+    <Compile Include="EnMemberGroup.cs" />
+    <Compile Include="EnCompanyGroup.cs" />
+    <Compile Include="EnShopGroup.cs" />
+    <Compile Include="EnMarketGroup.cs" />
+    <Compile Include="EnDealerGroup.cs" />
+    <Compile Include="EnArea.cs" />
+    <Compile Include="EnConfig.cs" />
+    <Compile Include="EnMenu.cs" />
+    <Compile Include="EnConfigType.cs" />
+    <Compile Include="EnBrand.cs" />
+    <Compile Include="EnLog.cs" />
+    <Compile Include="EnBrands.cs" />
+    <Compile Include="EnShopBrand.cs" />
+    <Compile Include="EnPCategoryPTyp.cs" />
+    <Compile Include="EnProductCon.cs" />
+    <Compile Include="EnAppBrand.cs" />
+    <Compile Include="EnMarketStorey.cs" />
+    <Compile Include="EnMarketStoreyShop.cs" />
+    <Compile Include="CacheKey.cs" />
+    <Compile Include="EnWebCompanyBrand.cs" />
+    <Compile Include="EnWebMarket.cs" />
+    <Compile Include="EnWebMarketStoreyShop.cs" />
+    <Compile Include="EnAggregation.cs" />
+    <Compile Include="EnAggregationType.cs" />
+    <Compile Include="EnPromotion.cs" />
+    <Compile Include="EnPromotionDef.cs" />
+    <Compile Include="EnWebAggregation.cs" />
+    <Compile Include="EnWebPromotion.cs" />
+    <Compile Include="EnPromotionStage.cs" />
+    <Compile Include="EnAllBrand.cs" />
+    <Compile Include="EnPromotionAppBrand.cs" />
+    <Compile Include="EnAppBrandCustomer.cs" />
+    <Compile Include="EnMsgCollection.cs" />
+    <Compile Include="t_colorswatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnAdvertisement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnDealer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnShop.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TREC.Config\TREC.Config.csproj">
+      <Project>{1861302F-FF9C-47C4-BF74-E2B97972CD86}</Project>
+      <Name>TREC.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRECommon\TRECommon.csproj">
+      <Project>{8BCDF65D-3BF5-41D9-BD9F-01635A768129}</Project>
+      <Name>TRECommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

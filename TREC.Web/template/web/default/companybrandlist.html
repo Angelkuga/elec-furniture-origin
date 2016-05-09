@@ -1,0 +1,659 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>�Ҿ߿���-Ʒ��</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7;IE=9;IE=8">
+ 
+<link rel="icon" href="/jiajukuaiso.ico"  type="image/x-icon" />
+<link rel="shortcut icon" href="/jiajukuaiso.ico"  type="image/x-icon" />
+
+    <link href="../../../resource/content/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="../../../resource/content/css/css.css" rel="stylesheet" type="text/css" />
+    <link href="../../../resource/content/css/brand/brand.css" rel="stylesheet" type="text/css" />
+<script src="../../../resource/content/js/core.js" type="text/javascript"></script>
+    <script src="../../../resource/content/libs/slides.min.jquery.js" type="text/javascript"></script>
+    
+ <script src="../../../resource/content/js/brand.js" type="text/javascript"></script>
+ <script src="../../../resource/page/page.js" type="text/javascript"></script>
+    <link href="../../../resource/page/page.css" rel="stylesheet" type="text/css" />
+    <style>
+        .tab_con
+        {
+            padding: 10px;
+            display: none;
+            overflow: hidden;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form name="Form1" method="post" action="companybrandlisth.aspx" id="Form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzY5NDg0NDU0ZGQOKqmYyQAzdf2PcSe9evUc93pFSQ==" />
+</div>
+
+ 
+<link href="../../../../resource/content/css/core.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/resource/script/oms_autocomplate.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var url = document.URL.toLowerCase();
+        $("#searchKey").oms_autocomplate({ url: "/ajax/search.ashx", inputWidth: 339, inputHeight: 32, paramTypeSelector: "#searchTypeList>a.Searcha" });
+        $('#kslkcon>.inner,#ksbrandcon>inner').html('���ڼ���������...');
+        GetMarket('A,B,C,D', null); //��ʼ�����
+        GetBrand('A,B,C', null); //��ʼ��Ʒ�� 
+        //������ ������Ϊ��Ʒ����
+        $("#topSearchBtn").click(function () {
+            //window.top.location = "" + "/search.aspx?type=product&key=" + encodeURIComponent($("#searchKey").val().replace(/\-/g, "abc111"));
+
+
+            window.location.href = "productlist.aspx?k=" + escape($("#searchKey").val());
+
+        });
+    });
+    //ajax��ȡ����˵�����
+    function GetMarket(myletter, obj) {
+        var myclass = '';
+        if (obj != null) {
+            myclass = $(obj).attr('class');
+            if (myclass == undefined) {
+                myclass = '';
+            }
+        }
+        if (myclass == '') {
+            if (obj != null) {
+                $('#marketmenu .on').removeClass('on');
+                $(obj).addClass('on');
+            }
+            $.ajax({
+                url: '/ajax/ajaxproduct.ashx',
+                data: 'type=getmarketbyletter&v=' + myletter.toString(),
+                dataType: 'text',
+                success: function (data) {
+                    if (data != null) {
+                        if (data == '') {
+                            $('#kslkcon>.inner').html('��Ǹ�����������');
+                        } else {
+                            $('#kslkcon>.inner').html(data.toString());
+                        }
+                    }
+                }
+            });
+        }
+    }
+    //ajax��ȡƷ�Ʋ˵�����
+    function GetBrand(myletter, obj) {
+
+        var myclass = '';
+        if (obj != null) {
+            myclass = $(obj).attr('class');
+            if (myclass == undefined) {
+                myclass = '';
+            }
+        }
+        if (myclass == '') {
+            if (obj != null) {
+                $('#brandmenu .on').removeClass('on');
+                $(obj).addClass('on');
+            }
+            $.ajax({
+                url: '/ajax/ajaxproduct.ashx',
+                data: 'type=getbrandbyletter&v=' + myletter.toString(),
+                dataType: 'text',
+                success: function (data) {
+                    if (data != null) {
+                        if (data == '') {
+                            $('#ksbrandcon>.inner').html('��Ǹ������Ʒ�ƣ�');
+                        } else {
+                            $('#ksbrandcon>.inner').html(data.toString());
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    function addToFavorite() {
+        var a = "http://www.jiajuks.com",
+b = "�Ҿ߿���jiajuks.com-����Ҿ�";
+        document.all ? window.external.AddFavorite(a, b) : window.sidebar && window.sidebar.addPanel ? window.sidebar.addPanel(b, a, "") : alert("\u5bf9\u4e0d\u8d77\uff0c\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u6b64\u64cd\u4f5c!\n\u8bf7\u60a8\u4f7f\u7528\u83dc\u5355\u680f\u6216Ctrl+D\u6536\u85cf\u672c\u7ad9\u3002");
+    }
+    
+</script>
+<!--ͷ���ļ���ʼ-->
+<style>
+    .nav-box .pull-down li dd .inner-img img
+    {
+        float: left;
+        width: 110px;
+        height: 36px;
+        margin: 3px;
+    }
+</style>
+<div class="header">
+    <div class="hd w">
+        <ul class="clearfix fl left">
+            <li class="li1">������ȫ�ļҾ߹�����Ѷ</li>
+            <li class="li2"><span><a href='/company-brand/list.aspx' style='color: Red' target="_blank">
+                110</a></span>��Ʒ��</li>
+            <li class="li3"><span><a href='/product/list.aspx' style='color: Red' target="_blank">
+                7251</a></span>����Ʒ</li>
+            <li class="li4"><a href="javascript:addToFavorite();">�ղ�</a></li>
+            <li class="li5"><a href="#">��ע</a></li>
+            <li class="li6"><a href="#">վ�㵼��</a></li>
+            <li class="li7"><a href="#">�ֻ��Ҿ߿���</a></li>
+        </ul>
+        <ul class="fr clearfix right" id="ullogin">
+            <li>��ӭ�������Ҿ߿��� &nbsp;|&nbsp;</li>
+            
+                <li><a href="/loginuser.aspx">��¼</a> &nbsp;|&nbsp; </li>
+                <li><a href="/reguser.aspx">ע��</a> </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="header-box">
+    <div class="w clearfix">
+        <div class="logo fl" style='position: relative;'>
+            <a href='/' style="position: absolute; top: 5px; left: 5px; width: 140px; height: 45px;
+                z-index: 2px;"></a>
+            <div class="citys">
+                <a class="a0" href="#">�Ϻ�</a>
+                <ul class="clearfix">
+                    <li><a href='##'>ȫ��</a></li>
+                    <li>�Ϻ�</li>
+                    <li>����</li>
+                    <li>����</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl search">
+            <div class="logo-s-t" id="searchTypeList" style="display: none;">
+                <a id="T_product" title="product" class="Searcha">
+                    �Ѳ�Ʒ</a> <a id="T_brand" title="brand" class="">
+                        ��Ʒ��</a> <a id="T_market" title="market" class="">
+                            �����</a>
+            </div>
+            <input type="text" class="text" name="searchKey" id="searchKey" placeholder="���ǼҾ�ʢ�ݣ�1Ԫ�ı���Ҿߣ��������ʡ4500��" /><input
+                class="button" type="button" name="topSearchBtn" id="topSearchBtn" value="����" />
+            <div class="hot" style="border: 0px solid #cacaca;">
+                <a class="a-on" href="#">48Сʱ����</a><a href="#">��</a><a href="#">����</a><a href="#"></a><a
+                    class="a-on" href="#">Simmons</a><a href="#">ת��ɳ��</a><a href="#">�ؼۼ�����</a><a href="#">1.8�׽��ڴ���</a></div>
+        </div>
+        <div class="right fr">
+            <a href="http://www.jiajuks.com/product/17781/info.aspx">
+                <img src="../../../resource/content/img/common/j1.png" alt="" /></a>
+        </div>
+    </div>
+</div>
+<!--ͷ���ļ�����-->
+<!--�˵���ʼ-->
+<div class="nav">
+    <div class="nav-box w clearfix">
+        <div class="main-nav fl" id="j_navTab">
+            <a href="#" class="a0">ȫ������</a>
+            <ul class="pull-down hide">
+                <li class="li1"><a href="/market/list.aspx" class="nav-item">�Ҿ����</a> <a href="#"
+                    class="trim"></a>
+                    <dl class="hide">
+                        <dt id="marketmenu"><span class="on" onmouseover="GetMarket('A,B,C,D',this);">ABCD</span>
+                            <span onmouseover="GetMarket('E,F,G,H',this);">EFGH</span> <span onmouseover="GetMarket('I,J,K,L',this);">
+                                IJKL</span> <span onmouseover="GetMarket('M,N,O,P',this);">MNOS</span> <span onmouseover="GetMarket('Q,R,S,T,U',this);">
+                                    TUVW</span> <span onmouseover="GetMarket('V,W,X,Y,Z',this);">XYZ</span>
+                        </dt>
+                        <dd>
+                            <div class="items" id="kslkcon">
+                                <div class="inner"  style=' min-height:110px;'>
+                                </div>
+                                <div class="inner-img">
+                                    <a href="http://www.jiajuks.com/market/14/index.aspx">
+                                        <img style="width: 120px; height: 45px;" src="http://www.jiajuks.com/upload/market/logo/14/20130608175750105503.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/8/20130608144234216136.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/41/20130608174628497316.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/43/20130608145015418676.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/45/20130608145353002055.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/46/20130608150014577812.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/52/20130608150641921687.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/market/list.aspx">
+                                        <img src="http://www.jiajuks.com/upload/market/logo/56/20130608174958084551.jpg" /></a>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="li2"><a href="/company-brand/list.aspx" class="nav-item">�Ҿ�Ʒ��</a> <a href="#"
+                    class="trim"></a>
+                    <dl class="hide">
+                        <dt id="brandmenu"><span class="on" onmouseover="GetBrand('A,B,C',this);">ABC</span>
+                            <span onmouseover="GetBrand('D,E,F,G',this);">DEFG</span> <span onmouseover="GetBrand('H,I,J,K',this);">
+                                HIJK</span> <span onmouseover="GetBrand('L,M,N,O',this);">LMNO</span> <span onmouseover="GetBrand('P,Q,R,S,T',this);">
+                                    PQRST</span> <span onmouseover="GetBrand('U,V,W,X,Y,Z',this);">UVWXYZ</span>
+                        </dt>
+                        <dd>
+                            <div class="items" id="ksbrandcon">
+                                <div class="inner"  style=' min-height:110px;'>
+                                </div>
+                                <div class="inner-img">
+                                    <a href="http://www.jiajuks.com/company/136/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/340/20130607172438841210.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/84/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/26/20130607163039796565.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/84/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/27/20130607163926744345.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/84/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/28/20130607163837507808.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/285/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/479/20130607170959064141.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/84/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/454/20130607162434373504.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/197/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/401/20130607170000134017.jpg" /></a>
+                                    <a href="http://www.jiajuks.com/company/202/index.aspx">
+                                        <img src="http://www.jiajuks.com/upload/brand/logo/318/20130607164839988311.jpg" /></a>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+               <li class='li3'><a href='/productlist.aspx?did=7' class='nav-item'>���ҼҾ�</a> <a href='#' class='trim'></a>    <dl class='hide'  style=' min-height:300px'>	<dd>	    <div class='item'>		<div class='inner' style=' min-height:145px;' >		    <table border='0'>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist2.aspx?did=7&ty=%e5%8d%a7%e5%ae%a4%e5%a5%97%e7%bb%84%e5%90%88'  style='color: #9f1121'>���������</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				&nbsp;			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=8&did=7' style='color: #9f1121'>��</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=8&did=7&tid=106'>���ߴ�(��1.8m)</a> 				<a href='/productlist.aspx?xid=8&did=7&tid=57'>�ĳߴ�(��1.2m)</a> 				<a href='/productlist.aspx?xid=8&did=7&tid=58'>��ߴ�(��1.5m)</a> 				<a href='/productlist.aspx?xid=8&did=7&tid=59'>�Ӵ�</a> 				<a href='/productlist.aspx?xid=8&did=7&tid=60'>�۵���</a> 				<a href='/productlist.aspx?xid=8&did=7&tid=61'>���´�</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=14&did=7' style='color: #9f1121'>�¹�</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=14&did=7&tid=74'>�����¹�</a> 				<a href='/productlist.aspx?xid=14&did=7&tid=75'>�����¹�</a> 				<a href='/productlist.aspx?xid=14&did=7&tid=76'>�����¹�</a> 				<a href='/productlist.aspx?xid=14&did=7&tid=77'>�����¹�</a> 				<a href='/productlist.aspx?xid=14&did=7&tid=127'>����¹�</a> 				<a href='/productlist.aspx?xid=14&did=7&tid=91'>�����¹�</a> 				<a href='/productlist.aspx?xid=14&did=7&tid=92'>�����¹�</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=15&did=7' style='color: #9f1121'>����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=15&did=7&tid=85'>������</a> 				<a href='/productlist.aspx?xid=15&did=7&tid=86'>�Ķ���</a> 				<a href='/productlist.aspx?xid=15&did=7&tid=87'>�嶷��</a> 				<a href='/productlist.aspx?xid=15&did=7&tid=88'>������</a> 				<a href='/productlist.aspx?xid=15&did=7&tid=89'>�߶���</a> 				<a href='/productlist.aspx?xid=15&did=7&tid=120'>������</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=16&did=7' style='color: #9f1121'>��ױ̨/��</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=16&did=7&tid=124'>��ױ̨</a> 				<a href='/productlist.aspx?xid=16&did=7&tid=125'>��ױ��</a> 				<a href='/productlist.aspx?xid=16&did=7&tid=129'>��ױ̨/��</a> 				<a href='/productlist.aspx?xid=16&did=7&tid=130'>�����ױ̨/��</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=21&did=7' style='color: #9f1121'>����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=21&did=7&tid=110'>��Ӳ</a> 				<a href='/productlist.aspx?xid=21&did=7&tid=111'>����</a> 				<a href='/productlist.aspx?xid=21&did=7&tid=112'>����</a> 				<a href='/productlist.aspx?xid=21&did=7&tid=113'>����</a> 			    </td>			</tr>		    </table>		</div>		<div class='inner-img'>		    <a href='/company/210/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/414/20150121162613926433.png' /></a>		    <a href='/company/136/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/340/20130607172438841210.jpg' /></a>		    <a href='/company/121/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/61/20130608140415624904.jpg' /></a>		    <a href='/company/198/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/322/20130607160115855265.jpg' /></a>		    <a href='/company/162/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/365/20130608142529164872.jpg' /></a>		    <a href='/company/275/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/470/20130608140035934460.jpg' /></a>		    <a href='/company/196/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/400/20130607173842112509.jpg' /></a>		</div>	    </div>	</dd>    </dl></li><li class='li4'><a href='/productlist.aspx?did=9' class='nav-item'>�����Ҿ�</a> <a href='#' class='trim'></a>    <dl class='hide'  style=' min-height:300px'>	<dd>	    <div class='item'>		<div class='inner' style=' min-height:145px;' >		    <table border='0'>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist2.aspx?did=9&ty=%e5%ae%a2%e5%8e%85%e5%a5%97%e7%bb%84%e5%90%88'  style='color: #9f1121'>���������</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				&nbsp;			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=25&did=9' style='color: #9f1121'>ɳ��</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=25&did=9&tid=62'>ɳ����</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=69'>����ɳ��</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=70'>����ɳ��</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=71'>����ɳ��</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=72'>���ɳ��</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=73'>����ɳ��</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=121'>����ɳ��</a> 				<a href='/productlist.aspx?xid=25&did=9&tid=114'>ת��ɳ��</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=26&did=9' style='color: #9f1121'>�輸</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=26&did=9&tid=105'>��Բ�輸</a> 				<a href='/productlist.aspx?xid=26&did=9&tid=16'>�輸</a> 				<a href='/productlist.aspx?xid=26&did=9&tid=83'>���輸</a> 				<a href='/productlist.aspx?xid=26&did=9&tid=84'>Բ�輸</a> 				<a href='/productlist.aspx?xid=26&did=9&tid=94'>���輸</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=27&did=9' style='color: #9f1121'>�Ǽ�</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=27&did=9&tid=95'>���Ǽ�</a> 				<a href='/productlist.aspx?xid=27&did=9&tid=96'>Բ�Ǽ�</a> 				<a href='/productlist.aspx?xid=27&did=9&tid=97'>���Ǽ�</a> 				<a href='/productlist.aspx?xid=27&did=9&tid=17'>�Ǽ�</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=30&did=9' style='color: #9f1121'>�ƹ�</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=30&did=9&tid=115'>���žƹ�</a> 				<a href='/productlist.aspx?xid=30&did=9&tid=116'>���žƹ�</a> 				<a href='/productlist.aspx?xid=30&did=9&tid=117'>���žƹ�</a> 				<a href='/productlist.aspx?xid=30&did=9&tid=118'>���žƹ�</a> 				<a href='/productlist.aspx?xid=30&did=9&tid=48'>�ƹ�</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=31&did=9' style='color: #9f1121'>������</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=31&did=9&tid=19'>������</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=34&did=9' style='color: #9f1121'>����/��</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=34&did=9&tid=126'>����</a> 				<a href='/productlist.aspx?xid=34&did=9&tid=22'>����/��</a> 			    </td>			</tr>		    </table>		</div>		<div class='inner-img'>		    <a href='/company/210/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/414/20150121162613926433.png' /></a>		    <a href='/company/136/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/340/20130607172438841210.jpg' /></a>		    <a href='/company/121/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/61/20130608140415624904.jpg' /></a>		    <a href='/company/198/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/322/20130607160115855265.jpg' /></a>		    <a href='/company/162/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/365/20130608142529164872.jpg' /></a>		    <a href='/company/275/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/470/20130608140035934460.jpg' /></a>		    <a href='/company/196/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/400/20130607173842112509.jpg' /></a>		</div>	    </div>	</dd>    </dl></li><li class='li5'><a href='/productlist.aspx?did=10' class='nav-item'>�����Ҿ�</a> <a href='#' class='trim'></a>    <dl class='hide'  style=' min-height:300px'>	<dd>	    <div class='item'>		<div class='inner' style=' min-height:145px;' >		    <table border='0'>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist2.aspx?did=10&ty=%e9%a4%90%e5%8e%85%e5%a5%97%e7%bb%84%e5%90%88'  style='color: #9f1121'>���������</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				&nbsp;			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=40&did=10' style='color: #9f1121'>����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=40&did=10&tid=99'>������</a> 				<a href='/productlist.aspx?xid=40&did=10&tid=100'>Բ����</a> 				<a href='/productlist.aspx?xid=40&did=10&tid=101'>������</a> 				<a href='/productlist.aspx?xid=40&did=10&tid=102'>��Բ����</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=41&did=10' style='color: #9f1121'>����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=41&did=10&tid=67'>������</a> 				<a href='/productlist.aspx?xid=41&did=10&tid=68'>�޷�����</a> 				<a href='/productlist.aspx?xid=41&did=10&tid=27'>����</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=42&did=10' style='color: #9f1121'>�ͱ߹�/��</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=42&did=10&tid=28'>�ͱ߹�/��</a> 				<a href='/productlist.aspx?xid=42&did=10&tid=123'>�ͱ߹�</a> 			    </td>			</tr>		    </table>		</div>		<div class='inner-img'>		    <a href='/company/210/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/414/20150121162613926433.png' /></a>		    <a href='/company/136/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/340/20130607172438841210.jpg' /></a>		    <a href='/company/121/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/61/20130608140415624904.jpg' /></a>		    <a href='/company/198/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/322/20130607160115855265.jpg' /></a>		    <a href='/company/162/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/365/20130608142529164872.jpg' /></a>		    <a href='/company/275/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/470/20130608140035934460.jpg' /></a>		    <a href='/company/196/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/400/20130607173842112509.jpg' /></a>		</div>	    </div>	</dd>    </dl></li><li class='li6'><a href='/productlist.aspx?did=11' class='nav-item'>�鷿�Ҿ�</a> <a href='#' class='trim'></a>    <dl class='hide'  style=' min-height:300px'>	<dd>	    <div class='item'>		<div class='inner' style=' min-height:145px;' >		    <table border='0'>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist2.aspx?did=11&ty=%e4%b9%a6%e6%88%bf%e5%a5%97%e7%bb%84%e5%90%88'  style='color: #9f1121'>�鷿�����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				&nbsp;			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=50&did=11' style='color: #9f1121'>���</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=50&did=11&tid=93'>�������</a> 				<a href='/productlist.aspx?xid=50&did=11&tid=98'>�������</a> 				<a href='/productlist.aspx?xid=50&did=11&tid=78'>�������</a> 				<a href='/productlist.aspx?xid=50&did=11&tid=79'>�������</a> 				<a href='/productlist.aspx?xid=50&did=11&tid=80'>�������</a> 				<a href='/productlist.aspx?xid=50&did=11&tid=81'>�������</a> 				<a href='/productlist.aspx?xid=50&did=11&tid=82'>������</a> 			    </td>			</tr>		    </table>		</div>		<div class='inner-img'>		    <a href='/company/210/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/414/20150121162613926433.png' /></a>		    <a href='/company/136/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/340/20130607172438841210.jpg' /></a>		    <a href='/company/121/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/61/20130608140415624904.jpg' /></a>		    <a href='/company/198/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/322/20130607160115855265.jpg' /></a>		    <a href='/company/162/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/365/20130608142529164872.jpg' /></a>		    <a href='/company/275/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/470/20130608140035934460.jpg' /></a>		    <a href='/company/196/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/400/20130607173842112509.jpg' /></a>		</div>	    </div>	</dd>    </dl></li><li class='li7'><a href='/productlist.aspx?did=12' class='nav-item'>��ͯ�Ҿ�</a> <a href='#' class='trim'></a>    <dl class='hide'  style=' min-height:300px'>	<dd>	    <div class='item'>		<div class='inner' style=' min-height:145px;' >		    <table border='0'>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist2.aspx?did=12&ty=%e5%84%bf%e7%ab%a5%e5%a5%97%e7%bb%84%e5%90%88'  style='color: #9f1121'>��ͯ�����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				&nbsp;			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=55&did=12' style='color: #9f1121'>��ͯ��</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=55&did=12&tid=5'>Ӥ����</a> 				<a href='/productlist.aspx?xid=55&did=12&tid=39'>��ͯ��</a> 				<a href='/productlist.aspx?xid=55&did=12&tid=61'>���´�</a> 				<a href='/productlist.aspx?xid=55&did=12&tid=57'>�ĳߴ�(��1.2m)</a> 			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=58&did=12' style='color: #9f1121'>��ͯ�¹�</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				<a href='/productlist.aspx?xid=58&did=12&tid=6'>�¹�</a> 				<a href='/productlist.aspx?xid=58&did=12&tid=42'>��ͯ�¹�</a> 				<a href='/productlist.aspx?xid=58&did=12&tid=77'>�����¹�</a> 				<a href='/productlist.aspx?xid=58&did=12&tid=76'>�����¹�</a> 			    </td>			</tr>		    </table>		</div>		<div class='inner-img'>		    <a href='/company/210/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/414/20150121162613926433.png' /></a>		    <a href='/company/136/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/340/20130607172438841210.jpg' /></a>		    <a href='/company/121/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/61/20130608140415624904.jpg' /></a>		    <a href='/company/198/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/322/20130607160115855265.jpg' /></a>		    <a href='/company/162/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/365/20130608142529164872.jpg' /></a>		    <a href='/company/275/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/470/20130608140035934460.jpg' /></a>		    <a href='/company/196/index.aspx'><img style='width: 120px; height: 45px;' src='/upload/brand/logo/400/20130607173842112509.jpg' /></a>		</div>	    </div>	</dd>    </dl></li><li class='li8'><a href='/productlist.aspx?did=69' class='nav-item'>����Ҿ�</a> <a href='#' class='trim'></a>    <dl class='hide'  style=' min-height:300px'>	<dd>	    <div class='item'>		<div class='inner' style=' min-height:145px;' >		    <table border='0'>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist2.aspx?did=69&ty=%e6%88%b7%e5%a4%96%e5%a5%97%e7%bb%84%e5%90%88'  style='color: #9f1121'>���������</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>				&nbsp;			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=70&did=69' style='color: #9f1121'>������</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=71&did=69' style='color: #9f1121'>����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>			    </td>			</tr>		    </table>		    <table>			<tr>			    <td style='width: 50px' align='right'>				<a href='/productlist.aspx?xid=72&did=69' style='color: #9f1121'>����</a>			    </td>			    <td style='font-size: 12px; font-family: ����;'>			    </td>			</tr>		    </table>		</div>		<div class='inner-img'>		</div>	    </div>	</dd>    </dl></li>
+            </ul>
+        </div>
+        <ul class="nav-title fl" id="j_menuTab">
+            <li  id='linav_1'><a href="/index.aspx" class="nav-item">�� ҳ</a> </li>
+            <li  id='linav_2' class="nav-brand"><a href="/companybrandlist.aspx"
+                class="nav-item">Ʒ ��</a>
+                <dl>
+                </dl>
+            </li>
+            <li  id='linav_3'><a href="/marketlist.aspx" class="nav-item"
+                style="">
+                ���</a> </li>
+            <li  id='linav_4'><a href="#" class="nav-item">���ʹ�</a></li>
+        </ul>
+        <ul class="fr nav-title-right">
+            <li  id='linav_5'><a href="/productlisttbb.aspx">�Ա���</a></li>
+            <li  id='linav_6'><a href="#">�����Ź�</a></li>
+            <li  id='linav_7'><a href="/guide.aspx">�����</a></li>
+            <li  id='linav_8'><a href="/news/list.aspx">��ҵ��Ѷ</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $("#linav_").css("background-color", "#74072b");
+    $("#ullogin").load("../../../loginMsg.aspx");
+</script>
+<!--�˵�����-->
+
+    <div class="brand-mod w clearfix">
+        <div class="cont-l fl">
+            <div class="tab" id="j_brandTab" style="width: 950px;">
+                <div class="hd clearfix">
+                    <ul class="fl">
+                        <li><a class='a' href='###'>A  </a><div data-alpha='A'><ul class='clearfix'> <li><a href='company/83/index.aspx'>���� </a></li> <li><a href='company/87/index.aspx'>���Ͽ� </a></li> <li><a href='company/89/index.aspx'>���� </a></li> <li><a href='company/159/index.aspx'>���ƶ� </a></li> <li><a href='company/197/index.aspx'>�������ľ </a></li> <li><a href='company/220/index.aspx'>������ </a></li> <li><a href='company/277/index.aspx'>��һ�� </a></li> <li><a href='company/279/index.aspx'>����˾ </a></li> <li><a href='company/283/index.aspx'>���� </a></li> <li><a href='company/285/index.aspx'>��ܽ�� </a></li> <li><a href='company/305/index.aspx'>��ɯ���� </a></li></ul></div></li><li><a class='a' href='###'>B  </a><div data-alpha='B'><ul class='clearfix'> <li><a href='company/97/index.aspx'>���ʼ�˽ </a></li> <li><a href='company/118/index.aspx'>������ </a></li> <li><a href='company/120/index.aspx'>���� </a></li> <li><a href='company/210/index.aspx'>��ŷE�� </a></li> <li><a href='company/275/index.aspx'>������ </a></li></ul></div></li><li><a class='a' href='###'>C  </a><div data-alpha='C'><ul class='clearfix'> <li><a href='company/94/index.aspx'>COMO </a></li> <li><a href='company/211/index.aspx'>�Ϸ� </a></li> <li><a href='company/304/index.aspx'>�����˽ </a></li></ul></div></li><li><a class='a' href='###'>D  </a><div data-alpha='D'><ul class='clearfix'> <li><a href='company/84/index.aspx'>���� </a></li> <li><a href='company/203/index.aspx'>������ </a></li> <li><a href='company/231/index.aspx'>��緶 </a></li> <li><a href='company/273/index.aspx'>�����Ҿ� </a></li> <li><a href='company/300/index.aspx'>DiamondSofa </a></li> <li><a href='company/302/index.aspx'>���� </a></li> <li><a href='company/305/index.aspx'>�󻨽� </a></li> <li><a href='company/344/index.aspx'>���з��� </a></li> <li><a href='company/77/index.aspx'>���з��� </a></li></ul></div></li> <li><a class='a' href='###'>E </a></li><li><a class='a' href='###'>F  </a><div data-alpha='F'><ul class='clearfix'> <li><a href='company/160/index.aspx'>ܽ��˹�� </a></li> <li><a href='company/195/index.aspx'>������ </a></li> <li><a href='company/281/index.aspx'>������� </a></li> <li><a href='company/284/index.aspx'>���� </a></li> <li><a href='company/298/index.aspx'>���ñ� </a></li> <li><a href='company/299/index.aspx'>���� </a></li></ul></div></li> <li><a class='a' href='###'>G </a></li><li><a class='a' href='###'>H  </a><div data-alpha='H'><ul class='clearfix'> <li><a href='company/80/index.aspx'>����E�� </a></li> <li><a href='company/86/index.aspx'>��ΰ </a></li> <li><a href='company/88/index.aspx'>���� </a></li> <li><a href='company/95/index.aspx'>���� </a></li> <li><a href='company/177/index.aspx'>���� </a></li> <li><a href='company/208/index.aspx'>��ͥ�� </a></li> <li><a href='company/227/index.aspx'>�����ʼ� </a></li> <li><a href='company/290/index.aspx'>�ʳ���˽ </a></li> <li><a href='company/300/index.aspx'>�������� </a></li> <li><a href='company/301/index.aspx'>��ƻ�� </a></li></ul></div></li> <li><a class='a' href='###'>I </a></li><li><a class='a' href='###'>J  </a><div data-alpha='J'><ul class='clearfix'> <li><a href='company/98/index.aspx'>���ݸ� </a></li> <li><a href='company/102/index.aspx'>�� </a></li> <li><a href='company/121/index.aspx'>���ż� </a></li> <li><a href='company/204/index.aspx'>��ŷ֮�� </a></li> <li><a href='company/221/index.aspx'>���� </a></li> <li><a href='company/230/index.aspx'>�ܶ����� </a></li> <li><a href='company/303/index.aspx'>���� </a></li></ul></div></li><li><a class='a' href='###'>K  </a><div data-alpha='K'><ul class='clearfix'> <li><a href='company/110/index.aspx'>������ </a></li> <li><a href='company/111/index.aspx'>������ </a></li> <li><a href='company/162/index.aspx'>������԰ </a></li> <li><a href='company/163/index.aspx'>����� </a></li> <li><a href='company/201/index.aspx'>KBH </a></li> <li><a href='company/84/index.aspx'>��ģ100 </a></li></ul></div></li><li><a class='a' href='###'>L  </a><div data-alpha='L'><ul class='clearfix'> <li><a href='company/100/index.aspx'>������ </a></li> <li><a href='company/117/index.aspx'>����˹�� </a></li> <li><a href='company/164/index.aspx'>¶���� </a></li> <li><a href='company/174/index.aspx'>���ɿ�˹ </a></li> <li><a href='company/178/index.aspx'>��ľ�� </a></li> <li><a href='company/181/index.aspx'>·��˹ </a></li> <li><a href='company/271/index.aspx'>��Դ���� </a></li> <li><a href='company/280/index.aspx'>����ɳ�� </a></li> <li><a href='company/288/index.aspx'>���� </a></li> <li><a href='company/296/index.aspx'>���� </a></li> <li><a href='company/345/index.aspx'>��˹���� </a></li></ul></div></li><li><a class='a' href='###'>M  </a><div data-alpha='M'><ul class='clearfix'> <li><a href='company/93/index.aspx'>���� </a></li> <li><a href='company/168/index.aspx'>����� </a></li> <li><a href='company/169/index.aspx'>����ŷ�� </a></li> <li><a href='company/183/index.aspx'>ľ֮�� </a></li> <li><a href='company/219/index.aspx'>���� </a></li> <li><a href='company/228/index.aspx'>������ </a></li> <li><a href='company/229/index.aspx'>����ɳ </a></li> <li><a href='company/0/index.aspx'>������ɯ </a></li></ul></div></li><li><a class='a' href='###'>N  </a><div data-alpha='N'><ul class='clearfix'> <li><a href='company/84/index.aspx'>���� </a></li></ul></div></li><li><a class='a' href='###'>O  </a><div data-alpha='O'><ul class='clearfix'> <li><a href='company/99/index.aspx'>ŷ���� </a></li> <li><a href='company/341/index.aspx'>ŷ��˼�� </a></li></ul></div></li><li><a class='a' href='###'>P  </a><div data-alpha='P'><ul class='clearfix'> <li><a href='company/200/index.aspx'>Ʒ���Ҿ� </a></li> <li><a href='company/276/index.aspx'>����ŷ </a></li></ul></div></li><li><a class='a' href='###'>Q  </a><div data-alpha='Q'><ul class='clearfix'> <li><a href='company/159/index.aspx'>�߲ʺ� </a></li> <li><a href='company/196/index.aspx'>ȫ�Ѽ�˽ </a></li></ul></div></li><li><a class='a' href='###'>R  </a><div data-alpha='R'><ul class='clearfix'> <li><a href='company/85/index.aspx'>��� </a></li> <li><a href='company/165/index.aspx'>����ľ�� </a></li></ul></div></li><li><a class='a' href='###'>S  </a><div data-alpha='S'><ul class='clearfix'> <li><a href='company/199/index.aspx'>˹���� </a></li> <li><a href='company/202/index.aspx'>�뱦 </a></li> <li><a href='company/170/index.aspx'>����ά�� </a></li> <li><a href='company/278/index.aspx'>���� </a></li> <li><a href='company/292/index.aspx'>������ </a></li> <li><a href='company/297/index.aspx'>˹������ </a></li></ul></div></li><li><a class='a' href='###'>T  </a><div data-alpha='T'><ul class='clearfix'> <li><a href='company/82/index.aspx'>�ذ��� </a></li> <li><a href='company/305/index.aspx'>����˹ </a></li></ul></div></li> <li><a class='a' href='###'>U </a></li> <li><a class='a' href='###'>V </a></li><li><a class='a' href='###'>W  </a><div data-alpha='W'><ul class='clearfix'> <li><a href='company/223/index.aspx'>���� </a></li> <li><a href='company/300/index.aspx'>��֮�� </a></li></ul></div></li><li><a class='a' href='###'>X  </a><div data-alpha='X'><ul class='clearfix'> <li><a href='company/162/index.aspx'>��ҫ </a></li> <li><a href='company/200/index.aspx'>�Ժ����� </a></li> <li><a href='company/274/index.aspx'>ܰ���� </a></li> <li><a href='company/291/index.aspx'>ϲ���� </a></li></ul></div></li><li><a class='a' href='###'>Y  </a><div data-alpha='Y'><ul class='clearfix'> <li><a href='company/80/index.aspx'>������� </a></li> <li><a href='company/116/index.aspx'>��ľ </a></li> <li><a href='company/198/index.aspx'>��ͥ </a></li> <li><a href='company/136/index.aspx'>����ɯ </a></li> <li><a href='company/173/index.aspx'>�׼���ľ </a></li> <li><a href='company/182/index.aspx'>�˰� </a></li> <li><a href='company/250/index.aspx'>����õ�� </a></li> <li><a href='company/287/index.aspx'>���� </a></li></ul></div></li><li><a class='a' href='###'>Z  </a><div data-alpha='Z'><ul class='clearfix'> <li><a href='company/171/index.aspx'>���� </a></li> <li><a href='company/172/index.aspx'>�ڽ� </a></li> <li><a href='company/270/index.aspx'>����ɳ�� </a></li> <li><a href='company/272/index.aspx'>���� </a></li></ul></div></li>
+                    </ul>
+                    <div class="arrow">
+                        <a href="#" class="">����</a></div>
+                </div>
+                <div class="filter">
+                    <div class="line b f666">
+                        Ŀǰ������<span id='licount'></span>�����Ʒ��</div>
+                    <dl class="clearfix">
+                        <dt class="b f666">��Ʒ���</dt>
+                        <dd id='ddfg' ><a href='###' id='ddfgall' class='arrow-on' onclick='setchk(this,"ddfg","fg","")' >����</a> <a href='###' onclick='setchk(this,"ddfg","fg","46")' >ŷʽ</a> <a href='###' onclick='setchk(this,"ddfg","fg","47")' >��ʽ</a> <a href='###' onclick='setchk(this,"ddfg","fg","48")' >�ִ�</a> <a href='###' onclick='setchk(this,"ddfg","fg","49")' >����</a> <a href='###' onclick='setchk(this,"ddfg","fg","50")' >��԰</a> <a href='###' onclick='setchk(this,"ddfg","fg","51")' >��ŷ</a> <a href='###' onclick='setchk(this,"ddfg","fg","52")' >����</a> <a href='###' onclick='setchk(this,"ddfg","fg","53")' >��ʽ</a> <a href='###' onclick='setchk(this,"ddfg","fg","54")' >�����</a> <a href='###' onclick='setchk(this,"ddfg","fg","55")' >������</a> <a href='###' onclick='setchk(this,"ddfg","fg","56")' >��ʽ</a> <a href='###' onclick='setchk(this,"ddfg","fg","57")' >��ʽ�¹�</a> <a href='###' onclick='setchk(this,"ddfg","fg","58")' >������</a> <a href='###' onclick='setchk(this,"ddfg","fg","59")' >��ŷ</a> <a href='###' onclick='setchk(this,"ddfg","fg","60")' >��ʽ</a> </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt class="b f666">��Ʒ���ʣ�</dt>
+                        <dd id='ddcz'><a href='###' class='on' id='ddczall' onclick='setchk(this,"ddcz","cz","")'>����</a> <a href='###' onclick='setchk(this,"ddcz","cz","12")' >ʵľ���</a> <a href='###' onclick='setchk(this,"ddcz","cz","13")' >��ʽ</a> <a href='###' onclick='setchk(this,"ddcz","cz","14")' >����</a> <a href='###' onclick='setchk(this,"ddcz","cz","15")' >����ʯ</a> <a href='###' onclick='setchk(this,"ddcz","cz","16")' >����</a> <a href='###' onclick='setchk(this,"ddcz","cz","17")' >����</a> <a href='###' onclick='setchk(this,"ddcz","cz","18")' >����</a> <a href='###' onclick='setchk(this,"ddcz","cz","19")' >Ƥ��</a> <a href='###' onclick='setchk(this,"ddcz","cz","20")' >����</a> <a href='###' onclick='setchk(this,"ddcz","cz","21")' >ȫʵľ</a> <a href='###' onclick='setchk(this,"ddcz","cz","140")' >ʵľ</a> </dd>
+                    </dl>
+                    <dl class="clearfix" style='height: 150px;'>
+                        <dt class="b f666">�����</dt>
+                        <dd>
+                            <div class="mall-alpha" id='tab_conbox2'>
+                                <ul class="clearfix" id='tab_conbox'>
+                                    <li class='on'><a class='on' href='###' onclick='setchk(this,"tab_conbox","mc","")' onmouseover="javascript:$('#divmc').show();" >���� </a></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">A<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">B<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >C<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","53")'>���꽭�Ҿ��������õ�</a> </div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >D<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","52")'>�����Ҿ߹㳡�ֶ���</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","61")'>�����Ҿ߹㳡��̫��</a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">E<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">F<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">G<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >H<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","8")'>������������ˮ��</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","39")'>�����������ֶ���</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","48")'>�ð���Ҿӹ㳡������</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","51")'>�����������汱��</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","55")'>�����Ҿ߳�</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","56")'>�����ҽ��ŵ�</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","58")'>����������÷¤��</a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">I<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >J<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","14")'>���������ʼҾ�</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","43")'>��ʢ���ʼҾӹ㳡</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","45")'>��ʢΰ�������</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","46")'>���ʯͷ���Ҿ�����㳡</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","49")'>��ʢΰ����Ź��ʼҾ߲�������</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","50")'>��ʢΰ���̵ع��ʼҾߴ�</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","57")'>����Ҿ��ֶ����ϵ�</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","59")'>����Ҿ�����·��</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","60")'>���ǼҾ߳�</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","64")'>��ʢ���ʼҾ�����·��</a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">K<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">L<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >M<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","40")'>���������ʼҾ�����㳡</a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">N<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >O<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","54")'>ŷ�����ֶ��Ҿ߹㳡</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","62")'>ŷ�����ζ����ļҾ߹㳡 </a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">P<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">Q<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">R<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >S<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","47")'>ʢԴ��ؼҾӳ�</a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">T<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">U<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">V<i></i></a><div class='drop' style='width:0px' ></div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >W<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","209")'>�ҵ����</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","210")'>wj���</a> </div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >X<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","63")'>ݷ���Ҿӽ�ɽ��</a> </div></li><li  ><a class='a0' href='###' onmouseover="javascript:$('#divmc').hide();" >Y<i></i></a><div class='drop' style='width:780px' ><a href='###' onclick='setchk(this,"tab_conbox","mc","41")'>���ǼҾӹ㳡����·��</a> <a href='###' onclick='setchk(this,"tab_conbox","mc","199")'>����</a> </div></li><li  ><a class='a0' href='###' style='color: #c5c5c5;cursor: default' onmouseover="javascript:$('#divmc').hide();">Z<i></i></a><div class='drop' style='width:0px' ></div></li>
+                                </ul>
+                                <div class='drop' id='divmc' style='width:800px;border: 1px solid #c5c5c5' onmouseover='javascript:$(this).show();' onmouseout='javascript:$(this).hide();'><table border='0' style='text-align:top' valign='top'><tr><td><div style='width:700px; height:100px; overflow:auto; border:0px solid #000000;overflow-y: auto; overflow-x:hidden;'><div ><a href='###' onclick='setchk(this,"tab_conbox2","mc","8")' >������������ˮ��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","14")' >���������ʼҾ�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","39")' >�����������ֶ���</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","40")' >���������ʼҾ�����㳡</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","41")' >���ǼҾӹ㳡����·��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","43")' >��ʢ���ʼҾӹ㳡</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","45")' >��ʢΰ�������</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","46")' >���ʯͷ���Ҿ�����㳡</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","47")' >ʢԴ��ؼҾӳ�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","48")' >�ð���Ҿӹ㳡������</a> </div><div id='divbrand' style='display:none;width:700px;overflow-y: auto; overflow-x:hidden;'><a href='###' onclick='setchk(this,"tab_conbox2","mc","49")' >��ʢΰ����Ź��ʼҾ߲�������</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","50")' >��ʢΰ���̵ع��ʼҾߴ�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","51")' >�����������汱��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","52")' >�����Ҿ߹㳡�ֶ���</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","53")' >���꽭�Ҿ��������õ�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","54")' >ŷ�����ֶ��Ҿ߹㳡</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","55")' >�����Ҿ߳�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","56")' >�����ҽ��ŵ�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","57")' >����Ҿ��ֶ����ϵ�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","58")' >����������÷¤��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","59")' >����Ҿ�����·��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","60")' >���ǼҾ߳�</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","61")' >�����Ҿ߹㳡��̫��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","62")' >ŷ�����ζ����ļҾ߹㳡 </a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","63")' >ݷ���Ҿӽ�ɽ��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","64")' >��ʢ���ʼҾ�����·��</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","199")' >����</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","209")' >�ҵ����</a> <a href='###' onclick='setchk(this,"tab_conbox2","mc","210")' >wj���</a> </div></div></td><td  style='text-align:center' valign='top'>&nbsp;&nbsp;&nbsp;&nbsp;<label style='color:#f89a05' onclick='javascript:if($(this).html()=="չ��"){$("#divbrand").show();$(this).html("����");}else{$(this).html("չ��");$("#divbrand").hide();};' style='cursor:pointer'>չ��</label></td></tr></table></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="bd">
+                <div class="line clearfix">
+                    <div class="fl f14 tit b">
+                        ��Ʒ����ʾ</div>
+                    <div class="fr" style="display: none">
+                        <a class="s1 fr" href="#">��һҳ</a> <span class="s2 fr songti">1/6</span> <a class="fr s3"
+                            href="#">
+                            <img src="../../../resource/content/img/brand/product_19.gif" /></a>
+                    </div>
+                </div>
+                <div class="condi clearfix" style="width: 950px">
+                    <span class="fl">���ٷ���</span>
+                    <table>
+                        <tr>
+                            <td>
+                                <select id='selectfg' onchange='selval("fg","selectfg")' class='inp' style='width: 105px;'><option value='0' >���з��</option><option value='46'>ŷʽ</option><option value='47'>��ʽ</option><option value='48'>�ִ�</option><option value='49'>����</option><option value='50'>��԰</option><option value='51'>��ŷ</option><option value='52'>����</option><option value='53'>��ʽ</option><option value='54'>�����</option><option value='55'>������</option><option value='56'>��ʽ</option><option value='57'>��ʽ�¹�</option><option value='58'>������</option><option value='59'>��ŷ</option><option value='60'>��ʽ</option></select>
+                                
+                            </td>
+                            <td>
+                                &nbsp;&nbsp;
+                            </td>
+                            <td>
+                                <select class='inp' id='selectcz' onchange='selval("cz","selectcz")' style='width: 105px;'><option value='0'>���в���</option><option value='12'>ʵľ���</option><option value='13'>��ʽ</option><option value='14'>����</option><option value='15'>����ʯ</option><option value='16'>����</option><option value='17'>����</option><option value='18'>����</option><option value='19'>Ƥ��</option><option value='20'>����</option><option value='21'>ȫʵľ</option><option value='140'>ʵľ</option></select>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mainz5" id='ulinfo'>
+                   
+                </div>
+                
+            </div>
+            <div class="digg" style="clear: both; margin: 30px;">
+                <span id="paging1" class="page"></span>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="cont-r fr" style="width: 230px;">
+                        <div class="layout_a brand-bar" id="j_brandBar">
+                            <div class="tit">
+                                Ʒ�Ʋ�ѯ</div>
+                            <div class="brand-search">
+                                <input type="text" class="txt" name="key" id='txtkey' style="width: 120px;" />
+                                <input type="image" onclick='return selkey();' src="../../../resource/content/img/mall/marketSearch.gif" />
+                            </div>
+                            <div class="clearfix alpha-list">
+                                <ul id="j_letterAlpha" class="clearfix">
+                                     <li><a href='#A'>A</a></li> <li><a href='#B'>B</a></li> <li><a href='#C'>C</a></li> <li><a href='#D'>D</a></li><li class='none'>E</li>  <li><a href='#F'>F</a></li><li class='none'>G</li>  <li><a href='#H'>H</a></li><li class='none'>I</li>  <li><a href='#J'>J</a></li> <li><a href='#K'>K</a></li> <li><a href='#L'>L</a></li> <li><a href='#M'>M</a></li> <li><a href='#N'>N</a></li> <li><a href='#O'>O</a></li> <li><a href='#P'>P</a></li> <li><a href='#Q'>Q</a></li> <li><a href='#R'>R</a></li> <li><a href='#S'>S</a></li> <li><a href='#T'>T</a></li><li class='none'>U</li> <li class='none'>V</li>  <li><a href='#W'>W</a></li> <li><a href='#X'>X</a></li> <li><a href='#Y'>Y</a></li> <li><a href='#Z'>Z</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div style="height: 300px;" class="brand-alpha-list" id="j_letterTree">
+                                <ul>
+                                    <li class='root'><b>A <s>(11)</s><a name='A' href='###'></a></b><ul><li><a target='_blank' href='/company/83/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/87/index.aspx'><big>���Ͽ�</big></a></li><li><a target='_blank' href='/company/89/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/159/index.aspx'><big>���ƶ�</big></a></li><li><a target='_blank' href='/company/197/index.aspx'><big>�������ľ</big></a></li><li><a target='_blank' href='/company/220/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/277/index.aspx'><big>��һ��</big></a></li><li><a target='_blank' href='/company/279/index.aspx'><big>����˾</big></a></li><li><a target='_blank' href='/company/283/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/285/index.aspx'><big>��ܽ��</big></a></li><li><a target='_blank' href='/company/305/index.aspx'><big>��ɯ����</big></a></li></ul></li><li class='root'><b>B <s>(5)</s><a name='B' href='###'></a></b><ul><li><a target='_blank' href='/company/97/index.aspx'><big>���ʼ�˽</big></a></li><li><a target='_blank' href='/company/118/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/120/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/210/index.aspx'><big>��ŷE��</big></a></li><li><a target='_blank' href='/company/275/index.aspx'><big>������</big></a></li></ul></li><li class='root'><b>C <s>(3)</s><a name='C' href='###'></a></b><ul><li><a target='_blank' href='/company/94/index.aspx'><big>COMO</big></a></li><li><a target='_blank' href='/company/211/index.aspx'><big>�Ϸ�</big></a></li><li><a target='_blank' href='/company/304/index.aspx'><big>�����˽</big></a></li></ul></li><li class='root'><b>D <s>(9)</s><a name='D' href='###'></a></b><ul><li><a target='_blank' href='/company/84/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/203/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/231/index.aspx'><big>��緶</big></a></li><li><a target='_blank' href='/company/273/index.aspx'><big>�����Ҿ�</big></a></li><li><a target='_blank' href='/company/300/index.aspx'><big>DiamondSofa</big></a></li><li><a target='_blank' href='/company/302/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/305/index.aspx'><big>�󻨽�</big></a></li><li><a target='_blank' href='/company/344/index.aspx'><big>���з���</big></a></li><li><a target='_blank' href='/company/77/index.aspx'><big>���з���</big></a></li></ul></li><li class='root'><b>F <s>(6)</s><a name='F' href='###'></a></b><ul><li><a target='_blank' href='/company/160/index.aspx'><big>ܽ��˹��</big></a></li><li><a target='_blank' href='/company/195/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/281/index.aspx'><big>�������</big></a></li><li><a target='_blank' href='/company/284/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/298/index.aspx'><big>���ñ�</big></a></li><li><a target='_blank' href='/company/299/index.aspx'><big>����</big></a></li></ul></li><li class='root'><b>H <s>(10)</s><a name='H' href='###'></a></b><ul><li><a target='_blank' href='/company/80/index.aspx'><big>����E��</big></a></li><li><a target='_blank' href='/company/86/index.aspx'><big>��ΰ</big></a></li><li><a target='_blank' href='/company/88/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/95/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/177/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/208/index.aspx'><big>��ͥ��</big></a></li><li><a target='_blank' href='/company/227/index.aspx'><big>�����ʼ�</big></a></li><li><a target='_blank' href='/company/290/index.aspx'><big>�ʳ���˽</big></a></li><li><a target='_blank' href='/company/300/index.aspx'><big>��������</big></a></li><li><a target='_blank' href='/company/301/index.aspx'><big>��ƻ��</big></a></li></ul></li><li class='root'><b>J <s>(7)</s><a name='J' href='###'></a></b><ul><li><a target='_blank' href='/company/98/index.aspx'><big>���ݸ�</big></a></li><li><a target='_blank' href='/company/102/index.aspx'><big>��</big></a></li><li><a target='_blank' href='/company/121/index.aspx'><big>���ż�</big></a></li><li><a target='_blank' href='/company/204/index.aspx'><big>��ŷ֮��</big></a></li><li><a target='_blank' href='/company/221/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/230/index.aspx'><big>�ܶ�����</big></a></li><li><a target='_blank' href='/company/303/index.aspx'><big>����</big></a></li></ul></li><li class='root'><b>K <s>(6)</s><a name='K' href='###'></a></b><ul><li><a target='_blank' href='/company/110/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/111/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/162/index.aspx'><big>������԰</big></a></li><li><a target='_blank' href='/company/163/index.aspx'><big>�����</big></a></li><li><a target='_blank' href='/company/201/index.aspx'><big>KBH</big></a></li><li><a target='_blank' href='/company/84/index.aspx'><big>��ģ100</big></a></li></ul></li><li class='root'><b>L <s>(11)</s><a name='L' href='###'></a></b><ul><li><a target='_blank' href='/company/100/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/117/index.aspx'><big>����˹��</big></a></li><li><a target='_blank' href='/company/164/index.aspx'><big>¶����</big></a></li><li><a target='_blank' href='/company/174/index.aspx'><big>���ɿ�˹</big></a></li><li><a target='_blank' href='/company/178/index.aspx'><big>��ľ��</big></a></li><li><a target='_blank' href='/company/181/index.aspx'><big>·��˹</big></a></li><li><a target='_blank' href='/company/271/index.aspx'><big>��Դ����</big></a></li><li><a target='_blank' href='/company/280/index.aspx'><big>����ɳ��</big></a></li><li><a target='_blank' href='/company/288/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/296/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/345/index.aspx'><big>��˹����</big></a></li></ul></li><li class='root'><b>M <s>(8)</s><a name='M' href='###'></a></b><ul><li><a target='_blank' href='/company/93/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/168/index.aspx'><big>�����</big></a></li><li><a target='_blank' href='/company/169/index.aspx'><big>����ŷ��</big></a></li><li><a target='_blank' href='/company/183/index.aspx'><big>ľ֮��</big></a></li><li><a target='_blank' href='/company/219/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/228/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/229/index.aspx'><big>����ɳ</big></a></li><li><a target='_blank' href='/company/0/index.aspx'><big>������ɯ</big></a></li></ul></li><li class='root'><b>N <s>(1)</s><a name='N' href='###'></a></b><ul><li><a target='_blank' href='/company/84/index.aspx'><big>����</big></a></li></ul></li><li class='root'><b>O <s>(2)</s><a name='O' href='###'></a></b><ul><li><a target='_blank' href='/company/99/index.aspx'><big>ŷ����</big></a></li><li><a target='_blank' href='/company/341/index.aspx'><big>ŷ��˼��</big></a></li></ul></li><li class='root'><b>P <s>(2)</s><a name='P' href='###'></a></b><ul><li><a target='_blank' href='/company/200/index.aspx'><big>Ʒ���Ҿ�</big></a></li><li><a target='_blank' href='/company/276/index.aspx'><big>����ŷ</big></a></li></ul></li><li class='root'><b>Q <s>(2)</s><a name='Q' href='###'></a></b><ul><li><a target='_blank' href='/company/159/index.aspx'><big>�߲ʺ�</big></a></li><li><a target='_blank' href='/company/196/index.aspx'><big>ȫ�Ѽ�˽</big></a></li></ul></li><li class='root'><b>R <s>(2)</s><a name='R' href='###'></a></b><ul><li><a target='_blank' href='/company/85/index.aspx'><big>���</big></a></li><li><a target='_blank' href='/company/165/index.aspx'><big>����ľ��</big></a></li></ul></li><li class='root'><b>S <s>(6)</s><a name='S' href='###'></a></b><ul><li><a target='_blank' href='/company/199/index.aspx'><big>˹����</big></a></li><li><a target='_blank' href='/company/202/index.aspx'><big>�뱦</big></a></li><li><a target='_blank' href='/company/170/index.aspx'><big>����ά��</big></a></li><li><a target='_blank' href='/company/278/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/292/index.aspx'><big>������</big></a></li><li><a target='_blank' href='/company/297/index.aspx'><big>˹������</big></a></li></ul></li><li class='root'><b>T <s>(2)</s><a name='T' href='###'></a></b><ul><li><a target='_blank' href='/company/82/index.aspx'><big>�ذ���</big></a></li><li><a target='_blank' href='/company/305/index.aspx'><big>����˹</big></a></li></ul></li><li class='root'><b>W <s>(2)</s><a name='W' href='###'></a></b><ul><li><a target='_blank' href='/company/223/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/300/index.aspx'><big>��֮��</big></a></li></ul></li><li class='root'><b>X <s>(4)</s><a name='X' href='###'></a></b><ul><li><a target='_blank' href='/company/162/index.aspx'><big>��ҫ</big></a></li><li><a target='_blank' href='/company/200/index.aspx'><big>�Ժ�����</big></a></li><li><a target='_blank' href='/company/274/index.aspx'><big>ܰ����</big></a></li><li><a target='_blank' href='/company/291/index.aspx'><big>ϲ����</big></a></li></ul></li><li class='root'><b>Y <s>(8)</s><a name='Y' href='###'></a></b><ul><li><a target='_blank' href='/company/80/index.aspx'><big>�������</big></a></li><li><a target='_blank' href='/company/116/index.aspx'><big>��ľ</big></a></li><li><a target='_blank' href='/company/198/index.aspx'><big>��ͥ</big></a></li><li><a target='_blank' href='/company/136/index.aspx'><big>����ɯ</big></a></li><li><a target='_blank' href='/company/173/index.aspx'><big>�׼���ľ</big></a></li><li><a target='_blank' href='/company/182/index.aspx'><big>�˰�</big></a></li><li><a target='_blank' href='/company/250/index.aspx'><big>����õ��</big></a></li><li><a target='_blank' href='/company/287/index.aspx'><big>����</big></a></li></ul></li><li class='root'><b>Z <s>(4)</s><a name='Z' href='###'></a></b><ul><li><a target='_blank' href='/company/171/index.aspx'><big>����</big></a></li><li><a target='_blank' href='/company/172/index.aspx'><big>�ڽ�</big></a></li><li><a target='_blank' href='/company/270/index.aspx'><big>����ɳ��</big></a></li><li><a target='_blank' href='/company/272/index.aspx'><big>����</big></a></li></ul></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-r fr" style="margin-top: 10px; float: right; width: 230px;">
+                        <div class="layout_a brand-bar">
+                            <div class="tit">
+                                Ʒ���Ƽ�</div>
+                            <div style='padding: 15px; min-height: 200px;'>
+                                <a target='_blank' href='/company/136/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br /><a target='_blank' href='/company/84/index.aspx' ><img style='width: 196px; height: 70px;' src=''/></a>&nbsp;&nbsp;<br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-r fr" style="margin-top: 10px; width: 230px;">
+                        <div class="layout_a brand-bar">
+                            <div class="tit">
+                                �����̼�</div>
+                            <div class="clearfix alpha-list">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-r fr" style="margin-top: 10px; width: 230px;">
+                        <div class="layout_a brand-bar">
+                            <div class="clearfix alpha-list">
+                                <ul class="clearfix">
+                                    <a href='/company/136/index.aspx' target='_blank'><img style='width: 208px; height: 170px;' src='' /></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<style>
+    .backToTop
+    {
+        display: none;
+        padding: 26px;
+        background-image: url(http://www.jiajuks.com/resource/images/backtop.gif);
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        position: fixed;
+        _position: absolute;
+        right: 5px;
+        bottom: 5px;
+        _bottom: "auto";
+        cursor: pointer;
+        opacity: .8;
+        filter: Alpha(opacity=60);
+    }
+</style>
+<div class="footer">
+    <p class="p1">
+        <a href="/yqlj.aspx">��������</a> | <a href="#">��ǩ��</a> | <a target="_blank" href="/gywm.aspx">
+            ��ҵ����</a> | <a target="_blank" href="/lxwm.aspx">��ϵ����</a> | <a href="#">��Ƹ��ʿ</a>
+        | <a href="#">��վ��ͼ</a> | <a href="/reg.aspx" target="_blank">��Ӧ�̼���</a>
+        | <a href="/reg.aspx?r=l" target="_blank">��Ӧ�̵�¼</a>
+    </p>
+    <p class="p3">
+        Copyright &copy; <a href="http://www.jiajuks.com/">�Ҿ߿���</a>��www.jiajuks.com�� &nbsp;��ICP��12034118��</p>
+    <p class="p4">
+        <p>
+            <img src="http://www.jiajuks.com/resource/web/images/index_130.jpg">
+            <a href="#">
+                <img src="http://www.jiajuks.com/resource/web/images/index-08.jpg"></a> <a href="#">
+                    <img src="http://www.jiajuks.com/resource/web/images/index-09.jpg"></a>
+            <a href="#">
+                <img src="http://www.jiajuks.com/resource/web/images/index-10.jpg"></a>
+        </p>
+    </p>
+</div>
+
+<!-- �����վͳ�� BEGIN -->
+<script type="text/javascript">
+
+//    var _gaq = _gaq || [];
+//    _gaq.push(['_setAccount', 'UA-29901941-1']);
+//    _gaq.push(['_trackPageview']);
+
+//    (function () {
+//        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//    })();
+
+</script>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F91f7d5c30539521e5de3dbe0889f845e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://s19.cnzz.com/stat.php?id=4297930&web_id=4297930&show=pic1" language="JavaScript"></script>
+<!-- �����վͳ�� END -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+    var jiathis_config = {
+        siteNum: 15,
+        sm: "qzone,tsina,tqq,renren,kaixin001,taobao,douban,xiaoyou,baidu,tieba,hi,qq,tianya,51,diandian",
+        summary: "",
+        boldNum: 3,
+        marginTop: 388,
+        showClose: true,
+        hideMore: false
+    }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r5.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {  //ֻҪ���ڹ���,�ʹ���������� 
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //��ȡ������ĸ߶� 
+            if (scrollt > 200) {
+                //�жϹ�����߶ȳ���200px,����ʾ  
+                $(".backToTop").fadeIn(400); //����     
+            } else {
+                $(".backToTop").stop().fadeOut(400);
+                //������ػ���û�г���,�͵���.�������stop()ֹ֮ͣǰ����,������������   
+            }
+        });
+        $(".backToTop").click(function () { //�������ǩ��ʱ��,ʹ��animate��200�����ʱ����,��������
+            $("html,body").animate({ scrollTop: "0px" }, 200);
+        });
+    });
+</script>
+<div class="backToTop" title="" style="display: none;">
+</div>
+
+    <input type="hidden" id='hidmc' value='' />
+    <input type="hidden" id='hidcz' value='' />
+    <input type="hidden" id='hidfg' value='' />
+    <input type="hidden" id='hidkey' value='' />
+    </form>
+    <script type="text/javascript">
+        var pagesize = 20;
+        function selval(id, id1) {
+
+            $("#hid" + id).val($("#" + id1).val());
+            hd(1);
+        }
+        function setchk(obj, id0, id1, id2) {
+
+            $("#" + id0 + " a").each(function (i) {
+                $(this).css("background-color", "");
+            });
+
+            $(obj).css("background-color", "#B9003C");
+
+            $("#hid" + id1).val(id2);
+            $("#hidkey").val("");
+            hd(1);
+        }
+        function selkey() {
+            $("#hidmc").val("");
+            $("#hidcz").val("");
+            $("#hidfg").val("");
+            $("#hidkey").val($("#txtkey").val());
+
+            hd(1);
+            return false;
+        }
+        if (getQueryString("s") != null)
+            $("#hidkey").val(getQueryString("s"));
+
+       hd(1);
+        function hd(index) {
+
+            $.ajax({
+                async: true, //�Ƿ��첽
+                url: '../../../ajax/hdsearch.ashx?t=pp&pi=' + index + '&pg=' + pagesize + '&mc=' + $("#hidmc").val() + '&cz=' + $("#hidcz").val() + '&fg=' + $("#hidfg").val() + '&k=' + escape($("#hidkey").val()) + '&m=' + Math.random(),
+                type: 'post', //post����
+                dataType: 'json', //����json��ʽ����
+                success: function (data) {
+                    var s = "";
+                    var f = "";
+                    var stylecount = 0;
+                    for (var i = 0; i < data.dt.length; i++) {
+                        stylecount++;
+                        if (stylecount % 2 == 0)
+                            s += "<div class='pplm2 pplm2y'>";
+                        else
+                            s += "<div class='pplm2'>";
+
+
+                        s += " <div class='pplm21'>";
+                        s += " <a target='_blank' href='/company/" + data.dt[i].companyid + "/index.aspx' >";
+                        s += " <img style='margin-bottom:5px;' src=\"/upload/brand/logo/" + data.dt[i].id + "/" + data.dt[i].logo.replace(",", "") + "\"  class=\"pplm22tp\" width=\"215\" height=\"50\"  alt=\"\"/></a>";
+                        s += " <img src=\"/upload/brand/thumb/" + data.dt[i].id + "/" + data.dt[i].thumb.replace(",", "") + "\" width=\"215\" height=\"105\"  alt=''/></div>";
+
+                        s += "<div class=\"pplm22\"><dd class=\"dd1\">" + data.dt[i].title + "</dd><dd class=\"dd2\">";
+                        s += "<strong>���</strong>" + data.dt[i].fgtitle + "<br><strong>���ʣ�</strong>" + data.dt[i].cztitle + "</dd>";
+                        s += "<dd class=\"dd3\">" + data.dt[i].descript + "</dd>";
+
+                        f = ' /company/' + data.dt[i].companyid + '/product-' + data.dt[i].id + '-----------.aspx';
+                        s += "<a href=\"#\" onclick='window.open(\"" + f + "\")'>�鿴��Ʒ</a> ";
+                        f = ' /company/' + data.dt[i].companyid + '/brand-' + data.dt[i].id + '.aspx';
+                        s += "<a href=\"#\" onclick='window.open(\"" + f + "\")'>Ʒ�ƽ���</a> ";
+                        f = ' /company/' + data.dt[i].companyid + '/address-' + data.dt[i].id + '-1.aspx';
+                        s += " <a href=\"#\" onclick='window.open(\"" + f + "\")'>���̵�ַ</a></div></div>"; 
+
+                    }
+
+                    if (s.length == 0)
+                        s = '<br />������Ϣ<br />';
+                    $("#ulinfo").html(s);
+                    $("#licount").html("<label style='color:red'>&nbsp;" + data.dt.length + "&nbsp;</label>");
+
+                    //��ҳ
+                    if (data.totalrow < pagesize)
+                        $("#paging1").html('');
+                    else
+                        $("#paging1").pagination({
+                            items: data.totalrow,
+                            cssStyle: 'light-theme',
+                            itemsOnPage: pagesize,
+                            callFn: "hd",
+                            currentPage: index
+                        });
+
+                },
+                error: function () { alert('����'); }
+            });
+        }
+
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&|\\?)" + name + "=([^&]*)(&|$)"), r;
+            if (r = window.location.href.match(reg)) return unescape(r[2]); return null;
+        };
+        function htmlencode(str) {
+            str = str.replace(/&/g, '&amp;');
+            str = str.replace(/</g, '&lt;');
+            str = str.replace(/>/g, '&gt;');
+            str = str.replace(/(?:t| |v|r)*n/g, '<br />');
+            str = str.replace(/  /g, '&nbsp; ');
+            str = str.replace(/t/g, '&nbsp; &nbsp; ');
+            str = str.replace(/x22/g, '&quot;');
+            str = str.replace(/x27/g, '&#39;');
+            return str;
+        }
+
+        function DrawImage(ImgD, FitWidth, FitHeight) {
+            var image = new Image();
+            image.src = ImgD.src;
+            if (image.width > 0 && image.height > 0) {
+                if (image.width / image.height >= FitWidth / FitHeight) {
+                    if (image.width > FitWidth) {
+                        ImgD.width = FitWidth;
+                        ImgD.height = (image.height * FitWidth) / image.width;
+                    }
+                    else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                    }
+                }
+                else {
+                    if (image.height > FitHeight) {
+                        ImgD.height = FitHeight;
+                        ImgD.width = (image.width * FitHeight) / image.height;
+                    }
+                    else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                    }
+                }
+            }
+        }  
+    </script>
+</body>
+</html>

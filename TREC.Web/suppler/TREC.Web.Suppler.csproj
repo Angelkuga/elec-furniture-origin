@@ -1,0 +1,2048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B100F63C-A236-4A6F-A1C6-E712BC57E842}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TREC.Web.Suppler</RootNamespace>
+    <AssemblyName>TREC.Web.Suppler</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Haojibiz.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=b733f39d3b0216a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Haojibiz.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\ajaxSupplerValidator.ashx.cs">
+      <DependentUpon>ajaxSupplerValidator.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\CliqueCheck.aspx.cs">
+      <DependentUpon>CliqueCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\CliqueCheck.aspx.designer.cs">
+      <DependentUpon>CliqueCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\MarketCheck.aspx.cs">
+      <DependentUpon>MarketCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\MarketCheck.aspx.designer.cs">
+      <DependentUpon>MarketCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\MemberHandler.ashx.cs">
+      <DependentUpon>MemberHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\PavilionData.aspx.cs">
+      <DependentUpon>PavilionData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\PavilionData.aspx.designer.cs">
+      <DependentUpon>PavilionData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ProductHandler.ashx.cs">
+      <DependentUpon>ProductHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ascx\AreaSelect.ascx.cs">
+      <DependentUpon>AreaSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ascx\AreaSelect.ascx.designer.cs">
+      <DependentUpon>AreaSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ascx\head.ascx.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ascx\head.ascx.designer.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ascx\headNoLog.ascx.cs">
+      <DependentUpon>headNoLog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ascx\headNoLog.ascx.designer.cs">
+      <DependentUpon>headNoLog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\addBrandYM.aspx.cs">
+      <DependentUpon>addBrandYM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\addBrandYM.aspx.designer.cs">
+      <DependentUpon>addBrandYM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\appbrand.aspx.cs">
+      <DependentUpon>appbrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\appbrand.aspx.designer.cs">
+      <DependentUpon>appbrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\appbrandlist.aspx.cs">
+      <DependentUpon>appbrandlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\appbrandlist.aspx.designer.cs">
+      <DependentUpon>appbrandlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\brandinfo.aspx.cs">
+      <DependentUpon>brandinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\brandinfo.aspx.designer.cs">
+      <DependentUpon>brandinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\brandlist.aspx.cs">
+      <DependentUpon>brandlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\brandlist.aspx.designer.cs">
+      <DependentUpon>brandlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\brandsinfo.aspx.cs">
+      <DependentUpon>brandsinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\brandsinfo.aspx.designer.cs">
+      <DependentUpon>brandsinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\brandslist.aspx.cs">
+      <DependentUpon>brandslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\brandslist.aspx.designer.cs">
+      <DependentUpon>brandslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\createbrand.aspx.cs">
+      <DependentUpon>createbrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\createbrand.aspx.designer.cs">
+      <DependentUpon>createbrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\recyclebrandlist.aspx.cs">
+      <DependentUpon>recyclebrandlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\recyclebrandlist.aspx.designer.cs">
+      <DependentUpon>recyclebrandlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brand\recyclebrandslist.aspx.cs">
+      <DependentUpon>recyclebrandslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="brand\recyclebrandslist.aspx.designer.cs">
+      <DependentUpon>recyclebrandslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="colorswatch\colorswatchlist.aspx.cs">
+      <DependentUpon>colorswatchlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="colorswatch\colorswatchlist.aspx.designer.cs">
+      <DependentUpon>colorswatchlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="colorswatch\DelSwatchList.aspx.cs">
+      <DependentUpon>DelSwatchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="colorswatch\DelSwatchList.aspx.designer.cs">
+      <DependentUpon>DelSwatchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="colorswatch\IssueSwatch.aspx.cs">
+      <DependentUpon>IssueSwatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="colorswatch\IssueSwatch.aspx.designer.cs">
+      <DependentUpon>IssueSwatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\companyinfo.aspx.cs">
+      <DependentUpon>companyinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\companyinfo.aspx.designer.cs">
+      <DependentUpon>companyinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\dealerinfo.aspx.cs">
+      <DependentUpon>dealerinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\dealerinfo.aspx.designer.cs">
+      <DependentUpon>dealerinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_company\nav.ascx.cs">
+      <DependentUpon>nav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_company\nav.ascx.designer.cs">
+      <DependentUpon>nav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="f_company\setup1.aspx.cs">
+      <DependentUpon>setup1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_company\setup1.aspx.designer.cs">
+      <DependentUpon>setup1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_company\setup2.aspx.cs">
+      <DependentUpon>setup2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_company\setup2.aspx.designer.cs">
+      <DependentUpon>setup2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_company\setup3.aspx.cs">
+      <DependentUpon>setup3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_company\setup3.aspx.designer.cs">
+      <DependentUpon>setup3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_dealer\createbrand.aspx.cs">
+      <DependentUpon>createbrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_dealer\createbrand.aspx.designer.cs">
+      <DependentUpon>createbrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_dealer\nav.ascx.cs">
+      <DependentUpon>nav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_dealer\nav.ascx.designer.cs">
+      <DependentUpon>nav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="f_dealer\setup1.aspx.cs">
+      <DependentUpon>setup1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_dealer\setup1.aspx.designer.cs">
+      <DependentUpon>setup1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_dealer\setup2.aspx.cs">
+      <DependentUpon>setup2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_dealer\setup2.aspx.designer.cs">
+      <DependentUpon>setup2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_dealer\setup3.aspx.cs">
+      <DependentUpon>setup3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_dealer\setup3.aspx.designer.cs">
+      <DependentUpon>setup3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_market\nav.ascx.cs">
+      <DependentUpon>nav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_market\nav.ascx.designer.cs">
+      <DependentUpon>nav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="f_market\setup1.aspx.cs">
+      <DependentUpon>setup1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_market\setup1.aspx.designer.cs">
+      <DependentUpon>setup1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="f_market\setup2.aspx.cs">
+      <DependentUpon>setup2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="f_market\setup2.aspx.designer.cs">
+      <DependentUpon>setup2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="information\newsinfo.aspx.cs">
+      <DependentUpon>newsinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="information\newsinfo.aspx.designer.cs">
+      <DependentUpon>newsinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="information\newslist.aspx.cs">
+      <DependentUpon>newslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="information\newslist.aspx.designer.cs">
+      <DependentUpon>newslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="information\promotionsinfo.aspx.cs">
+      <DependentUpon>promotionsinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="information\promotionsinfo.aspx.designer.cs">
+      <DependentUpon>promotionsinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="information\promotionslist.aspx.cs">
+      <DependentUpon>promotionslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="information\promotionslist.aspx.designer.cs">
+      <DependentUpon>promotionslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="information\merchantslist.aspx.cs">
+      <DependentUpon>merchantslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="information\merchantslist.aspx.designer.cs">
+      <DependentUpon>merchantslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="information\merchantsinfo.aspx.cs">
+      <DependentUpon>merchantsinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="information\merchantsinfo.aspx.designer.cs">
+      <DependentUpon>merchantsinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\addSubMarket.aspx.cs">
+      <DependentUpon>addSubMarket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\addSubMarket.aspx.designer.cs">
+      <DependentUpon>addSubMarket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketclique.aspx.cs">
+      <DependentUpon>marketclique.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketclique.aspx.designer.cs">
+      <DependentUpon>marketclique.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketinfo.aspx.cs">
+      <DependentUpon>marketinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketinfo.aspx.designer.cs">
+      <DependentUpon>marketinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketminInfor.aspx.cs">
+      <DependentUpon>marketminInfor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketminInfor.aspx.designer.cs">
+      <DependentUpon>marketminInfor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketminList.aspx.cs">
+      <DependentUpon>marketminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketminList.aspx.designer.cs">
+      <DependentUpon>marketminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketshopadd.aspx.cs">
+      <DependentUpon>marketshopadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketshopadd.aspx.designer.cs">
+      <DependentUpon>marketshopadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketstoryinfo.aspx.cs">
+      <DependentUpon>marketstoryinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketstoryinfo.aspx.designer.cs">
+      <DependentUpon>marketstoryinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketstorylist.aspx.cs">
+      <DependentUpon>marketstorylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketstorylist.aspx.designer.cs">
+      <DependentUpon>marketstorylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketstoryshoplist.aspx.cs">
+      <DependentUpon>marketstoryshoplist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketstoryshoplist.aspx.designer.cs">
+      <DependentUpon>marketstoryshoplist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\marketstoryshopmanage.aspx.cs">
+      <DependentUpon>marketstoryshopmanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\marketstoryshopmanage.aspx.designer.cs">
+      <DependentUpon>marketstoryshopmanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\OrderInforpabe.aspx.cs">
+      <DependentUpon>OrderInforpabe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\OrderInforpabe.aspx.designer.cs">
+      <DependentUpon>OrderInforpabe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\PavilionAdd.aspx.cs">
+      <DependentUpon>PavilionAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\PavilionAdd.aspx.designer.cs">
+      <DependentUpon>PavilionAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\PavilionList.aspx.cs">
+      <DependentUpon>PavilionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\PavilionList.aspx.designer.cs">
+      <DependentUpon>PavilionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\setmarketstoryshop.aspx.cs">
+      <DependentUpon>setmarketstoryshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\setmarketstoryshop.aspx.designer.cs">
+      <DependentUpon>setmarketstoryshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="market\orderListmanage.aspx.cs">
+      <DependentUpon>orderListmanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="market\orderListmanage.aspx.designer.cs">
+      <DependentUpon>orderListmanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member.Master.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.Master.designer.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="member\DelAccount.aspx.cs">
+      <DependentUpon>DelAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\DelAccount.aspx.designer.cs">
+      <DependentUpon>DelAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\editpwd.aspx.cs">
+      <DependentUpon>editpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\editpwd.aspx.designer.cs">
+      <DependentUpon>editpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\memberinfo.aspx.cs">
+      <DependentUpon>memberinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\memberinfo.aspx.designer.cs">
+      <DependentUpon>memberinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\Purview.aspx.cs">
+      <DependentUpon>Purview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\Purview.aspx.designer.cs">
+      <DependentUpon>Purview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\SettlePurview.aspx.cs">
+      <DependentUpon>SettlePurview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\SettlePurview.aspx.designer.cs">
+      <DependentUpon>SettlePurview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\UpdateAccount.aspx.cs">
+      <DependentUpon>UpdateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\UpdateAccount.aspx.designer.cs">
+      <DependentUpon>UpdateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\BankComm_Bridge.aspx.cs">
+      <DependentUpon>BankComm_Bridge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\BankComm_Bridge.aspx.designer.cs">
+      <DependentUpon>BankComm_Bridge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\RegPayment.aspx.cs">
+      <DependentUpon>RegPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\RegPayment.aspx.designer.cs">
+      <DependentUpon>RegPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Alipay_Notify.aspx.cs">
+      <DependentUpon>Alipay_Notify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Alipay_Notify.aspx.designer.cs">
+      <DependentUpon>Alipay_Notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\RegPayMsg.aspx.cs">
+      <DependentUpon>RegPayMsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\RegPayMsg.aspx.designer.cs">
+      <DependentUpon>RegPayMsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\RegPayMsginfor.aspx.cs">
+      <DependentUpon>RegPayMsginfor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\RegPayMsginfor.aspx.designer.cs">
+      <DependentUpon>RegPayMsginfor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\addProductPOP.aspx.cs">
+      <DependentUpon>addProductPOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\addProductPOP.aspx.designer.cs">
+      <DependentUpon>addProductPOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\dealerproductlist.aspx.cs">
+      <DependentUpon>dealerproductlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\dealerproductlist.aspx.designer.cs">
+      <DependentUpon>dealerproductlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\DelGroupProductList.aspx.cs">
+      <DependentUpon>DelGroupProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\DelGroupProductList.aspx.designer.cs">
+      <DependentUpon>DelGroupProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\DelProductList.aspx.cs">
+      <DependentUpon>DelProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\DelProductList.aspx.designer.cs">
+      <DependentUpon>DelProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\groupproductlist.aspx.cs">
+      <DependentUpon>groupproductlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\groupproductlist.aspx.designer.cs">
+      <DependentUpon>groupproductlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\issuegroupproduct.aspx.cs">
+      <DependentUpon>issuegroupproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\issuegroupproduct.aspx.designer.cs">
+      <DependentUpon>issuegroupproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\modifyproductshop.aspx.cs">
+      <DependentUpon>modifyproductshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\modifyproductshop.aspx.designer.cs">
+      <DependentUpon>modifyproductshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\productattribute.aspx.cs">
+      <DependentUpon>productattribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\productattribute.aspx.designer.cs">
+      <DependentUpon>productattribute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\productinfo.aspx.cs">
+      <DependentUpon>productinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\productinfo.aspx.designer.cs">
+      <DependentUpon>productinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\productlist.aspx.cs">
+      <DependentUpon>productlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\productlist.aspx.designer.cs">
+      <DependentUpon>productlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product\SetProductPrice.aspx.cs">
+      <DependentUpon>SetProductPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\SetProductPrice.aspx.designer.cs">
+      <DependentUpon>SetProductPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settled.aspx.cs">
+      <DependentUpon>Settled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settled.aspx.designer.cs">
+      <DependentUpon>Settled.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop\createsmarket.aspx.cs">
+      <DependentUpon>createsmarket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop\createsmarket.aspx.designer.cs">
+      <DependentUpon>createsmarket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop\DelShopList.aspx.cs">
+      <DependentUpon>DelShopList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop\DelShopList.aspx.designer.cs">
+      <DependentUpon>DelShopList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop\modifyproportion.aspx.cs">
+      <DependentUpon>modifyproportion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop\modifyproportion.aspx.designer.cs">
+      <DependentUpon>modifyproportion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop\shopbrand.aspx.cs">
+      <DependentUpon>shopbrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop\shopbrand.aspx.designer.cs">
+      <DependentUpon>shopbrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop\shopinfo.aspx.cs">
+      <DependentUpon>shopinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop\shopinfo.aspx.designer.cs">
+      <DependentUpon>shopinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop\shoplist.aspx.cs">
+      <DependentUpon>shoplist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop\shoplist.aspx.designer.cs">
+      <DependentUpon>shoplist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="supplerindex.aspx.cs">
+      <DependentUpon>supplerindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="supplerindex.aspx.designer.cs">
+      <DependentUpon>supplerindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="supplermemberinfo.aspx.cs">
+      <DependentUpon>supplermemberinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="supplermemberinfo.aspx.designer.cs">
+      <DependentUpon>supplermemberinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\CliqueCheck.aspx" />
+    <Content Include="ajax\MarketCheck.aspx" />
+    <Content Include="ajax\PavilionData.aspx" />
+    <Content Include="ascx\AreaSelect.ascx" />
+    <Content Include="ascx\head.ascx" />
+    <Content Include="ascx\headNoLog.ascx" />
+    <Content Include="brand\addBrandYM.aspx" />
+    <Content Include="brand\appbrand.aspx" />
+    <Content Include="brand\appbrandlist.aspx" />
+    <Content Include="brand\brandinfo.aspx" />
+    <Content Include="brand\brandlist.aspx" />
+    <Content Include="brand\brandsinfo.aspx" />
+    <Content Include="brand\brandslist.aspx" />
+    <Content Include="brand\createbrand.aspx" />
+    <Content Include="brand\recyclebrandlist.aspx" />
+    <Content Include="brand\recyclebrandslist.aspx" />
+    <Content Include="colorswatch\colorswatchlist.aspx" />
+    <Content Include="colorswatch\DelSwatchList.aspx" />
+    <Content Include="colorswatch\IssueSwatch.aspx" />
+    <Content Include="company\companyinfo.aspx" />
+    <Content Include="css\base.css" />
+    <Content Include="css\DropDownListMenu.css" />
+    <Content Include="css\fileupload.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\message.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tcal.css" />
+    <Content Include="dealer\dealerinfo.aspx" />
+    <Content Include="f_company\nav.ascx" />
+    <Content Include="f_company\setup1.aspx" />
+    <Content Include="f_company\setup2.aspx" />
+    <Content Include="f_company\setup3.aspx" />
+    <Content Include="f_dealer\createbrand.aspx" />
+    <Content Include="f_dealer\nav.ascx" />
+    <Content Include="f_dealer\setup1.aspx" />
+    <Content Include="f_dealer\setup2.aspx" />
+    <Content Include="f_dealer\setup3.aspx" />
+    <Content Include="f_market\nav.ascx" />
+    <Content Include="f_market\setup1.aspx" />
+    <Content Include="f_market\setup2.aspx" />
+    <Content Include="html\f1.htm" />
+    <Content Include="html\images\company.png" />
+    <Content Include="html\images\l1.png" />
+    <Content Include="html\images\main.png" />
+    <Content Include="html\images\product.jpg" />
+    <Content Include="html\images\shop1.png" />
+    <Content Include="html\index.htm" />
+    <Content Include="html\l1.htm" />
+    <Content Include="html\pic.htm" />
+    <Content Include="html\style.css" />
+    <Content Include="images\0_421.png" />
+    <Content Include="images\0_835.png" />
+    <Content Include="images\1-1.gif" />
+    <Content Include="images\1-1.jpg" />
+    <Content Include="images\1-2.gif" />
+    <Content Include="images\1-2.jpg" />
+    <Content Include="images\1_421.png" />
+    <Content Include="images\1_835.png" />
+    <Content Include="images\2-1.gif" />
+    <Content Include="images\2-1.jpg" />
+    <Content Include="images\2-2.gif" />
+    <Content Include="images\2-2.jpg" />
+    <Content Include="images\3-1.gif" />
+    <Content Include="images\3-1.jpg" />
+    <Content Include="images\3-100.gif" />
+    <Content Include="images\3-1jt.gif" />
+    <Content Include="images\3-2.gif" />
+    <Content Include="images\3-2.jpg" />
+    <Content Include="images\add_bg.gif" />
+    <Content Include="images\arrow_c.gif" />
+    <Content Include="images\arrow_o.gif" />
+    <Content Include="images\b1.jpg" />
+    <Content Include="images\b2.jpg" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\bank\ABC.jpg" />
+    <Content Include="images\bank\Alipay.jpg" />
+    <Content Include="images\bank\BOC.jpg" />
+    <Content Include="images\bank\BOCOM.jpg" />
+    <Content Include="images\bank\BOCSH.jpg" />
+    <Content Include="images\bank\CCB.jpg" />
+    <Content Include="images\bank\CEB.jpg" />
+    <Content Include="images\bank\CIB.jpg" />
+    <Content Include="images\bank\CMB.jpg" />
+    <Content Include="images\bank\CMBC.jpg" />
+    <Content Include="images\bank\CNCB.jpg" />
+    <Content Include="images\bank\cz.jpg" />
+    <Content Include="images\bank\GDB.jpg" />
+    <Content Include="images\bank\HXB.jpg" />
+    <Content Include="images\bank\ICBC.jpg" />
+    <Content Include="images\bank\PSBC.jpg" />
+    <Content Include="images\bank\SPDB.jpg" />
+    <Content Include="images\bianji.png" />
+    <Content Include="images\bicon.gif" />
+    <Content Include="images\btn.gif" />
+    <Content Include="images\btn2.gif" />
+    <Content Include="images\btn2_cur.gif" />
+    <Content Include="images\btn_alert.gif" />
+    <Content Include="images\btn_bg.gif" />
+    <Content Include="images\btn_charge.gif" />
+    <Content Include="images\btn_edit.gif" />
+    <Content Include="images\btn_favorite.gif" />
+    <Content Include="images\btn_friend.gif" />
+    <Content Include="images\btn_home.gif" />
+    <Content Include="images\btn_message.gif" />
+    <Content Include="images\btn_my.gif" />
+    <Content Include="images\btn_record.gif" />
+    <Content Include="images\btn_style.gif" />
+    <Content Include="images\btn_trade.gif" />
+    <Content Include="images\button_submit.gif" />
+    <Content Include="images\c1.gif" />
+    <Content Include="images\c2.gif" />
+    <Content Include="images\c3.gif" />
+    <Content Include="images\c4.gif" />
+    <Content Include="images\c5.gif" />
+    <Content Include="images\c6.gif" />
+    <Content Include="images\c7.gif" />
+    <Content Include="images\cal.gif" />
+    <Content Include="images\chat_bg.gif" />
+    <Content Include="images\chat_c1.gif" />
+    <Content Include="images\chat_c2.gif" />
+    <Content Include="images\chat_clear.gif" />
+    <Content Include="images\chat_e1.gif" />
+    <Content Include="images\chat_e2.gif" />
+    <Content Include="images\chat_ec.gif" />
+    <Content Include="images\chat_face.gif" />
+    <Content Include="images\chat_file.gif" />
+    <Content Include="images\chat_font.gif" />
+    <Content Include="images\chat_font_b.gif" />
+    <Content Include="images\chat_font_i.gif" />
+    <Content Include="images\chat_font_u.gif" />
+    <Content Include="images\chat_foot_bg.gif" />
+    <Content Include="images\chat_foot_l.gif" />
+    <Content Include="images\chat_foot_r.gif" />
+    <Content Include="images\chat_log.gif" />
+    <Content Include="images\chat_s1.gif" />
+    <Content Include="images\chat_s2.gif" />
+    <Content Include="images\chat_save.gif" />
+    <Content Include="images\chat_tip.gif" />
+    <Content Include="images\chat_tool_bg.gif" />
+    <Content Include="images\chat_tool_ov.gif" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\close2.gif" />
+    <Content Include="images\coninfo.gif" />
+    <Content Include="images\correct.gif" />
+    <Content Include="images\cpphoto.jpg" />
+    <Content Include="images\cztp.jpg" />
+    <Content Include="images\d1.gif" />
+    <Content Include="images\d10.gif" />
+    <Content Include="images\d11.gif" />
+    <Content Include="images\d2.gif" />
+    <Content Include="images\d3.gif" />
+    <Content Include="images\d4.gif" />
+    <Content Include="images\d5.gif" />
+    <Content Include="images\d6.gif" />
+    <Content Include="images\d7.gif" />
+    <Content Include="images\d8.gif" />
+    <Content Include="images\d9.gif" />
+    <Content Include="images\del.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\disable.gif" />
+    <Content Include="images\dpphoto.jpg" />
+    <Content Include="images\e1.gif" />
+    <Content Include="images\e2.gif" />
+    <Content Include="images\e3.gif" />
+    <Content Include="images\e5.gif" />
+    <Content Include="images\e6.gif" />
+    <Content Include="images\e7.gif" />
+    <Content Include="images\e7.jpg" />
+    <Content Include="images\e8.gif" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\error.gif" />
+    <Content Include="images\f1.gif" />
+    <Content Include="images\f2.gif" />
+    <Content Include="images\f3.gif" />
+    <Content Include="images\f4.gif" />
+    <Content Include="images\fatcow_002.png" />
+    <Content Include="images\fatcow_005.png" />
+    <Content Include="images\fatcow_009.png" />
+    <Content Include="images\fatcow_015.png" />
+    <Content Include="images\fatcow_034.png" />
+    <Content Include="images\fatcow_038.png" />
+    <Content Include="images\fatcow_043.png" />
+    <Content Include="images\fatcow_060.png" />
+    <Content Include="images\fatcow_132.png" />
+    <Content Include="images\fatcow_134.png" />
+    <Content Include="images\fatcow_466.png" />
+    <Content Include="images\fatcow_686.png" />
+    <Content Include="images\finish_1.jpg" />
+    <Content Include="images\finish_2.jpg" />
+    <Content Include="images\finish_3.jpg" />
+    <Content Include="images\finish_4.jpg" />
+    <Content Include="images\focus_bg.jpg" />
+    <Content Include="images\folder.gif" />
+    <Content Include="images\f_d_bg.jpg" />
+    <Content Include="images\f_d_topbg.jpg" />
+    <Content Include="images\f_f_bg.jpg" />
+    <Content Include="images\f_jxf.jpg" />
+    <Content Include="images\f_m_1.jpg" />
+    <Content Include="images\f_m_2.jpg" />
+    <Content Include="images\f_m_3.jpg" />
+    <Content Include="images\goto.gif" />
+    <Content Include="images\gz.gif" />
+    <Content Include="images\head_bg.gif" />
+    <Content Include="images\head_sch.gif" />
+    <Content Include="images\hs.png" />
+    <Content Include="images\huanyuan.gif" />
+    <Content Include="images\hv.png" />
+    <Content Include="images\icon-01.gif" />
+    <Content Include="images\icon-02.gif" />
+    <Content Include="images\icon-03.gif" />
+    <Content Include="images\ico_credit.gif" />
+    <Content Include="images\ico_edit.gif" />
+    <Content Include="images\ico_home.gif" />
+    <Content Include="images\ico_homepage.gif" />
+    <Content Include="images\ico_lock.gif" />
+    <Content Include="images\ico_mailok.gif" />
+    <Content Include="images\ico_member.gif" />
+    <Content Include="images\ico_message.gif" />
+    <Content Include="images\ico_newcart.gif" />
+    <Content Include="images\ico_newchat.gif" />
+    <Content Include="images\ico_newmessage.gif" />
+    <Content Include="images\ico_product.gif" />
+    <Content Include="images\ico_profile.gif" />
+    <Content Include="images\ico_record.gif" />
+    <Content Include="images\ico_sms.gif" />
+    <Content Include="images\ico_trade.gif" />
+    <Content Include="images\ihead_bg.gif" />
+    <Content Include="images\img_delete.gif" />
+    <Content Include="images\img_down.gif" />
+    <Content Include="images\img_preview.gif" />
+    <Content Include="images\img_select.gif" />
+    <Content Include="images\img_upload.gif" />
+    <Content Include="images\input_bg.jpg" />
+    <Content Include="images\jiahao.jpg" />
+    <Content Include="images\kefu.gif" />
+    <Content Include="images\kjdh.gif" />
+    <Content Include="images\ko.gif" />
+    <Content Include="images\li_dot.gif" />
+    <Content Include="images\ljt.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo1.jpg" />
+    <Content Include="images\mainbg.gif" />
+    <Content Include="images\main_lc.gif" />
+    <Content Include="images\main_lc_bg.gif" />
+    <Content Include="images\menu.gif" />
+    <Content Include="images\menu_bg.gif" />
+    <Content Include="images\message_0.gif" />
+    <Content Include="images\message_1.gif" />
+    <Content Include="images\message_2.gif" />
+    <Content Include="images\message_3.gif" />
+    <Content Include="images\message_4.gif" />
+    <Content Include="images\message_sys.gif" />
+    <Content Include="images\msgbox.gif" />
+    <Content Include="images\msgtbth.gif" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\new.png" />
+    <Content Include="images\next_has.jpg" />
+    <Content Include="images\next_mon.gif" />
+    <Content Include="images\next_no.jpg" />
+    <Content Include="images\next_now.jpg" />
+    <Content Include="images\next_year.gif" />
+    <Content Include="images\noaudit.jpg" />
+    <Content Include="images\noshop.jpg" />
+    <Content Include="images\no_cal.gif" />
+    <Content Include="images\ok.gif" />
+    <Content Include="images\okay.gif" />
+    <Content Include="images\order.gif" />
+    <Content Include="images\photo.gif" />
+    <Content Include="images\prev_mon.gif" />
+    <Content Include="images\prev_year.gif" />
+    <Content Include="images\QQICO.jpg" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\s10.gif" />
+    <Content Include="images\searchtablebg.gif" />
+    <Content Include="images\searchtablebg.jpg" />
+    <Content Include="images\setMemberInfoTopBg.gif" />
+    <Content Include="images\side_bg.gif" />
+    <Content Include="images\side_head.gif" />
+    <Content Include="images\side_hide.gif" />
+    <Content Include="images\side_li.gif" />
+    <Content Include="images\side_show.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\success.gif" />
+    <Content Include="images\supplerindex_bg.gif" />
+    <Content Include="images\support.gif" />
+    <Content Include="images\t2.gif" />
+    <Content Include="images\th.gif" />
+    <Content Include="images\tieshi.jpg" />
+    <Content Include="images\tip-yellow.png" />
+    <Content Include="images\tip-yellowsimple.css" />
+    <Content Include="images\tip-yellowsimple_arrows.gif" />
+    <Content Include="images\tip-yellow_arrows.png" />
+    <Content Include="images\tips_bg.gif" />
+    <Content Include="images\tips_top.gif" />
+    <Content Include="images\topbg.jpg" />
+    <Content Include="images\top_more.gif" />
+    <Content Include="images\upfilebg.gif" />
+    <Content Include="images\upfilebg2.gif" />
+    <Content Include="images\u_bank.gif" />
+    <Content Include="images\u_company.gif" />
+    <Content Include="images\u_email.gif" />
+    <Content Include="images\u_member.gif" />
+    <Content Include="images\u_mobile.gif" />
+    <Content Include="images\u_trade.gif" />
+    <Content Include="images\u_truename.gif" />
+    <Content Include="images\v_bank.gif" />
+    <Content Include="images\v_company.gif" />
+    <Content Include="images\v_email.gif" />
+    <Content Include="images\v_member.gif" />
+    <Content Include="images\v_mobile.gif" />
+    <Content Include="images\v_trade.gif" />
+    <Content Include="images\v_truename.gif" />
+    <Content Include="images\warn.gif" />
+    <Content Include="images\warning.gif" />
+    <Content Include="images\wenhao.jpg" />
+    <Content Include="images\why.gif" />
+    <Content Include="images\wicon.gif" />
+    <Content Include="images\xldown.gif" />
+    <Content Include="images\xlup.gif" />
+    <Content Include="index.aspx" />
+    <Content Include="information\newsinfo.aspx" />
+    <Content Include="information\newslist.aspx" />
+    <Content Include="information\promotionsinfo.aspx" />
+    <Content Include="information\promotionslist.aspx" />
+    <Content Include="information\merchantslist.aspx" />
+    <Content Include="information\merchantsinfo.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="market\addSubMarket.aspx" />
+    <Content Include="market\marketclique.aspx" />
+    <Content Include="market\marketinfo.aspx" />
+    <Content Include="market\marketminInfor.aspx" />
+    <Content Include="market\marketminList.aspx" />
+    <Content Include="market\marketshopadd.aspx" />
+    <Content Include="market\marketstoryinfo.aspx" />
+    <Content Include="market\marketstorylist.aspx" />
+    <Content Include="market\marketstoryshoplist.aspx" />
+    <Content Include="market\marketstoryshopmanage.aspx" />
+    <Content Include="market\OrderInforpabe.aspx" />
+    <Content Include="market\PavilionAdd.aspx" />
+    <Content Include="market\PavilionList.aspx" />
+    <Content Include="market\setmarketstoryshop.aspx" />
+    <Content Include="market\orderListmanage.aspx" />
+    <Content Include="member\DelAccount.aspx" />
+    <Content Include="member\editpwd.aspx" />
+    <Content Include="member\memberinfo.aspx" />
+    <Content Include="member\Purview.aspx" />
+    <Content Include="member\SettlePurview.aspx" />
+    <Content Include="member\UpdateAccount.aspx" />
+    <Content Include="member\WebForm1.aspx" />
+    <Content Include="Payment\BankComm_Bridge.aspx" />
+    <Content Include="Payment\RegPayment.aspx" />
+    <Content Include="Payment\Alipay_Notify.aspx" />
+    <Content Include="Payment\RegPayMsg.aspx" />
+    <Content Include="Payment\RegPayMsginfor.aspx" />
+    <Content Include="product\addProductPOP.aspx" />
+    <Content Include="product\dealerproductlist.aspx" />
+    <Content Include="product\DelGroupProductList.aspx" />
+    <Content Include="product\DelProductList.aspx" />
+    <Content Include="product\groupproductlist.aspx" />
+    <Content Include="product\issuegroupproduct.aspx" />
+    <Content Include="product\IssueProductColorSwatch.htm" />
+    <Content Include="product\modifyproductshop.aspx" />
+    <Content Include="product\productattribute.aspx" />
+    <Content Include="product\productinfo.aspx" />
+    <Content Include="product\productlist.aspx" />
+    <Content Include="product\SetProductPrice.aspx" />
+    <Content Include="resource\altdialog\artDialog.js" />
+    <Content Include="resource\altdialog\plugins\artDialog.plugins.min.js" />
+    <Content Include="resource\altdialog\plugins\iframeTools.js" />
+    <Content Include="resource\altdialog\plugins\iframeTools.source.js" />
+    <Content Include="resource\altdialog\skins\aero.css" />
+    <Content Include="resource\altdialog\skins\aero\aero_s.png" />
+    <Content Include="resource\altdialog\skins\aero\aero_s2.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_close.hover.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_close.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_e.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_n.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_ne.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_nw.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_s.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_se.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_sw.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_title_icon.png" />
+    <Content Include="resource\altdialog\skins\aero\ie6\aui_w.png" />
+    <Content Include="resource\altdialog\skins\black.css" />
+    <Content Include="resource\altdialog\skins\black\bg.png" />
+    <Content Include="resource\altdialog\skins\black\bg2.png" />
+    <Content Include="resource\altdialog\skins\black\bg_css3.png" />
+    <Content Include="resource\altdialog\skins\black\bg_css3_2.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\close.hover.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\close.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\e.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\n.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\ne.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\nw.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\s.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\se.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\sw.png" />
+    <Content Include="resource\altdialog\skins\black\ie6\w.png" />
+    <Content Include="resource\altdialog\skins\blue.css" />
+    <Content Include="resource\altdialog\skins\blue\bg.png" />
+    <Content Include="resource\altdialog\skins\blue\bg2.png" />
+    <Content Include="resource\altdialog\skins\blue\bg_css3.png" />
+    <Content Include="resource\altdialog\skins\blue\bg_css3_2.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\close.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\e.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\n.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\ne.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\nw.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\s.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\se.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\sw.png" />
+    <Content Include="resource\altdialog\skins\blue\ie6\w.png" />
+    <Content Include="resource\altdialog\skins\chrome.css" />
+    <Content Include="resource\altdialog\skins\chrome\border.png" />
+    <Content Include="resource\altdialog\skins\chrome\chrome_s.png" />
+    <Content Include="resource\altdialog\skins\default.css" />
+    <Content Include="resource\altdialog\skins\green.css" />
+    <Content Include="resource\altdialog\skins\green\bg.png" />
+    <Content Include="resource\altdialog\skins\green\bg2.png" />
+    <Content Include="resource\altdialog\skins\green\bg_css3.png" />
+    <Content Include="resource\altdialog\skins\green\bg_css3_2.png" />
+    <Content Include="resource\altdialog\skins\green\color_bg.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\close.hover.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\close.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\e.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\n.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\ne.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\nw.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\s.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\se.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\sw.png" />
+    <Content Include="resource\altdialog\skins\green\ie6\w.png" />
+    <Content Include="resource\altdialog\skins\icons\error.png" />
+    <Content Include="resource\altdialog\skins\icons\face-sad.png" />
+    <Content Include="resource\altdialog\skins\icons\face-smile.png" />
+    <Content Include="resource\altdialog\skins\icons\loading.gif" />
+    <Content Include="resource\altdialog\skins\icons\question.png" />
+    <Content Include="resource\altdialog\skins\icons\succeed.png" />
+    <Content Include="resource\altdialog\skins\icons\warning.png" />
+    <Content Include="resource\altdialog\skins\idialog.css" />
+    <Content Include="resource\altdialog\skins\idialog\idialog_s.png" />
+    <Content Include="resource\altdialog\skins\idialog\idialog_s2.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_close.hover.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_close.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_e.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_n.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_ne.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_nw.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_s.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_se.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_sw.png" />
+    <Content Include="resource\altdialog\skins\idialog\ie6\aui_w.png" />
+    <Content Include="resource\altdialog\skins\opera.css" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_close.hover.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_close.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_e.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_n.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_ne.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_nw.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_s.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_se.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_sw.png" />
+    <Content Include="resource\altdialog\skins\opera\ie6\aui_w.png" />
+    <Content Include="resource\altdialog\skins\opera\s1.png" />
+    <Content Include="resource\altdialog\skins\opera\s2.png" />
+    <Content Include="resource\altdialog\skins\simple.css" />
+    <Content Include="resource\altdialog\skins\twitter.css" />
+    <Content Include="resource\css\jquery.jcarousel.css" />
+    <Content Include="resource\css\webcommon.css" />
+    <Content Include="resource\css\ymPrompt\black\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\btn_bg.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\ico.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\title_bg_center.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\title_bg_left.gif" />
+    <Content Include="resource\css\ymPrompt\black\images\title_bg_right.gif" />
+    <Content Include="resource\css\ymPrompt\black\ymPrompt.css" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\btn_bg.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\ico.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\title_bg_center.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\title_bg_left.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\images\title_bg_right.gif" />
+    <Content Include="resource\css\ymPrompt\bluebar\ymPrompt.css" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\btn_bg.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\ico.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\titleIco.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\title_bg_center.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\title_bg_left.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\title_bg_right.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\win_b.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\win_l.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\win_lb.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\win_r.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\images\win_rb.gif" />
+    <Content Include="resource\css\ymPrompt\dmm-green\ymPrompt.css" />
+    <Content Include="resource\css\ymPrompt\qq\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\btn_bg.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\content_bg.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\ico.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\title_bg_center.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\title_bg_left.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\title_bg_right.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\win_b.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\win_l.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\win_lb.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\win_r.gif" />
+    <Content Include="resource\css\ymPrompt\qq\images\win_rb.gif" />
+    <Content Include="resource\css\ymPrompt\qq\ymPrompt.css" />
+    <Content Include="resource\css\ymPrompt\simple\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\simple\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\simple\images\ico.gif" />
+    <Content Include="resource\css\ymPrompt\simple\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\simple\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\simple\ymPrompt.css" />
+    <Content Include="resource\css\ymPrompt\simple_gray\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\simple_gray\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\simple_gray\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\simple_gray\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\simple_gray\ymPrompt.css" />
+    <Content Include="resource\css\ymPrompt\vista\images\ask.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\btn_bg.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\err.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\ico.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\info.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\right.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\title_bg_center.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\title_bg_left.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\title_bg_right.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\win_b.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\win_l.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\win_lb.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\win_r.gif" />
+    <Content Include="resource\css\ymPrompt\vista\images\win_rb.gif" />
+    <Content Include="resource\css\ymPrompt\vista\ymPrompt.css" />
+    <Content Include="resource\editor\kindeditor\kindeditor-min.js" />
+    <Content Include="resource\editor\kindeditor\kindeditor.js" />
+    <Content Include="resource\editor\kindeditor\lang\ar.js" />
+    <Content Include="resource\editor\kindeditor\lang\en.js" />
+    <Content Include="resource\editor\kindeditor\lang\zh_CN.js" />
+    <Content Include="resource\editor\kindeditor\lang\zh_TW.js" />
+    <Content Include="resource\editor\kindeditor\plugins\anchor\anchor.js" />
+    <Content Include="resource\editor\kindeditor\plugins\clearhtml\clearhtml.js" />
+    <Content Include="resource\editor\kindeditor\plugins\code\code.js" />
+    <Content Include="resource\editor\kindeditor\plugins\code\prettify.css" />
+    <Content Include="resource\editor\kindeditor\plugins\code\prettify.js" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\emoticons.js" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\0.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\1.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\10.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\100.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\101.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\102.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\103.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\104.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\105.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\106.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\107.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\108.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\109.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\11.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\110.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\111.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\112.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\113.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\114.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\115.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\116.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\117.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\118.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\119.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\12.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\120.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\121.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\122.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\123.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\124.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\125.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\126.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\127.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\128.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\129.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\13.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\130.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\131.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\132.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\133.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\134.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\14.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\15.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\16.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\17.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\18.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\19.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\2.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\20.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\21.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\22.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\23.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\24.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\25.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\26.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\27.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\28.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\29.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\3.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\30.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\31.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\32.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\33.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\34.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\35.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\36.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\37.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\38.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\39.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\4.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\40.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\41.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\42.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\43.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\44.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\45.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\46.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\47.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\48.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\49.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\5.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\50.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\51.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\52.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\53.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\54.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\55.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\56.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\57.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\58.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\59.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\6.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\60.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\61.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\62.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\63.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\64.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\65.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\66.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\67.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\68.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\69.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\7.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\70.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\71.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\72.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\73.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\74.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\75.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\76.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\77.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\78.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\79.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\8.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\80.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\81.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\82.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\83.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\84.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\85.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\86.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\87.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\88.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\89.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\9.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\90.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\91.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\92.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\93.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\94.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\95.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\96.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\97.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\98.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\99.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\emoticons\images\static.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\filemanager\filemanager.js" />
+    <Content Include="resource\editor\kindeditor\plugins\filemanager\images\file-16.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\filemanager\images\file-64.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\filemanager\images\go-up.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\flash\flash.js" />
+    <Content Include="resource\editor\kindeditor\plugins\image\image.js" />
+    <Content Include="resource\editor\kindeditor\plugins\image\images\align_left.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\image\images\align_right.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\image\images\align_top.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\image\images\refresh.gif" />
+    <Content Include="resource\editor\kindeditor\plugins\insertfile\insertfile.js" />
+    <Content Include="resource\editor\kindeditor\plugins\lineheight\lineheight.js" />
+    <Content Include="resource\editor\kindeditor\plugins\link\link.js" />
+    <Content Include="resource\editor\kindeditor\plugins\map\map.html" />
+    <Content Include="resource\editor\kindeditor\plugins\map\map.js" />
+    <Content Include="resource\editor\kindeditor\plugins\media\media.js" />
+    <Content Include="resource\editor\kindeditor\plugins\pagebreak\pagebreak.js" />
+    <Content Include="resource\editor\kindeditor\plugins\plainpaste\plainpaste.js" />
+    <Content Include="resource\editor\kindeditor\plugins\preview\preview.js" />
+    <Content Include="resource\editor\kindeditor\plugins\quickformat\quickformat.js" />
+    <Content Include="resource\editor\kindeditor\plugins\table\table.js" />
+    <Content Include="resource\editor\kindeditor\plugins\template\html\1.html" />
+    <Content Include="resource\editor\kindeditor\plugins\template\html\2.html" />
+    <Content Include="resource\editor\kindeditor\plugins\template\html\3.html" />
+    <Content Include="resource\editor\kindeditor\plugins\template\template.js" />
+    <Content Include="resource\editor\kindeditor\plugins\wordpaste\wordpaste.js" />
+    <Content Include="resource\editor\kindeditor\themes\common\anchor.gif" />
+    <Content Include="resource\editor\kindeditor\themes\common\blank.gif" />
+    <Content Include="resource\editor\kindeditor\themes\common\flash.gif" />
+    <Content Include="resource\editor\kindeditor\themes\common\loading.gif" />
+    <Content Include="resource\editor\kindeditor\themes\common\media.gif" />
+    <Content Include="resource\editor\kindeditor\themes\common\rm.gif" />
+    <Content Include="resource\editor\kindeditor\themes\default\bg.gif" />
+    <Content Include="resource\editor\kindeditor\themes\default\default.css" />
+    <Content Include="resource\editor\kindeditor\themes\default\default.png" />
+    <Content Include="resource\editor\kindeditor\themes\simple\simple.css" />
+    <Content Include="resource\flash\error.jpg" />
+    <Content Include="resource\flash\focus.swf" />
+    <Content Include="resource\flash\library\focus.js" />
+    <Content Include="resource\flash\library\hint.gif" />
+    <Content Include="resource\flash\library\hintbg1.gif" />
+    <Content Include="resource\flash\library\hintbg2.gif" />
+    <Content Include="resource\flash\library\icon-01.gif" />
+    <Content Include="resource\flash\library\icon-02.gif" />
+    <Content Include="resource\flash\library\icon-03.gif" />
+    <Content Include="resource\flash\library\msg-01.gif" />
+    <Content Include="resource\flash\library\msg.css" />
+    <Content Include="resource\flash\library\msg.js" />
+    <Content Include="resource\flash\library\msg_bg.gif" />
+    <Content Include="resource\flash\Player.swf" />
+    <Content Include="resource\images\button_submit.gif" />
+    <Content Include="resource\images\ico\fatcow_091.png" />
+    <Content Include="resource\images\ico\fatcow_542.png" />
+    <Content Include="resource\images\ico\ico-01.gif" />
+    <Content Include="resource\images\ico\ico-02.gif" />
+    <Content Include="resource\images\ico\ico-03.gif" />
+    <Content Include="resource\joyride\joyride-1.0.2.css" />
+    <Content Include="resource\joyride\jquery.joyride-1.0.2.min.js" />
+    <Content Include="resource\lazyload\grey.gif" />
+    <Content Include="resource\lazyload\jquery.lazyload.js" />
+    <Content Include="resource\lazyload\white.gif" />
+    <Content Include="resource\listbox\jquery.dualListBox-1.3.min.js" />
+    <Content Include="resource\listbox\styles.css" />
+    <Content Include="resource\My97DatePicker\calendar.js" />
+    <Content Include="resource\My97DatePicker\lang\en.js" />
+    <Content Include="resource\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="resource\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="resource\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="resource\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="resource\My97DatePicker\skin\default\img.gif" />
+    <Content Include="resource\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="resource\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="resource\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="resource\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="resource\My97DatePicker\WdatePicker.js" />
+    <Content Include="resource\script\additional-methods.js" />
+    <Content Include="resource\script\common.js" />
+    <Content Include="resource\script\fancybox\blank.gif" />
+    <Content Include="resource\script\fancybox\fancybox-x.png" />
+    <Content Include="resource\script\fancybox\fancybox-y.png" />
+    <Content Include="resource\script\fancybox\fancybox.png" />
+    <Content Include="resource\script\fancybox\fancy_close.png" />
+    <Content Include="resource\script\fancybox\fancy_loading.png" />
+    <Content Include="resource\script\fancybox\fancy_nav_left.png" />
+    <Content Include="resource\script\fancybox\fancy_nav_right.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_e.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_n.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_ne.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_nw.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_s.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_se.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_sw.png" />
+    <Content Include="resource\script\fancybox\fancy_shadow_w.png" />
+    <Content Include="resource\script\fancybox\fancy_title_left.png" />
+    <Content Include="resource\script\fancybox\fancy_title_main.png" />
+    <Content Include="resource\script\fancybox\fancy_title_over.png" />
+    <Content Include="resource\script\fancybox\fancy_title_right.png" />
+    <Content Include="resource\script\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="resource\script\fileupload.js" />
+    <Content Include="resource\script\jquery-1.7.1.min.js" />
+    <Content Include="resource\script\jquery.area.js" />
+    <Content Include="resource\script\jquery.area2.js" />
+    <Content Include="resource\script\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="resource\script\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="resource\script\jquery.form.js" />
+    <Content Include="resource\script\jquery.getcss.js" />
+    <Content Include="resource\script\jquery.inputlabel.js" />
+    <Content Include="resource\script\jquery.jcarousel.pack.js" />
+    <Content Include="resource\script\jquery.jcountdown1.3.min.js" />
+    <Content Include="resource\script\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="resource\script\jquery.poshytip.min.js" />
+    <Content Include="resource\script\jquery.scrollLoading.js" />
+    <Content Include="resource\script\jquery.validate.min.js" />
+    <Content Include="resource\script\json2.js" />
+    <Content Include="resource\script\messages_cn.js" />
+    <Content Include="resource\script\myfocus-1.2.4.min.js" />
+    <Content Include="resource\script\oms_autocomplate.js" />
+    <Content Include="resource\script\pattern\mF_51xflash.css" />
+    <Content Include="resource\script\pattern\mF_51xflash.js" />
+    <Content Include="resource\script\pattern\mF_classicHB.css" />
+    <Content Include="resource\script\pattern\mF_classicHB.js" />
+    <Content Include="resource\script\pattern\mF_classicHC.css" />
+    <Content Include="resource\script\pattern\mF_classicHC.js" />
+    <Content Include="resource\script\pattern\mF_expo2010.css" />
+    <Content Include="resource\script\pattern\mF_expo2010.js" />
+    <Content Include="resource\script\pattern\mF_fscreen_tb.css" />
+    <Content Include="resource\script\pattern\mF_fscreen_tb.js" />
+    <Content Include="resource\script\pattern\mF_games_tb.css" />
+    <Content Include="resource\script\pattern\mF_games_tb.js" />
+    <Content Include="resource\script\pattern\mF_kiki.css" />
+    <Content Include="resource\script\pattern\mF_kiki.js" />
+    <Content Include="resource\script\pattern\mF_ladyQ.css" />
+    <Content Include="resource\script\pattern\mF_ladyQ.js" />
+    <Content Include="resource\script\pattern\mF_liquid.css" />
+    <Content Include="resource\script\pattern\mF_liquid.js" />
+    <Content Include="resource\script\pattern\mF_liuzg.css" />
+    <Content Include="resource\script\pattern\mF_liuzg.js" />
+    <Content Include="resource\script\pattern\mF_luluJQ.css" />
+    <Content Include="resource\script\pattern\mF_luluJQ.js" />
+    <Content Include="resource\script\pattern\mF_pconline.css" />
+    <Content Include="resource\script\pattern\mF_pconline.js" />
+    <Content Include="resource\script\pattern\mF_peijianmall.css" />
+    <Content Include="resource\script\pattern\mF_peijianmall.js" />
+    <Content Include="resource\script\pattern\mF_pithy_tb.css" />
+    <Content Include="resource\script\pattern\mF_pithy_tb.js" />
+    <Content Include="resource\script\pattern\mF_qiyi.css" />
+    <Content Include="resource\script\pattern\mF_qiyi.js" />
+    <Content Include="resource\script\pattern\mF_quwan.css" />
+    <Content Include="resource\script\pattern\mF_quwan.js" />
+    <Content Include="resource\script\pattern\mF_rapoo.css" />
+    <Content Include="resource\script\pattern\mF_rapoo.js" />
+    <Content Include="resource\script\pattern\mF_slide3D.css" />
+    <Content Include="resource\script\pattern\mF_slide3D.js" />
+    <Content Include="resource\script\pattern\mF_sohusports.css" />
+    <Content Include="resource\script\pattern\mF_sohusports.js" />
+    <Content Include="resource\script\pattern\mF_taobao2010.css" />
+    <Content Include="resource\script\pattern\mF_taobao2010.js" />
+    <Content Include="resource\script\pattern\mF_taobaomall.css" />
+    <Content Include="resource\script\pattern\mF_taobaomall.js" />
+    <Content Include="resource\script\pattern\mF_tbhuabao.css" />
+    <Content Include="resource\script\pattern\mF_tbhuabao.js" />
+    <Content Include="resource\script\pattern\mF_YSlider.css" />
+    <Content Include="resource\script\pattern\mF_YSlider.js" />
+    <Content Include="resource\script\socommon.js" />
+    <Content Include="resource\script\soglobal.js" />
+    <Content Include="resource\script\thickbox-compressed.js" />
+    <Content Include="resource\script\thickbox.css" />
+    <Content Include="resource\script\WdatePicker.js" />
+    <Content Include="resource\script\Aliyunfileupload.js" />
+    <Content Include="resource\web\css\common.css" />
+    <Content Include="resource\web\css\csshover.htc" />
+    <Content Include="resource\web\css\index.css" />
+    <Content Include="resource\web\css\tcal.css" />
+    <Content Include="resource\web\images\21.jpg" />
+    <Content Include="resource\web\images\22.jpg" />
+    <Content Include="resource\web\images\addressphone.gif" />
+    <Content Include="resource\web\images\ajax-loader.gif" />
+    <Content Include="resource\web\images\anopic.jpg" />
+    <Content Include="resource\web\images\b1.jpg" />
+    <Content Include="resource\web\images\bannelp1.jpg" />
+    <Content Include="resource\web\images\banner\21.jpg" />
+    <Content Include="resource\web\images\banner\22.jpg" />
+    <Content Include="resource\web\images\banner\23.jpg" />
+    <Content Include="resource\web\images\banner\24.jpg" />
+    <Content Include="resource\web\images\banner\b1.jpg" />
+    <Content Include="resource\web\images\banner\b2.jpg" />
+    <Content Include="resource\web\images\banner\bannelp1.jpg" />
+    <Content Include="resource\web\images\banner\index_106.jpg" />
+    <Content Include="resource\web\images\banner\index_62.jpg" />
+    <Content Include="resource\web\images\banner\index_mid_banner.jpg" />
+    <Content Include="resource\web\images\banner\index_mid_banner2.jpg" />
+    <Content Include="resource\web\images\banner\index_rig_banner.jpg" />
+    <Content Include="resource\web\images\banner\index_top_banner.jpg" />
+    <Content Include="resource\web\images\brands_01.gif" />
+    <Content Include="resource\web\images\brands_02.gif" />
+    <Content Include="resource\web\images\brands_03.gif" />
+    <Content Include="resource\web\images\brands_03.jpg" />
+    <Content Include="resource\web\images\brands_04.jpg" />
+    <Content Include="resource\web\images\brands_05.gif" />
+    <Content Include="resource\web\images\brands_05.jpg" />
+    <Content Include="resource\web\images\brands_06.gif" />
+    <Content Include="resource\web\images\brands_07.jpg" />
+    <Content Include="resource\web\images\brands_08.gif" />
+    <Content Include="resource\web\images\brands_081.gif" />
+    <Content Include="resource\web\images\brands_09.gif" />
+    <Content Include="resource\web\images\brands_091.gif" />
+    <Content Include="resource\web\images\brands_10.jpg" />
+    <Content Include="resource\web\images\brands_11.jpg" />
+    <Content Include="resource\web\images\brands_12.gif" />
+    <Content Include="resource\web\images\brands_13.gif" />
+    <Content Include="resource\web\images\brands_14.gif" />
+    <Content Include="resource\web\images\brands_14_2.gif" />
+    <Content Include="resource\web\images\brands_15.jpg" />
+    <Content Include="resource\web\images\brands_16.gif" />
+    <Content Include="resource\web\images\brands_16.jpg" />
+    <Content Include="resource\web\images\brands_17.jpg" />
+    <Content Include="resource\web\images\brands_18.jpg" />
+    <Content Include="resource\web\images\brands_19.jpg" />
+    <Content Include="resource\web\images\btn1.jpg" />
+    <Content Include="resource\web\images\btn2.gif" />
+    <Content Include="resource\web\images\btn2.jpg" />
+    <Content Include="resource\web\images\btn2_cur.gif" />
+    <Content Include="resource\web\images\butox.gif" />
+    <Content Include="resource\web\images\cal.gif" />
+    <Content Include="resource\web\images\canlender.jpg" />
+    <Content Include="resource\web\images\canlender2.jpg" />
+    <Content Include="resource\web\images\close2.gif" />
+    <Content Include="resource\web\images\common\c53104.jpg" />
+    <Content Include="resource\web\images\common\grey.gif" />
+    <Content Include="resource\web\images\common\white.gif" />
+    <Content Include="resource\web\images\connecttitle.gif" />
+    <Content Include="resource\web\images\contact_head.gif" />
+    <Content Include="resource\web\images\dealer_03.gif" />
+    <Content Include="resource\web\images\dealer_04.gif" />
+    <Content Include="resource\web\images\dealer_04Trim1.gif" />
+    <Content Include="resource\web\images\dealer_05.jpg" />
+    <Content Include="resource\web\images\dealer_06.jpg" />
+    <Content Include="resource\web\images\dealer_07.jpg" />
+    <Content Include="resource\web\images\dealer_08.gif" />
+    <Content Include="resource\web\images\error.gif" />
+    <Content Include="resource\web\images\fnotbrand.jpg" />
+    <Content Include="resource\web\images\gray.gif" />
+    <Content Include="resource\web\images\groupInfo_baoming.png" />
+    <Content Include="resource\web\images\groupInfo_bg.gif" />
+    <Content Include="resource\web\images\groupInfo_con_bg.png" />
+    <Content Include="resource\web\images\homebrands_03.gif" />
+    <Content Include="resource\web\images\homebrands_05.gif" />
+    <Content Include="resource\web\images\homebrands_10.gif" />
+    <Content Include="resource\web\images\homebrands_17.jpg" />
+    <Content Include="resource\web\images\homebrands_21.jpg" />
+    <Content Include="resource\web\images\homebrands_24.gif" />
+    <Content Include="resource\web\images\homebrands_29.jpg" />
+    <Content Include="resource\web\images\homebrands_32.jpg" />
+    <Content Include="resource\web\images\homebrands_37.jpg" />
+    <Content Include="resource\web\images\homebrands_41.gif" />
+    <Content Include="resource\web\images\homebrands_45.jpg" />
+    <Content Include="resource\web\images\homebrands_x.gif" />
+    <Content Include="resource\web\images\home\home001.jpg" />
+    <Content Include="resource\web\images\home\home001hover.jpg" />
+    <Content Include="resource\web\images\home\home002.jpg" />
+    <Content Include="resource\web\images\home\home002hover.jpg" />
+    <Content Include="resource\web\images\home\home003.jpg" />
+    <Content Include="resource\web\images\home\home003hover.jpg" />
+    <Content Include="resource\web\images\home\home004.jpg" />
+    <Content Include="resource\web\images\home\home004hover.jpg" />
+    <Content Include="resource\web\images\home\home005.jpg" />
+    <Content Include="resource\web\images\home\home005hover.jpg" />
+    <Content Include="resource\web\images\home\home006.jpg" />
+    <Content Include="resource\web\images\home\home006hover.jpg" />
+    <Content Include="resource\web\images\home\home007.jpg" />
+    <Content Include="resource\web\images\home\home007hover.jpg" />
+    <Content Include="resource\web\images\home\home008.jpg" />
+    <Content Include="resource\web\images\home\home008hover.jpg" />
+    <Content Include="resource\web\images\home\home009.jpg" />
+    <Content Include="resource\web\images\home\home009hover.jpg" />
+    <Content Include="resource\web\images\home\home10.gif" />
+    <Content Include="resource\web\images\home\home10.jpg" />
+    <Content Include="resource\web\images\home\home11.gif" />
+    <Content Include="resource\web\images\home\home11.jpg" />
+    <Content Include="resource\web\images\home\home12.jpg" />
+    <Content Include="resource\web\images\home\home13.jpg" />
+    <Content Include="resource\web\images\home\home13hover.jpg" />
+    <Content Include="resource\web\images\home\home15.jpg" />
+    <Content Include="resource\web\images\home\home3.gif" />
+    <Content Include="resource\web\images\home\home5.jpg" />
+    <Content Include="resource\web\images\home\home54.jpg" />
+    <Content Include="resource\web\images\home\home55.jpg" />
+    <Content Include="resource\web\images\home\home6.jpg" />
+    <Content Include="resource\web\images\home\home7.gif" />
+    <Content Include="resource\web\images\home\home7.jpg" />
+    <Content Include="resource\web\images\home\home8.gif" />
+    <Content Include="resource\web\images\home\home8.jpg" />
+    <Content Include="resource\web\images\home\home9.gif" />
+    <Content Include="resource\web\images\home\home9.jpg" />
+    <Content Include="resource\web\images\home\homebrand01.jpg" />
+    <Content Include="resource\web\images\home\homemarket01.jpg" />
+    <Content Include="resource\web\images\home\homemarket02.jpg" />
+    <Content Include="resource\web\images\home\homemarket03.jpg" />
+    <Content Include="resource\web\images\house.gif" />
+    <Content Include="resource\web\images\i1.gif" />
+    <Content Include="resource\web\images\i2.gif" />
+    <Content Include="resource\web\images\i3.gif" />
+    <Content Include="resource\web\images\i4.gif" />
+    <Content Include="resource\web\images\i5.gif" />
+    <Content Include="resource\web\images\icon001.gif" />
+    <Content Include="resource\web\images\index-08.jpg" />
+    <Content Include="resource\web\images\index-09.jpg" />
+    <Content Include="resource\web\images\index-10.jpg" />
+    <Content Include="resource\web\images\index_02.gif" />
+    <Content Include="resource\web\images\index_04.gif" />
+    <Content Include="resource\web\images\index_07.jpg" />
+    <Content Include="resource\web\images\index_100.gif" />
+    <Content Include="resource\web\images\index_103.jpg" />
+    <Content Include="resource\web\images\index_106.jpg" />
+    <Content Include="resource\web\images\index_110.gif" />
+    <Content Include="resource\web\images\index_114.jpg" />
+    <Content Include="resource\web\images\index_117.gif" />
+    <Content Include="resource\web\images\index_12.jpg" />
+    <Content Include="resource\web\images\index_121.gif" />
+    <Content Include="resource\web\images\index_124.gif" />
+    <Content Include="resource\web\images\index_127.jpg" />
+    <Content Include="resource\web\images\index_13.jpg" />
+    <Content Include="resource\web\images\index_130.gif" />
+    <Content Include="resource\web\images\index_130.jpg" />
+    <Content Include="resource\web\images\index_133.gif" />
+    <Content Include="resource\web\images\index_138.gif" />
+    <Content Include="resource\web\images\index_16.gif" />
+    <Content Include="resource\web\images\index_18.gif" />
+    <Content Include="resource\web\images\index_21.gif" />
+    <Content Include="resource\web\images\index_24.jpg" />
+    <Content Include="resource\web\images\index_33.gif" />
+    <Content Include="resource\web\images\index_37.gif" />
+    <Content Include="resource\web\images\index_40.jpg" />
+    <Content Include="resource\web\images\index_41.gif" />
+    <Content Include="resource\web\images\index_42.jpg" />
+    <Content Include="resource\web\images\index_47.gif" />
+    <Content Include="resource\web\images\index_48.gif" />
+    <Content Include="resource\web\images\index_52.jpg" />
+    <Content Include="resource\web\images\index_55.jpg" />
+    <Content Include="resource\web\images\index_58.jpg" />
+    <Content Include="resource\web\images\index_60.gif" />
+    <Content Include="resource\web\images\index_61.jpg" />
+    <Content Include="resource\web\images\index_62.gif" />
+    <Content Include="resource\web\images\index_62.jpg" />
+    <Content Include="resource\web\images\index_68.gif" />
+    <Content Include="resource\web\images\index_71.jpg" />
+    <Content Include="resource\web\images\index_74.gif" />
+    <Content Include="resource\web\images\index_76.gif" />
+    <Content Include="resource\web\images\index_83.jpg" />
+    <Content Include="resource\web\images\index_85.gif" />
+    <Content Include="resource\web\images\index_89.gif" />
+    <Content Include="resource\web\images\index_92.jpg" />
+    <Content Include="resource\web\images\index_97.gif" />
+    <Content Include="resource\web\images\index_rig_banner.jpg" />
+    <Content Include="resource\web\images\lightbox-blank.gif" />
+    <Content Include="resource\web\images\lightbox-btn-close.gif" />
+    <Content Include="resource\web\images\lightbox-btn-next.gif" />
+    <Content Include="resource\web\images\lightbox-btn-prev.gif" />
+    <Content Include="resource\web\images\lightbox-ico-loading.gif" />
+    <Content Include="resource\web\images\loadingAnimation.gif" />
+    <Content Include="resource\web\images\market008.jpg" />
+    <Content Include="resource\web\images\market01.gif" />
+    <Content Include="resource\web\images\market02.gif" />
+    <Content Include="resource\web\images\market03.gif" />
+    <Content Include="resource\web\images\market04.gif" />
+    <Content Include="resource\web\images\market05.gif" />
+    <Content Include="resource\web\images\market06.gif" />
+    <Content Include="resource\web\images\market07.gif" />
+    <Content Include="resource\web\images\market08.gif" />
+    <Content Include="resource\web\images\market09.gif" />
+    <Content Include="resource\web\images\market10.gif" />
+    <Content Include="resource\web\images\market11.gif" />
+    <Content Include="resource\web\images\market12.gif" />
+    <Content Include="resource\web\images\market13.gif" />
+    <Content Include="resource\web\images\market14.gif" />
+    <Content Include="resource\web\images\market15.gif" />
+    <Content Include="resource\web\images\market16.gif" />
+    <Content Include="resource\web\images\market17.gif" />
+    <Content Include="resource\web\images\market18.gif" />
+    <Content Include="resource\web\images\market19.gif" />
+    <Content Include="resource\web\images\marketcart.gif" />
+    <Content Include="resource\web\images\marketSearch.gif" />
+    <Content Include="resource\web\images\marketSearch2.gif" />
+    <Content Include="resource\web\images\marketSearch3.gif" />
+    <Content Include="resource\web\images\marketSearchhover.gif" />
+    <Content Include="resource\web\images\mkpic.gif" />
+    <Content Include="resource\web\images\n1.jpg" />
+    <Content Include="resource\web\images\n2.jpg" />
+    <Content Include="resource\web\images\next_mon.gif" />
+    <Content Include="resource\web\images\next_year.gif" />
+    <Content Include="resource\web\images\ni1.gif" />
+    <Content Include="resource\web\images\ni2.gif" />
+    <Content Include="resource\web\images\no.jpg" />
+    <Content Include="resource\web\images\noinfo.jpg" />
+    <Content Include="resource\web\images\nomarket.jpg" />
+    <Content Include="resource\web\images\nomarkets.gif" />
+    <Content Include="resource\web\images\noproduct.jpg" />
+    <Content Include="resource\web\images\noproductlistshop.gif" />
+    <Content Include="resource\web\images\noproductlistshop.jpg" />
+    <Content Include="resource\web\images\noproductmap.jpg" />
+    <Content Include="resource\web\images\noproductshop.jpg" />
+    <Content Include="resource\web\images\noshop.jpg" />
+    <Content Include="resource\web\images\not.gif" />
+    <Content Include="resource\web\images\notcompany.gif" />
+    <Content Include="resource\web\images\notfound.gif" />
+    <Content Include="resource\web\images\notimage.gif" />
+    <Content Include="resource\web\images\no_cal.gif" />
+    <Content Include="resource\web\images\onCorrect.gif" />
+    <Content Include="resource\web\images\onError.gif" />
+    <Content Include="resource\web\images\onFocus.gif" />
+    <Content Include="resource\web\images\onSuccess.gif" />
+    <Content Include="resource\web\images\p1.jpg" />
+    <Content Include="resource\web\images\p2.jpg" />
+    <Content Include="resource\web\images\paih.gif" />
+    <Content Include="resource\web\images\prev_mon.gif" />
+    <Content Include="resource\web\images\prev_year.gif" />
+    <Content Include="resource\web\images\productbrand001.gif" />
+    <Content Include="resource\web\images\productbrand002.gif" />
+    <Content Include="resource\web\images\productbrand003.gif" />
+    <Content Include="resource\web\images\productbrand004.gif" />
+    <Content Include="resource\web\images\productcatagory00.gif" />
+    <Content Include="resource\web\images\productcatagory01.gif" />
+    <Content Include="resource\web\images\productcatagory02.gif" />
+    <Content Include="resource\web\images\productcatagory03.gif" />
+    <Content Include="resource\web\images\productcatagory04.gif" />
+    <Content Include="resource\web\images\product_03.jpg" />
+    <Content Include="resource\web\images\product_05.jpg" />
+    <Content Include="resource\web\images\product_06.gif" />
+    <Content Include="resource\web\images\product_07.gif" />
+    <Content Include="resource\web\images\product_07.jpg" />
+    <Content Include="resource\web\images\product_08.gif" />
+    <Content Include="resource\web\images\product_10.gif" />
+    <Content Include="resource\web\images\product_11.gif" />
+    <Content Include="resource\web\images\product_12.gif" />
+    <Content Include="resource\web\images\product_14.gif" />
+    <Content Include="resource\web\images\product_15.gif" />
+    <Content Include="resource\web\images\product_16.gif" />
+    <Content Include="resource\web\images\product_18.gif" />
+    <Content Include="resource\web\images\product_19.gif" />
+    <Content Include="resource\web\images\product_29.gif" />
+    <Content Include="resource\web\images\product_30.gif" />
+    <Content Include="resource\web\images\product_31.jpg" />
+    <Content Include="resource\web\images\product_34.gif" />
+    <Content Include="resource\web\images\product_34.jpg" />
+    <Content Include="resource\web\images\product_38.jpg" />
+    <Content Include="resource\web\images\product_41.gif" />
+    <Content Include="resource\web\images\product_42.gif" />
+    <Content Include="resource\web\images\product_43.gif" />
+    <Content Include="resource\web\images\product_43hover.gif" />
+    <Content Include="resource\web\images\product_44.gif" />
+    <Content Include="resource\web\images\product_45.gif" />
+    <Content Include="resource\web\images\product_46.gif" />
+    <Content Include="resource\web\images\product_47.gif" />
+    <Content Include="resource\web\images\product_x.gif" />
+    <Content Include="resource\web\images\product_y.jpg" />
+    <Content Include="resource\web\images\promotion_bg.gif" />
+    <Content Include="resource\web\images\red.gif" />
+    <Content Include="resource\web\images\reg\onCorrect.gif" />
+    <Content Include="resource\web\images\reg\onError.gif" />
+    <Content Include="resource\web\images\reg\onFocus.gif" />
+    <Content Include="resource\web\images\reg\onSuccess.gif" />
+    <Content Include="resource\web\images\s1.jpg" />
+    <Content Include="resource\web\images\s2.jpg" />
+    <Content Include="resource\web\images\sanjiaot.gif" />
+    <Content Include="resource\web\images\setMemberInfoTopBg.gif" />
+    <Content Include="resource\web\images\shop-02.jpg" />
+    <Content Include="resource\web\images\shop_03.jpg" />
+    <Content Include="resource\web\images\shop_07.jpg" />
+    <Content Include="resource\web\images\shop_08.jpg" />
+    <Content Include="resource\web\images\shop_09.gif" />
+    <Content Include="resource\web\images\shop_10.jpg" />
+    <Content Include="resource\web\images\success.gif" />
+    <Content Include="resource\web\images\tg1.jpg" />
+    <Content Include="resource\web\images\tg2.jpg" />
+    <Content Include="resource\web\images\tg3.gif" />
+    <Content Include="resource\web\images\tg3.jpg" />
+    <Content Include="resource\web\images\tg4.jpg" />
+    <Content Include="resource\web\images\tg5.jpg" />
+    <Content Include="resource\web\images\tg6.jpg" />
+    <Content Include="resource\web\images\tg7.jpg" />
+    <Content Include="resource\web\images\tiptool.gif" />
+    <Content Include="resource\web\images\t_fla_t1.gif" />
+    <Content Include="resource\web\images\t_fla_t2.gif" />
+    <Content Include="resource\web\images\t_fla_t3.gif" />
+    <Content Include="resource\web\images\t_i_1.gif" />
+    <Content Include="resource\web\images\t_i_2.gif" />
+    <Content Include="resource\web\images\t_i_3.gif" />
+    <Content Include="resource\web\images\zccg_03.gif" />
+    <Content Include="resource\web\images\zccg_07.gif" />
+    <Content Include="resource\web\images\zccg_11.gif" />
+    <Content Include="resource\web\images\zccg_14.gif" />
+    <Content Include="resource\web\images\zcfi_01.gif" />
+    <Content Include="resource\web\images\zcfi_02.jpg" />
+    <Content Include="resource\web\images\zcfi_03.gif" />
+    <Content Include="resource\web\images\zcfi_07.gif" />
+    <Content Include="resource\web\images\zhankai.gif" />
+    <Content Include="resource\web\images\zuosanjiao.gif" />
+    <Content Include="resource\web\jiajukuaiso.ico" />
+    <Content Include="script\ColorPanel.js" />
+    <Content Include="script\easytabs.js" />
+    <Content Include="script\fileupload.js" />
+    <Content Include="script\formValidator-4.1.1.js" />
+    <Content Include="script\formValidator-4.1.1.min.js" />
+    <Content Include="script\formValidatorRegex.js" />
+    <Content Include="script\myPublic.js" />
+    <Content Include="script\brand_autocomplate.js" />
+    <Content Include="script\oms_autocomplate.js" />
+    <Content Include="script\pageValitator\company-setup1.js" />
+    <Content Include="script\pageValitator\company-brand.js" />
+    <Content Include="script\pageValitator\company-brands.js" />
+    <Content Include="script\pageValitator\productinfo.js" />
+    <Content Include="script\pageValitator\shopinfo.js" />
+    <Content Include="script\pageValitator\dealer.js" />
+    <Content Include="script\pageValitator\shopaddmarket.js" />
+    <Content Include="script\pageValitator\dealeraddbrand.js" />
+    <Content Include="script\pageValitator\marketinfo.js" />
+    <Content Include="script\supplercommon.js" />
+    <Content Include="script\themes\126\Author.txt" />
+    <Content Include="script\themes\126\images\bgx.png" />
+    <Content Include="script\themes\126\images\global2.png" />
+    <Content Include="script\themes\126\js\theme.js" />
+    <Content Include="script\themes\126\Preview.jpg" />
+    <Content Include="script\themes\126\style\style.css" />
+    <Content Include="script\themes\ArrowSolidBox\Author.txt" />
+    <Content Include="script\themes\ArrowSolidBox\images\background.gif" />
+    <Content Include="script\themes\ArrowSolidBox\images\bt.gif" />
+    <Content Include="script\themes\ArrowSolidBox\images\onLoad.gif" />
+    <Content Include="script\themes\ArrowSolidBox\images\reg-menu.gif" />
+    <Content Include="script\themes\ArrowSolidBox\images\verification-ui6.gif" />
+    <Content Include="script\themes\ArrowSolidBox\js\theme.js" />
+    <Content Include="script\themes\ArrowSolidBox\Preview.jpg" />
+    <Content Include="script\themes\ArrowSolidBox\style\style.css" />
+    <Content Include="script\themes\Default\images\bt.gif" />
+    <Content Include="script\themes\Default\images\onCorrect.gif" />
+    <Content Include="script\themes\Default\images\onError.gif" />
+    <Content Include="script\themes\Default\images\onFocus.gif" />
+    <Content Include="script\themes\Default\images\onLoad.gif" />
+    <Content Include="script\themes\Default\images\onShow.gif" />
+    <Content Include="script\themes\Default\images\onSuccess.gif" />
+    <Content Include="script\themes\Default\js\theme.js" />
+    <Content Include="script\themes\Default\Preview.jpg" />
+    <Content Include="script\themes\Default\style\style.css" />
+    <Content Include="script\themes\Default\作者.txt" />
+    <Content Include="script\themes\SolidBox\Author.txt" />
+    <Content Include="script\themes\SolidBox\images\onCorrect.gif" />
+    <Content Include="script\themes\SolidBox\images\onError.gif" />
+    <Content Include="script\themes\SolidBox\images\onFocus.gif" />
+    <Content Include="script\themes\SolidBox\images\onLoad.gif" />
+    <Content Include="script\themes\SolidBox\images\onShow.gif" />
+    <Content Include="script\themes\SolidBox\images\onSuccess.gif" />
+    <Content Include="script\themes\SolidBox\js\theme.js" />
+    <Content Include="script\themes\SolidBox\Preview.jpg" />
+    <Content Include="script\themes\SolidBox\style\style.css" />
+    <Content Include="Settled.aspx" />
+    <Content Include="shop\createsmarket.aspx" />
+    <Content Include="shop\DelShopList.aspx" />
+    <Content Include="shop\modifyproportion.aspx" />
+    <Content Include="shop\shopbrand.aspx" />
+    <Content Include="shop\shopinfo.aspx" />
+    <Content Include="shop\shoplist.aspx" />
+    <Content Include="supplerindex.aspx" />
+    <Content Include="supplermemberinfo.aspx" />
+    <Content Include="help.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Haojibiz\Haojibiz.csproj">
+      <Project>{884556F5-6B56-4F22-B517-93657F48364E}</Project>
+      <Name>Haojibiz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TREC.Config\TREC.Config.csproj">
+      <Project>{1861302F-FF9C-47C4-BF74-E2B97972CD86}</Project>
+      <Name>TREC.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TREC.ECommerce\TREC.ECommerce.csproj">
+      <Project>{445E2E52-950F-4F6A-9520-508C33795A13}</Project>
+      <Name>TREC.ECommerce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TREC.Entity\TREC.Entity.csproj">
+      <Project>{73FEC9EA-274A-4650-A312-8C4B7F19257C}</Project>
+      <Name>TREC.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TREC.Payment\TREC.Payment.csproj">
+      <Project>{76546CE4-3806-4E28-B9A1-4CE1175354B3}</Project>
+      <Name>TREC.Payment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TRECommon\TRECommon.csproj">
+      <Project>{8BCDF65D-3BF5-41D9-BD9F-01635A768129}</Project>
+      <Name>TRECommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\ajaxSupplerValidator.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resource\editor\kindeditor\ashx\file_manager_json.ashx" />
+    <Content Include="resource\editor\kindeditor\ashx\upload_json.ashx" />
+    <Content Include="Member.Master" />
+    <Content Include="ajax\MemberHandler.ashx" />
+    <Content Include="ajax\ProductHandler.ashx" />
+    <None Include="resource\css\ymPrompt\simple_gray\images\Thumbs.db" />
+    <None Include="resource\flash\library\vssver2.scc" />
+    <None Include="script\themes\ArrowSolidBox\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27661</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://192.168.1.104:8087</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://192.168.1.104:8087</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+﻿2015-04-14 14:28:25,124 [11] TREC.Web.Global DEBUG - 家具快搜启动
+2015-04-14 14:29:44,333 [11] TREC.Web.Global ERROR - 错误:
+UrlReferrer:
+http://localhost:10080/suppler/market/marketminInfor.aspx?id=219
+UserAgent:
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0
+UserHostName:
+127.0.0.1
+UserHostAddress:
+127.0.0.1
+
+System.Web.HttpException: “http://jiajuks.oss-cn-hangzhou.aliyuncs.”不是有效的虚拟路径。
+   在 System.Web.VirtualPath.Create(String virtualPath, VirtualPathOptions options)
+   在 System.Web.HttpServerUtility.MapPath(String path)
+   在 TREC.Web.ajaxtools.AliyunImgfileupload1.ProcessRequest(HttpContext context) 位置 F:\CodeNew\trunk\TREC.Web\ajaxtools\AliyunImgfileupload.ashx.cs:行号 91
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-04-14 14:32:53,038 [9] TREC.Web.Global DEBUG - 家具快搜停止

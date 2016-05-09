@@ -1,0 +1,7 @@
+OrderList:
+payType:支付类型 0.未支付 1.全款支付 2.定金支付 3.余款支付完成
+Result:支付结果表 0.待付款 1.待付余款 2.备货中 3.送货中 4.已完成
+
+/upload//company/banner/281/20150213114337589257.jpg
+
+SELECT CASE WHEN buyprice>0 THEN @price=buyprice WHEN saleprice>0 THEN @price=saleprice WHEN markprice>0 THEN @price=0 ELSE @price=0 END FROM productattribute WHERE id=@productattributeId

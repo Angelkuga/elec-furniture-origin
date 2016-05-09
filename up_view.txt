@@ -1,0 +1,25 @@
+SELECT     (SELECT     isnull(id, 0) AS id, isnull(title, '') AS title, isnull(logo, '') AS logo, isnull(thumb, '') AS thumb, isnull(mapapi, '') AS map, isnull(spread, '') AS spreadvalue, 
+                                              isnull(material, '') AS materialvalue, isnull(style, '') AS stylevalue, isnull(descript, '') AS descript, isnull(keywords, '') AS keywords
+                       FROM          t_brand
+                       WHERE      companyid = c.id AND linestatus = 1
+                       ORDER BY sort FOR xml path('type')) AS brandxml,
+                          (SELECT     isnull(id, 0) AS id, isnull(title, '') AS title, isnull(thumb, '') AS thumb, isnull(mapapi, '') AS map, isnull(linkman, '') AS linkman, isnull(phone, '') AS phone, 
+                                                   isnull(areacode, '') AS areacode, isnull(address, '') AS address
+                            FROM          t_shop
+                            WHERE      cid = c.id AND ctype = 101 AND linestatus = 1
+                            ORDER BY sort FOR xml path('type')) AS shopxml,
+                          (SELECT     TOP 8 isnull(id, 0) AS id, isnull(title, '') AS title, isnull(thumb, '') AS thumb, isnull(sku, '') AS sku, isnull(no, 0) AS no, isnull(categorytitle, '') AS categorytitle, 
+                                                   isnull(brandtitle, '') AS brandtitle, isnull(brandstitle, '') AS brandstitle, isnull(stylename, '') AS stylename, isnull(colorname, '') AS colorname, 
+                                                   isnull(materialname, '') AS materialname
+                            FROM          t_product
+                            WHERE      companyid = c.id AND linestatus = 1
+                            ORDER BY sort FOR xml path('type')) AS productxml,
+                          (SELECT     '') AS certifyxml,
+                          (SELECT     count(1)
+                            FROM          t_product
+                            WHERE      brandid IN
+                                                       (SELECT     id
+                                                         FROM          t_brand
+                                                         WHERE      companyid = c.id AND linestatus = 1) AND linestatus = 1 AND (shopid=0 OR shopid IS NULL) ) AS productcount, c.*
+FROM         t_company c
+WHERE     linestatus = 1

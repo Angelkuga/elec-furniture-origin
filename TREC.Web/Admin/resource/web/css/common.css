@@ -1,0 +1,18 @@
+﻿
+/*验证表单样式*/
+.regiinput{float:left;}
+span.error{
+	margin-left:5px;
+	padding-left:25px;
+	color:#F00;
+	background:url(../images/onError.gif) left center no-repeat;
+	float:left;
+}
+span.success{
+	margin-left:5px;
+	padding-left:25px;
+	color:#999;
+	background:url(../images/onSuccess.gif) left center no-repeat;
+}
+
+span.error,span.success{ display:block; height:22px; float:left; line-height:22px;}

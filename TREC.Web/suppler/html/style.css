@@ -1,0 +1,41 @@
+﻿/*
+	[Destoon B2B System] Copyright (c) 2008-2011 Destoon.COM
+	This is NOT a freeware, use is subject to license.txt
+*/
+/* global */
+* {word-break:break-all;font-family:Verdana,Arial;}
+body {background:#f1f9ff;color:#000000;font-size:12px;margin:0px;height:100%;}
+input,textarea,select,button,td {font-size:12px; }
+input,textarea,select,button{float:left; display:block;}
+input[type="text"]{width:160px;}
+textarea{width:380px;}
+img {border:none;}
+ul li {list-style-type:none;}
+ol li {list-style-type:decimal;}
+ul,form {margin:0px;padding:0px;}
+html {height:100%;}
+a:link,a:visited,a:active {text-decoration:none;color:#000000;}
+a:hover {color:#FF0000;text-decoration:none;}
+a.t:link,a.t:visited,a.t:active {text-decoration:none;color:#0240A3;}
+a.t:hover {color:#FF0000;}
+a.w:link,a.w:visited,a.w:active {text-decoration:none;color:#FFFFFF;}
+a.w:hover {color:#FAFAFA;}
+a.b:link,a.b:visited,a.b:active {text-decoration:none;color:#005590;}
+a.b:hover{color:#FF0000;}
+a.l:link,a.l:visited,a.l:active {text-decoration:underline;color:#005590;}
+a.l:hover{color:#FF0000;}
+a.n:link,a.n:visited,a.n:active {text-decoration:none;display:block;width:125px;color:#005590;font-size:14px;}
+a.n:hover{color:#FF6600;}
+a.m:link,a.m:visited,a.m:active {color:#666666;text-decoration:none;}
+a.m:hover {color:#FF6600;}
+a.f:link,a.f:visited,a.f:active,a.f:hover {text-decoration:none;display:block;width:125px;color:#888888;font-size:14px;}
+
+.helpBox{ position:absolute; width:800px; height:auto; left:50%; margin-left:-400px; margin-top:20px; background:#f1f9ff;}
+
+.helpBox .boxTitle{ position:relative; float:left; line-height:30px; width:100%;}
+.helpBox .boxTitle span{font-size:14px; font-weight:bold; display:block; float:left; width:100%; line-height:14px; height:14px; margin-bottom:10px;}
+.helpBox .boxTitle span.d{font-size:12px; font-weight:normal; color:#282828;width:100%;}
+.helpBox .boxTitle span.d strong{font-size:14px; color:#f60;}
+.helpBox .boxCon{ position:relative; width:800px; float:left;}
+
+.clear{ clear:both; float:left; width:100%; height:20px;}

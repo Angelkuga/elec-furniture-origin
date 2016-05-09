@@ -1,0 +1,58 @@
+﻿/*register or supply request*/
+.topline { height:39px; background:url(/resource/web/images/newreg/sjrz_03.jpg) repeat-x;}
+.bannerbox{ background-color:#8d0000; }
+.topbanner{ width:1155px; height:386px; background:url(/resource/web/images/newreg/sjrz_06.jpg) no-repeat; position:relative;}
+.menubg{ background:url(/resource/web/images/newreg/sjrz_12.jpg) repeat-x; height:66px;}
+.mainmenu{ width:1155px; height:66px; background:url(/resource/web/images/newreg/sjrz_11.jpg) no-repeat; overflow:hidden;}
+.mainmenu ul{ margin:0 0 0 150px;}
+.mainmenu li{ margin:0 20px; height:50px; line-height:50px; vertical-align:middle; font-size:14px; font-weight:bold; float:left; display:block; color:#fff;}
+.mainmenu li a,.mainmenu li a:hover{ color:#fff; text-decoration:none;}
+.mainout{ background-color:#eee;}
+.mainbox{ background-color:#FFF; width:963px;}
+.content{ width:865px;}
+.content h1{ padding:15px 0;}
+.content h2{ width:847px; height:38px; line-height:38px; margin:10px 0 20px; vertical-align:middle; background:url(/resource/web/images/newreg/sjrz_32.gif) no-repeat; text-align:left; font-size:16px; font-weight:bold; padding-left:20px;}
+.content .fuwu li{ width:380px; float:left; margin:0 20px; display:inline;}
+.content .fuwu img{ float:left; width:129px; height:69px; display:inline; margin:0 20px 50px 0;}
+.content .fuwu .rcon{ float:right; width:230px; text-align:left; line-height:22px;}
+.content .fuwu h3{  font-size:14px; color:#999; font-weight:600;}
+.content .fuwu p{ font-size:12px;}
+.subonel,.suboner,.subtwol,.subtwor{line-height:22px; font-size:14px; text-align:left;}
+.subonel{ width:550px; float:left; padding-left:10px; }
+.subonel p{ margin:15px 0;}
+.suboner{ width:300px; float:right;}
+.subtwol{ width:450px; float:left; padding-left:10px;}
+.sbutwor{ width:350px; float:right;}
+.redbold{ color:#900; font-weight:bold; margin:0 2px; font-family:Arial;}
+.clear{ clear:both;}
+.biaozhun table{ background-color:#ddd; border: 1px solid #DCDCDC;}
+.biaozhun td{ line-height:30px; font-family:Arial, simsun; font-size:14px;border: 1px solid #DCDCDC;}
+.biaozhun .bg01{ height:30px; background-color:#777; color:#FFF; font-size:14px; font-weight:bold; text-align:center;}
+.biaozhun .bg02{background-color:#FFF; text-align:center; font-size:14px; color:#333;}
+/*标签切换*/
+.rukoubg{ position:absolute; width:340px; height:330px; right:120px; bottom:-1px; background-color:#000;filter:alpha(Opacity=40);-moz-opacity:0.4;opacity: 0.4;}
+.rukoucon{ position:absolute; width:340px; height:330px; right:120px; bottom:-1px; color:#999;  }
+.rukoucon .textfiled,.rukou .textfiled2,.rukoucon .textfiled3{background-color:#FFFFFF; color:#900; font-family:Arial; font-size:14px; padding-left:3px; background-color:#eee; border:none;}
+.rukoucon .textfiled{ width:170px;height:24px; line-height:24px; border:none; }
+.rukoucon .textfiled2{ width:50px;height:20px; line-height:20px; margin:0 5px; border:none; padding-left:3px; font-family:Arial;}
+.rukoucon .textfiled3{ width:187px;height:24px; line-height:24px; border:none;}
+.rukoucon td{ font-size:12px;}
+.rukoucon .wordcol{ color:#960;}
+a.huan{ color:#c37106; text-decoration:none;}
+a.huan:hover{ color:#c37106; text-decoration:underline;}
+a.xieyi{ color:#999; text-decoration:underline;}
+a.xieyi:hover{ color:#ccc; text-decoration:underline;}
+.cpTitle{ height:48px;   position:relative; }
+.cpTitle ul{ position:absolute; top:0; left:0;}
+.cpTitle li{ float:left; display:block; cursor:pointer;}
+.cpTitle li.tabActive,.cpTitle li.tabNormal{ width:170px; height:48px; line-height:48px; vertical-align:middle; text-align:center; font-size:14px;}
+.cpTitle li.tabActive{  color:#fff; font-weight:bold;}
+.cpTitle li.tabNormal{  color:#999; font-weight:bold; background-color:#000; }
+.cplist{ margin-top:15px;}
+a.rzbtn,a.rzbtn:hover,.rzbtn{ color:#fff; font-weight:bold; font-size:14px; cursor:pointer; text-decoration:none; background:url(/resource/web/images/newreg/tyzc.gif) repeat-x; width:235px; height:32px; line-height:32px; display:block; margin-right:5px; border:none;}
+.banner{ position:relative; width:865px; height:43px;}
+.banner a{ float:left; display:block; background:#fff; position:absolute;width:82px; height:25px; line-height:25px; z-index:100;filter:alpha(opacity=0);-moz-opacity:0;opacity: 0; right:7px; top:27px; cursor:pointer;}
+#imgValiateCode{ cursor:pointer;}
+.emessage{ color:Red;}
+.smessage{ color:#999;}
+.omessage{ color:Green;}
